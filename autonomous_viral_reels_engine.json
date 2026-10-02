@@ -1,0 +1,34 @@
+{
+  "project": "AutonomousViralReelsEngine",
+  "pipeline_steps": {
+    "1_trend_research": {
+      "tool": "Perplexity_or_Tavily_API",
+      "query": "Trending viral mysteries, unexplained Indian history, or bizarre biology hooks on YouTube Shorts this week",
+      "rule": "Fetch 1 unique topic. Check 'history_log.json' to ensure it was not used in the last 30 uploads."
+    },
+    "2_script_generation": {
+      "model": "claude-3-5-sonnet",
+      "duration": "24-28 seconds",
+      "hook_formula": "Drop viewer directly into an unresolved paradox or shocking claim in first 2 seconds.",
+      "output_format": {
+        "voiceover_clean": "Conversational Hindi/Hinglish narration ONLY. No stage directions.",
+        "scene_visual_prompts": "6 distinct prompts (3-4s each), vertical 9:16, 8k, octane 3D render style, dynamic lighting, --no flat color, black screen, static frame"
+      }
+    },
+    "3_voice_synthesis": {
+      "provider": "ElevenLabs_API",
+      "model": "eleven_multilingual_v2",
+      "stability": 0.45,
+      "similarity_boost": 0.85
+    },
+    "4_video_assembly": {
+      "engine": "Remotion",
+      "captions": "Center-aligned, uppercase, 48pt font, yellow active-word highlight, drop-shadow.",
+      "audio_mix": {
+        "voiceover": "0dB",
+        "impact_sfx_on_cuts": "-16dB",
+        "ambient_music": "-22dB"
+      }
+    }
+  }
+}

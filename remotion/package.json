@@ -1,0 +1,15 @@
+{
+  "name": "autonomous-viral-reels-remotion",
+  "version": "1.0.0",
+  "description": "Remotion video assembly template for AutonomousViralReelsEngine",
+  "scripts": {
+    "build": "remotion render src/index.ts ViralReel out/video.mp4",
+    "preview": "remotion preview src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.0"
+  }
+}

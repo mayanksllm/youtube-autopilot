@@ -1,0 +1,86 @@
+# =============================================================================
+# ZERO-LEAK SECURITY .GITIGNORE (DevSecOps Audited)
+# =============================================================================
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.env
+client_secret*.json
+credentials.json
+token.json
+token.pickle
+oauth_*.json
+*.pem
+*.key
+*.pfx
+
+# Python Virtual Environments & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Workspace & IDE State
+.antigravity/
+.antigravity-ide/
+.gemini/
+*.log
+*.lock
+history.json
+history_log.json
+batch_log.json
+autopilot_state.json
+daily_report.json
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Local Developer & Scheduler Scripts
+*.ps1
+register_*.bat
+setup_*.bat
+run_quota_uploader.bat
+test_*.py
+
+# Media & Temporary Render Files
+temp/
+assets/temp/
+output/
+assets/output/
+assets/scenes_cache/
+assets/producer_cache/
+assets/producer_frames/
+assets/my_photos/
+assets/my_videos/
+*.mp4
+*.mp3
+*.wav
+*.jpg
+*.png
+
+# Whitelist Verified Visual Templates & Fallback Assets
+!assets/templates/*.png
+!assets/templates/*.jpg
+!assets/fallback_vault/*.jpg
+!assets/fallback_vault/*.png

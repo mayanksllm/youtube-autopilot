@@ -1,0 +1,81 @@
+name: Autonomous AI Producer (Daily YouTube Shorts)
+
+on:
+  schedule:
+    # Schedule 1: 23:30 UTC (5:00 AM IST) -> With GitHub queue lag, triggers ~11:30 AM - 12:00 PM IST
+    - cron: '30 23 * * *'
+    # Schedule 2: 06:30 UTC (12:00 PM IST) -> Triggers ~6:30-7:00 PM IST
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'Optional custom topic to research (leave empty for autonomous live trend discovery)'
+        required: false
+        default: ''
+        type: string
+      dry_run:
+        description: 'Dry run (render video locally without uploading to YouTube)'
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: youtube-ai-producer
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run-ai-producer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install System Multimedia & Typography Packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-noto-core fonts-deva fonts-freefont-ttf fonts-dejavu
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Execute Autonomous AI Producer Pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+          CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
+        run: |
+          TOPIC_FLAG=""
+          if [ -n "${{ inputs.topic }}" ]; then
+            TOPIC_FLAG="--topic '${{ inputs.topic }}'"
+          fi
+
+          DRY_RUN_FLAG=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            DRY_RUN_FLAG="--dry-run"
+          fi
+
+          python ai_producer.py $TOPIC_FLAG $DRY_RUN_FLAG
+
+      - name: Commit & Push Daily Production Logs and History
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto: AI Producer daily video generation & metadata update [skip ci]"
+          file_pattern: "history.json history_log.json daily_report.json autopilot_state.json"
