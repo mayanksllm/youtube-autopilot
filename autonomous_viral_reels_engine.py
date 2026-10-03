@@ -345,6 +345,15 @@ class TrendResearcher:
         recent_30 = cls.get_recent_topics(30)
         print(f"\n🔍 [Trend Researcher] Checking history & variety store (Found {len(recent_30)} recent uploads in lookback memory)")
 
+        # 0. Integrated Multi-Source Trend Aggregator (YouTube, Google Trends RSS, Reddit with RSS fallback)
+        try:
+            from trend_aggregator import trend_aggregator
+            trend = trend_aggregator.get_fresh_daily_trend(target_category_id=category_id)
+            if trend and trend.get("topic"):
+                return trend
+        except Exception as e:
+            print(f"   [Trend Aggregator Notice] {e}, continuing failover cascade...")
+
         # 1. Perplexity search if key present
         if PERPLEXITY_API_KEY:
             try:
