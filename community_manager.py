@@ -118,6 +118,8 @@ class CommunityManager:
             }
             request = youtube_service.commentThreads().insert(part="snippet", body=body)
             response = request.execute()
+            from autopilot_config import QuotaManager
+            QuotaManager.consume_units("commentThreads.insert")
             comment_id = response.get("id")
             print(f"🎉 [Community] Successfully posted top-level comment (ID: {comment_id})!")
             print("   📌 [Notice] To pin this comment, click the 3 dots beside it in YouTube Studio.")
@@ -231,6 +233,8 @@ class CommunityManager:
                 textFormat="plainText"
             )
             res = req.execute()
+            from autopilot_config import QuotaManager
+            QuotaManager.consume_units("commentThreads.list")
             threads = res.get("items", [])
             print(f"📬 [Community] Found {len(threads)} recent comment threads on your channel.")
 
@@ -270,6 +274,7 @@ class CommunityManager:
                         }
                     }
                     youtube_service.comments().insert(part="snippet", body=reply_body).execute()
+                    QuotaManager.consume_units("comments.insert")
                     variety_engine.record_replied_comment(c_id, reply_text)
                     replies_count += 1
                     print(f"   ✅ [Replied to @{author}]: \"{reply_text[:60]}...\"")

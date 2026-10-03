@@ -83,3 +83,71 @@ BROWSER_HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
 }
+
+
+# -----------------------------------------------------------------------------
+# 7. Quota Manager Engine
+# -----------------------------------------------------------------------------
+class QuotaManager:
+    """
+    Monitors and budgets YouTube Data API quota units across runs.
+    Daily free project quota: 10,000 units. Resets at 00:00 Pacific Time (PT).
+    Persists estimated usage in variety_store.json.
+    """
+    @staticmethod
+    def get_pt_date_str() -> str:
+        from datetime import datetime, timezone, timedelta
+        now_utc = datetime.now(timezone.utc)
+        is_dst = 3 <= now_utc.month <= 10
+        pt_offset = timedelta(hours=-7 if is_dst else -8)
+        now_pt = now_utc.astimezone(timezone(pt_offset))
+        return now_pt.strftime("%Y-%m-%d")
+
+    @classmethod
+    def get_estimated_used_units(cls) -> int:
+        try:
+            import json
+            if VARIETY_STORE_PATH.exists():
+                with open(VARIETY_STORE_PATH, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                today_pt = cls.get_pt_date_str()
+                quota_meta = data.get("quota_tracking", {})
+                if quota_meta.get("date") == today_pt:
+                    return int(quota_meta.get("used_units", 0))
+        except Exception:
+            pass
+        return 0
+
+    @classmethod
+    def consume_units(cls, operation: str, count: int = 1) -> int:
+        unit_cost = QUOTA_COSTS.get(operation, 1) * count
+        today_pt = cls.get_pt_date_str()
+        try:
+            import json
+            data = {}
+            if VARIETY_STORE_PATH.exists():
+                with open(VARIETY_STORE_PATH, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+            quota_meta = data.setdefault("quota_tracking", {})
+            if quota_meta.get("date") != today_pt:
+                quota_meta["date"] = today_pt
+                quota_meta["used_units"] = 0
+            quota_meta["used_units"] = quota_meta.get("used_units", 0) + unit_cost
+            with open(VARIETY_STORE_PATH, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            return quota_meta["used_units"]
+        except Exception:
+            return unit_cost
+
+    @classmethod
+    def can_run_pipeline(cls, required_margin: int = MIN_REMAINING_QUOTA_FOR_RUN) -> bool:
+        used = cls.get_estimated_used_units()
+        remaining = QUOTA_DAILY_MAX - used
+        return remaining >= required_margin
+
+    @classmethod
+    def get_status_str(cls) -> str:
+        used = cls.get_estimated_used_units()
+        remaining = max(0, QUOTA_DAILY_MAX - used)
+        return f"Daily API Quota: ~{used}/{QUOTA_DAILY_MAX} units consumed (Est. {remaining} units remaining today)"
+

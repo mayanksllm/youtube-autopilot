@@ -333,6 +333,8 @@ class ThumbnailGenerator:
             media = MediaFileUpload(str(thumbnail_path), mimetype="image/jpeg", resumable=True)
             request = youtube_service.thumbnails().set(videoId=video_id, media_body=media)
             request.execute()
+            from autopilot_config import QuotaManager
+            QuotaManager.consume_units("thumbnails.set")
             print(f"🎉 [Thumbnails API] Successfully uploaded custom thumbnail for {video_id}!")
             return True
         except Exception as e:

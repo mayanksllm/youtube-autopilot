@@ -566,6 +566,14 @@ def _upload(yt, video_path: Path, title: str, description: str, tags: list,
         )
         return f"SAVED_LOCAL_{int(time.time())}"
 
+    from autopilot_config import QuotaManager
+    if not QuotaManager.can_run_pipeline(1600):
+        log.warning(
+            f"  [QUOTA PROTECT] YouTube API budget low ({QuotaManager.get_status_str()}). "
+            f"Saving '{video_path.name}' to local queue to prevent API exhaustion."
+        )
+        return f"SAVED_LOCAL_{int(time.time())}"
+
     try:
         from googleapiclient.http import MediaFileUpload
         body = {
@@ -587,6 +595,7 @@ def _upload(yt, video_path: Path, title: str, description: str, tags: list,
             if status:
                 log.info(f"  Upload {int(status.progress()*100)}%")
         vid_id = resp.get("id", "unknown")
+        QuotaManager.consume_units("videos.insert")
         _DAILY_UPLOAD_COUNTER += 1
         url = f"https://youtube.com/{'shorts/' if is_short else 'watch?v='}{vid_id}"
         log.info(f"  Uploaded ({_DAILY_UPLOAD_COUNTER}/{MAX_DAILY_UPLOADS}): {url}")

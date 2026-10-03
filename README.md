@@ -1,108 +1,148 @@
-# 🚀 Autonomous Viral Reels Engine (Zero-Cost Failover Cascade)
+# 🚀 Autonomous Viral Reels Engine (Quality Upgrade Suite)
 
-![Daily YouTube Autopilot](https://github.com/mayanksllm/youtube-autopilot/actions/workflows/daily_reels.yml/badge.svg)
+![YouTube Master Autopilot](https://github.com/mayanksllm/youtube-autopilot/actions/workflows/daily_autopilot.yml/badge.svg)
 
-An industrial-grade, 100% autonomous YouTube Shorts and Instagram Reels production pipeline. Built with an automated **Multi-Tier AI Failover Cascade** across scriptwriting, image generation, and voice synthesis. If any API is rate-limited (HTTP 429), expires, or fails, the engine seamlessly cascades down to keyless, zero-cost tiers without crashing.
+An industrial-grade, 100% autonomous YouTube Shorts and Instagram Reels production engine. Engineered with an automated **Multi-Tier AI Failover Cascade** across scripting, image generation, voice synthesis, thumbnail creation, and community engagement.
 
 ---
 
-## ⚡ Multi-Tier Failover Architecture
+## 🌟 Quality Upgrade Architecture
 
 ```
-┌────────────────────────────────────────────────────────────────────────┐
-│ 1. SCRIPT GENERATION CASCADE (Chain of 5 Providers)                    │
-│   • Tier 1: Google Gemini 2.5 Flash API (Free Tier key)                │
-│   • Tier 2: Groq Cloud API (llama-3.3-70b-versatile, free high-speed)  │
-│   • Tier 3: DeepSeek Free API / OpenRouter Free Tier                   │
-│   • Tier 4: Cohere API (command-r free tier)                           │
-│   • Tier 5: Pollinations AI Text (100% Keyless Emergency Tier)         │
-│   • Strict Schema: title, voiceover_clean (Hindi), pinned_comment,      │
-│     and 6 distinct scene visual prompts.                               │
-├────────────────────────────────────────────────────────────────────────┤
-│ 2. VISUAL GENERATION CASCADE (Chain of 4 Free Engines)                 │
-│   • Tier 1: Pollinations AI FLUX (1080x1920, 9:16 vertical, keyless)   │
-│   • Tier 2: Hugging Face Serverless Inference (FLUX.1-schnell)         │
-│   • Tier 3: Together AI Free Tier (SDXL 1.0)                           │
-│   • Tier 4: Local Dynamic B-Roll Vault (assets/fallback_vault/)        │
-│   • Quality Gate: File size > 30KB & luminance >= 10.0 (no black cuts) │
-├────────────────────────────────────────────────────────────────────────┤
-│ 3. VOICE SYNTHESIS CASCADE (Chain of 3 Providers)                      │
-│   • Tier 1: edge-tts voice 'hi-IN-MadhurNeural' (rate: +10%)           │
-│   • Tier 2: edge-tts voice 'hi-IN-SwaraNeural' (rate: +10%)            │
-│   • Tier 3: Local gTTS (Google Translate Hindi TTS fallback)           │
-├────────────────────────────────────────────────────────────────────────┤
-│ 4. REMOTION-GRADE VIDEO COMPOSITOR & AUDIO MASTERING                   │
-│   • Dynamic 2.5D Camera Dolly-in Zoom & Pan                            │
-│   • Center-aligned 48pt uppercase yellow active-word captions          │
-│   • Broadcast Audio Mix: Voiceover 0dB, Impact SFX -16dB, Music -22dB  │
-└────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 1. VARIETY & COOLDOWN ENGINE (yt_variety.py)                                │
+│   • Persistent store: variety_store.json (tracks production history)        │
+│   • Cooldowns: Visual Style: 15 videos | Hook: 4 | Camera: 3 | Caption: 4   │
+│                Music Mood: 4 | Voice: 3 | Topic Category: 3                 │
+│   • Freshness Gate: is_fresh() uses similarity checks (Jaccard + Sequence)  │
+│     on topics, titles, and scene prompts with a configurable threshold.     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 2. MULTI-SOURCE TREND RESEARCH & CONTRARIAN ANGLES (trend_aggregator.py)     │
+│   • YouTube Data API: regionCode=IN / Category 27 mostPopular videos        │
+│   • Google Trends RSS: India (geo=IN) & US real-time trending queries       │
+│   • Reddit Breakouts: r/todayilearned, r/damnthatsinteresting, r/science    │
+│     (with automatic fallback from keyless JSON to RSS / topic vaults)       │
+│   • Contrarian Angle: LLM synthesizes an original paradox angle; never      │
+│     summarizes or copies the raw trend.                                     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 3. TWO-PASS SCRIPTWRITER + ADVERSARIAL CRITIC (script_critic.py)             │
+│   • Pass 1 (Writer): Crafts 6-scene viral narrative with loop hook          │
+│   • Pass 2 (Critic): Evaluates Hook (1-10), Pacing (1-10), Retention (1-10) │
+│   • Auto-Rewrite Gate: If composite score < 7.0, triggers focused rewrite   │
+│   • Model Cascade: Gemini 3.8/3.6/3.5-flash → Groq → OpenRouter → Fallback  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 4. VISUAL STYLE DNA, PARALLAX MOTION & VISION GATE (visual_quality_gate.py) │
+│   • Visual DNA: Single style reference prompt injected into all scenes      │
+│   • Motion: Ken Burns 2.5D dynamic parallax zoom & pan                      │
+│   • Captions: Dynamic animated word-by-word active text highlighting        │
+│   • Post-Processing: Cinematic 35mm film grain & color grading in FFmpeg    │
+│   • Quality Gate: Validates image size, luminance (10-248), entropy, and    │
+│     Gemini Vision inspection (regenerates blurry or artifacted images)      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 5. 3-VARIANT THUMBNAIL GENERATOR & CTR SCORING (thumbnail_generator.py)     │
+│   • Generates 3 visual variants: Close-Up Yellow, Neon Cyan, Golden Amber   │
+│   • Strict Rule: <= 3 words bold, high-contrast overlay text                │
+│   • Vision CTR Ranking: AI Vision model selects the highest-CTR winner      │
+│   • Uploads via thumbnails().set() with graceful local fallback             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 6. COMMUNITY MANAGER & AUTO-REPLIES (community_manager.py)                  │
+│   • Pinned Question: Posts top-level engagement question on upload          │
+│   • Auto-Replies: Channel-only (allThreadsRelatedToChannelId)               │
+│   • Smart Filters: Skips spam, promo links, and negative/toxic comments     │
+│   • Anti-Repetition: Generates unique, non-repeating empathetic replies;   │
+│     logs replied IDs in variety_store.json to never reply twice             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 7. QUOTA MANAGEMENT & GRACEFUL DEGRADATION (autopilot_config.py)            │
+│   • Daily budget: 10,000 units (resets at 00:00 Pacific Time)               │
+│   • Cost tracking: videos.insert (1600), thumbnails.set (50), comments (50) │
+│   • Safety Gate: Stops gracefully with code 0 when quota is below safety    │
+│     margin (1750 units) instead of failing GitHub Actions builds            │
+└─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🌐 Cloud Execution: Public Repository Mode
+## 📌 Important YouTube API Notes
 
-In a **public GitHub repository**, GitHub Actions provides **unlimited minutes for standard Linux runners**:
-- The workflow [`.github/workflows/daily_reels.yml`](.github/workflows/daily_reels.yml) executes twice daily on schedule:
-  - `02:00 UTC` (7:30 AM IST) — Morning discovery surge.
-  - `11:00 UTC` (4:30 PM IST) — Evening Indian leisure & commute window.
-- All secrets are injected through repository **Settings → Secrets and variables → Actions**.
-- Production history is automatically tracked in [`history_log.json`](history_log.json) and committed back to the repository on each run with `[skip ci]`.
+### 1. Comment Pinning in YouTube Studio
+> [!NOTE]
+> The YouTube Data API v3 does **not** support setting a comment as pinned via API.
+> The pipeline posts your engagement question as a normal top-level comment on your video via `commentThreads().insert`.
+> **To pin it:** Open **YouTube Studio** or the **YouTube mobile app**, find your uploaded Short, click the **3 dots** beside the top comment, and select **"Pin"** (1 click).
+
+### 2. Custom Thumbnail Permissions & Verification
+> [!IMPORTANT]
+> The YouTube Data API endpoint `thumbnails().set` requires an **account verified via phone number** in YouTube Studio (Feature Eligibility -> Intermediate Features).
+> - If your channel is verified, the winning thumbnail is automatically set on YouTube.
+> - If your channel is not yet phone-verified, YouTube returns HTTP 403 `thumbnailUploadDisabled`.
+> - **Zero-Crash Resilience:** The engine catches this error gracefully, logs a helpful reminder, and preserves the winning thumbnail locally in `assets/thumbnails/` so your workflow never fails.
+
+### 3. API Quota Budgeting
+> [!TIP]
+> Google gives every YouTube Data API project **10,000 free quota units per day**, resetting at **00:00 Pacific Time (12:30 PM / 1:30 PM IST)**.
+> - Video upload: `~1600` units
+> - Thumbnail upload: `50` units
+> - Top-level comment: `50` units
+> - Auto-reply: `50` units
+> - Comment listing: `1` unit
+>
+> The built-in `QuotaManager` monitors consumption across runs and stops gracefully when remaining units are below 1750, ensuring zero failed workflow runs.
 
 ---
 
-## 💻 Alternative: Self-Hosted Local Background Daemon
+## 🌐 Consolidated GitHub Actions Workflow
 
-If you prefer to run production locally on your personal computer or laptop so that jobs **never consume GitHub cloud quotas or actions**:
+All legacy, overlapping workflows have been consolidated into **one master workflow**:
+- [`.github/workflows/daily_autopilot.yml`](.github/workflows/daily_autopilot.yml)
 
-### On Linux / macOS / Git Bash:
+### Schedule (Peak Indian Discovery Windows):
+- `02:00 UTC` (7:30 AM IST) — Morning discovery surge.
+- `11:00 UTC` (4:30 PM IST) — Evening Indian commute & leisure window.
+
+### Manual Trigger (`workflow_dispatch`):
+You can manually run the pipeline anytime from GitHub Actions tab:
+- **pipeline**: `autonomous_viral_reels` (default) or `daily_autopilot`
+- **dry_run**: `true` (test without uploading) or `false` (publish live)
+
+---
+
+## 🧪 Testing Locally Before Pushing
+
+Run these commands in PowerShell or Bash to verify the quality upgrades locally:
+
 ```bash
-chmod +x run.sh
-./run.sh
-```
-To run as a recurring background daemon (e.g., via cron or systemd):
-```bash
-# Add to crontab (crontab -e) to run at 8:00 AM and 5:00 PM daily:
-0 8,17 * * * cd /path/to/youtube_automation && ./run.sh >> autopilot.log 2>&1
-```
+# 1. Test Variety Engine & Cooldowns
+python -c "from yt_variety import variety_engine; print(variety_engine.pick_production_bundle())"
 
-### On Windows:
-```cmd
-run_autopilot.bat
-```
-Or register a Windows Scheduled Task using the provided PowerShell script:
-```powershell
-powershell -ExecutionPolicy Bypass -File .\set_task_settings.ps1
-```
+# 2. Test Multi-Source Trend Aggregator
+python -c "from trend_aggregator import trend_aggregator; print(trend_aggregator.get_fresh_trend_topic('psychology_thrillers'))"
 
----
+# 3. Test Script Critic Quality Gate
+python -c "import script_critic; print('Critic engine ready')"
 
-## 🔑 Environment Setup (`.env.example`)
+# 4. Test Visual Quality Gate
+python -c "import visual_quality_gate; print('Visual quality gate ready')"
 
-Copy [`.env.example`](.env.example) to `.env` and fill in whichever keys you have. Remember: **all keys are optional** — the cascade handles missing keys gracefully:
+# 5. Test 3-Variant Thumbnail Generator (Dry-Run)
+python -c "from thumbnail_generator import thumbnail_generator; print(thumbnail_generator.produce_3_variants('The Ambergris Mystery', 'psychology_thrillers'))"
 
-```ini
-# Optional Free Scripting Keys
-GEMINI_API_KEY=your_gemini_api_key
-GROQ_API_KEY=your_groq_api_key
-OPENROUTER_API_KEY=your_openrouter_api_key
-COHERE_API_KEY=your_cohere_api_key
+# 6. Test Community Manager & Spam Filter
+python -c "from community_manager import community_manager; print('Constructive:', community_manager.is_constructive_comment('Amazing video!'), 'Spam:', community_manager.is_constructive_comment('Subscribe here http://spam.com'))"
 
-# Optional Free Visual Keys
-HF_TOKEN=your_huggingface_token
-TOGETHER_API_KEY=your_together_api_key
-
-# YouTube Upload Credentials (Optional for dry-runs)
-CLIENT_SECRETS_JSON={"installed":{...}}
-YOUTUBE_TOKEN_JSON={"token":...}
+# 7. Run Full Pipeline Dry-Run (Renders complete video locally, tests all gates without uploading)
+python autonomous_viral_reels_engine.py --dry-run
 ```
 
 ---
 
-## 📁 Repository Structure
-- `autonomous_viral_reels_engine.py` — Main master pipeline with multi-tier failover
-- `autonomous_viral_reels_engine.json` — Exact pipeline specification
-- `run.sh` / `run_autopilot.bat` — Local self-hosted daemon runners
-- `.github/workflows/daily_reels.yml` — Automated cloud production workflow
-- `history_log.json` — 30-upload lookback memory to prevent topic repetition
-- `assets/fallback_vault/` — Verified high-res royalty-free fallback visuals
+## 🔒 Security & Git Hygiene
+
+- `client_secret*.json`, `token*.json`, `.env`, and secret keys are protected by `.gitignore` and **must never be committed to git**.
+- The git commit history on branch `quality-upgrade` has been verified clean of all credentials and tokens.
+- In production / GitHub Actions, credentials are fed securely via repository secrets:
+  - `YOUTUBE_TOKEN_JSON`
+  - `CLIENT_SECRETS_JSON`
+  - `YOUTUBE_CLIENT_SECRET_BASE64`
+  - `YOUTUBE_REFRESH_TOKEN`
+  - `GEMINI_API_KEY`
+  - `GROQ_API_KEY`

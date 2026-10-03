@@ -1600,6 +1600,12 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: List
                 "selfDeclaredMadeForKids": False
             }
         }
+        from autopilot_config import QuotaManager
+        if not QuotaManager.can_run_pipeline(1600):
+            print(f"🛑 [Quota Guard] Insufficient quota to upload ({QuotaManager.get_status_str()}).")
+            print("   Saving video locally to prevent YouTube API 403 quota exhaustion.")
+            return None
+
         print(f"📡 [YouTube API] Uploading '{title[:60]}'...")
         media = MediaFileUpload(str(video_path), mimetype="video/mp4", resumable=True)
         request = yt.videos().insert(part="snippet,status", body=body, media_body=media)
@@ -1610,6 +1616,7 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: List
                 print(f"   [Upload Progress] {int(status.progress() * 100)}% transferred...")
 
         vid_id = response.get("id")
+        QuotaManager.consume_units("videos.insert")
         print(f"🎉 [YouTube API] Published Successfully! Video Link: https://youtu.be/{vid_id}")
 
         # Produce 3 thumbnail variants and upload winner
@@ -1648,6 +1655,13 @@ def run_autonomous_viral_reels_engine(dry_run: bool = True) -> str:
     print("  🎬 AUTONOMOUS VIRAL REELS ENGINE (Zero-Cost Failover Cascade)")
     print("  Gemini/Groq/DeepSeek/Cohere • FLUX/HF/SDXL/Vault • EdgeTTS/gTTS")
     print("=" * 75)
+
+    from autopilot_config import QuotaManager, MIN_REMAINING_QUOTA_FOR_RUN
+    print(f"📊 [Quota Status] {QuotaManager.get_status_str()}")
+    if not dry_run and not QuotaManager.can_run_pipeline():
+        print(f"⚠️ [Quota Limit Notice] Remaining units below safety margin ({MIN_REMAINING_QUOTA_FOR_RUN}).")
+        print("   Stopping gracefully to preserve YouTube quota. Next quota reset at 00:00 PT.")
+        return ""
 
     # Variety Engine: Pick Production Bundle with full cooldowns
     bundle = variety_engine.pick_production_bundle()
