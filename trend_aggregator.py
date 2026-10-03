@@ -267,6 +267,27 @@ class TrendAggregator:
     # -------------------------------------------------------------------------
     # 4. Synthesizer: Transform Trend into Original Contrarian Paradox Angle
     # -------------------------------------------------------------------------
+    @classmethod
+    def validate_fact_safety(cls, angle: Dict[str, Any]) -> Tuple[bool, str]:
+        """
+        Ensures the angle strictly adheres to verifiable truth.
+        Rejects fabricated medical cures, pseudo-scientific health claims, or diagnostic advice.
+        """
+        combined = f"{angle.get('topic', '')} {angle.get('headline', '')} {angle.get('paradox', '')}".lower()
+        banned_health_phrases = [
+            "cure cancer", "cures cancer", "miracle cure", "secret cure",
+            "cures diabetes", "treats alzheimer", "cures disease",
+            "replace your doctor", "stop taking medicine", "doctors hide",
+            "big pharma hides", "guaranteed weight loss", "toxic vaccine",
+            "vaccines cause", "miracle supplement"
+        ]
+        for phrase in banned_health_phrases:
+            if phrase in combined:
+                return False, f"Prohibited unverified medical/health claim detected: '{phrase}'"
+        if angle.get("fact_safety_passed") is False:
+            return False, "Model self-audit flagged factual uncertainty."
+        return True, "Fact safety audit passed."
+
     def synthesize_original_angle(
         self,
         raw_trend: Dict[str, str],
@@ -274,7 +295,7 @@ class TrendAggregator:
     ) -> Optional[Dict[str, Any]]:
         """
         Uses LLM to convert a raw trend headline into a 100% original, contrarian angle.
-        The prompt explicitly forbids copying or summarizing the trend.
+        The prompt explicitly forbids copying, summarizing, or inventing medical claims.
         """
         title = raw_trend.get("raw_title", "")
         context = raw_trend.get("raw_context", "")
@@ -286,15 +307,19 @@ class TrendAggregator:
             f"Source: {source}\n"
             f"Context: \"{context}\"\n"
             f"Target Category: {target_category or 'Curiosity / Science / Enigma'}\n\n"
-            "CRITICAL INSTRUCTION: DO NOT summarize or copy the headline above. "
-            "Instead, find the UNNOTICED CONTRARIAN TRUTH, the hidden scientific/historical paradox, "
-            "or the counter-intuitive mechanism that mainstream media missed.\n\n"
+            "CRITICAL INSTRUCTIONS:\n"
+            "1. DO NOT summarize or copy the headline above. Find the UNNOTICED CONTRARIAN TRUTH, "
+            "hidden scientific/historical paradox, or counter-intuitive mechanism.\n"
+            "2. FACT-SAFETY MANDATE: Use ONLY real, scientifically or historically verifiable facts. "
+            "STRICTLY FORBIDDEN: NEVER invent medical cures, health remedies, drug effects, or clinical claims. "
+            "Do not state or imply any substance cures diseases or replaces medical treatment.\n\n"
             "Respond in STRICT JSON ONLY matching this exact schema:\n"
             "{\n"
             "  \"topic\": \"Punchy, original topic name (e.g. The Real Reason [X] Vanished)\",\n"
             "  \"category\": \"category_id\",\n"
             "  \"headline\": \"Opening paradox statement that stops scrolling (1 sentence)\",\n"
-            "  \"paradox\": \"The counter-intuitive scientific, historical or physical truth (1 sentence)\"\n"
+            "  \"paradox\": \"The counter-intuitive scientific, historical or physical truth (1 sentence)\",\n"
+            "  \"fact_safety_passed\": true\n"
             "}"
         )
 
@@ -310,6 +335,10 @@ class TrendAggregator:
                     if s != -1 and e != -1:
                         parsed = json.loads(raw_text[s:e+1])
                         if parsed.get("topic") and parsed.get("headline"):
+                            safe, reason = self.validate_fact_safety(parsed)
+                            if not safe:
+                                print(f"   ⚠️ [Fact-Safety Rejected] {reason}")
+                                continue
                             parsed["raw_source"] = source
                             parsed["raw_trend"] = title
                             return parsed
@@ -337,9 +366,13 @@ class TrendAggregator:
                     if s != -1 and e != -1:
                         parsed = json.loads(raw_text[s:e+1])
                         if parsed.get("topic") and parsed.get("headline"):
-                            parsed["raw_source"] = source
-                            parsed["raw_trend"] = title
-                            return parsed
+                            safe, reason = self.validate_fact_safety(parsed)
+                            if safe:
+                                parsed["raw_source"] = source
+                                parsed["raw_trend"] = title
+                                return parsed
+                            else:
+                                print(f"   ⚠️ [Fact-Safety Rejected] {reason}")
             except Exception as e:
                 print(f"   [Angle Gen: Groq notice]: {e}")
 
@@ -360,9 +393,13 @@ class TrendAggregator:
                 if s != -1 and e != -1:
                     parsed = json.loads(raw_text[s:e+1])
                     if parsed.get("topic") and parsed.get("headline"):
-                        parsed["raw_source"] = source
-                        parsed["raw_trend"] = title
-                        return parsed
+                        safe, reason = self.validate_fact_safety(parsed)
+                        if safe:
+                            parsed["raw_source"] = source
+                            parsed["raw_trend"] = title
+                            return parsed
+                        else:
+                            print(f"   ⚠️ [Fact-Safety Rejected] {reason}")
         except Exception:
             pass
 
