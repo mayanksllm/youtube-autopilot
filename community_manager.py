@@ -85,7 +85,8 @@ class CommunityManager:
         cls,
         youtube_service: Any,
         video_id: str,
-        question_text: str
+        question_text: str = "",
+        comment_text: Optional[str] = None
     ) -> Optional[str]:
         """
         Posts the engagement question as a top-level comment via commentThreads().insert().
@@ -100,7 +101,8 @@ class CommunityManager:
             print("   [Community Info] Dry-run video ID; skipping remote comment.")
             return None
 
-        clean_text = question_text.strip()
+        text_to_use = question_text or comment_text or ""
+        clean_text = text_to_use.strip()
         if not clean_text:
             clean_text = "Aapka is baare me kya manna hai? Comments me batayein! 👇 #shorts"
 
