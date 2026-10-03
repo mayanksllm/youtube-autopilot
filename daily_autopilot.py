@@ -541,11 +541,21 @@ MAX_DAILY_UPLOADS = int(os.environ.get("MAX_DAILY_UPLOADS", "5"))
 _DAILY_UPLOAD_COUNTER = 0
 
 def _upload(yt, video_path: Path, title: str, description: str, tags: list,
-            dry_run: bool, is_short: bool = True) -> str:
+            dry_run: bool, is_short: bool = True, pinned_comment: str = None) -> str:
     global _DAILY_UPLOAD_COUNTER
     if dry_run or not yt:
         sim_id = f"LOCAL_{int(time.time())}"
         log.info(f"  [{'DRY-RUN' if dry_run else 'NO-API'}] Saved: {video_path.name}")
+        try:
+            from thumbnail_generator import thumbnail_generator
+            thumbnail_generator.produce_and_upload_thumbnail(topic=title, title=title, youtube_service=None, video_id=None)
+        except Exception as th_err:
+            log.warning(f"  [Thumbnail Notice] {th_err}")
+        try:
+            from community_manager import community_manager
+            community_manager.post_engagement_question(None, sim_id, pinned_comment or f"Topic: {title}")
+        except Exception:
+            pass
         return sim_id
 
     # Protect channel health and API quota: cap daily live uploads
@@ -580,6 +590,32 @@ def _upload(yt, video_path: Path, title: str, description: str, tags: list,
         _DAILY_UPLOAD_COUNTER += 1
         url = f"https://youtube.com/{'shorts/' if is_short else 'watch?v='}{vid_id}"
         log.info(f"  Uploaded ({_DAILY_UPLOAD_COUNTER}/{MAX_DAILY_UPLOADS}): {url}")
+
+        # Produce 3 thumbnail variants and upload winner
+        try:
+            from thumbnail_generator import thumbnail_generator
+            thumbnail_generator.produce_and_upload_thumbnail(
+                topic=title,
+                title=title,
+                youtube_service=yt,
+                video_id=vid_id
+            )
+        except Exception as th_err:
+            log.warning(f"  [Thumbnail Notice] {th_err}")
+
+        # Community Management: Post engagement question & auto-replies
+        try:
+            from community_manager import community_manager
+            q_text = pinned_comment or f"What do you think about {title}? Tell us below! 👇"
+            community_manager.post_engagement_question(
+                youtube_service=yt,
+                video_id=vid_id,
+                comment_text=q_text
+            )
+            community_manager.run_channel_auto_replies(youtube_service=yt)
+        except Exception as comm_err:
+            log.warning(f"  [Community Notice] {comm_err}")
+
         return vid_id
     except Exception as e:
         if "uploadLimitExceeded" in str(e):

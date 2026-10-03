@@ -1562,7 +1562,7 @@ def restore_youtube_credentials():
                 print(f"   [Auth Warning] Failed to build token.json from refresh token: {e}")
 
 
-def upload_to_youtube(video_path: Path, title: str, description: str, tags: List[str]) -> Optional[str]:
+def upload_to_youtube(video_path: Path, title: str, description: str, tags: List[str], pinned_comment: Optional[str] = None) -> Optional[str]:
     restore_youtube_credentials()
     token_file = BASE_DIR / "token.json"
     if not token_file.exists():
@@ -1624,6 +1624,19 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: List
         except Exception as th_err:
             print(f"   [Thumbnail Notice] {th_err}")
 
+        # Community Management: Post engagement question & auto-replies
+        try:
+            from community_manager import community_manager
+            q_text = pinned_comment or f"What do you think about {title}? Tell us below! 👇"
+            community_manager.post_engagement_question(
+                youtube_service=yt,
+                video_id=vid_id,
+                comment_text=q_text
+            )
+            community_manager.run_channel_auto_replies(youtube_service=yt)
+        except Exception as comm_err:
+            print(f"   [Community Notice] {comm_err}")
+
         return vid_id
     except Exception as e:
         print(f"   [YouTube Upload Warning] {e}")
@@ -1673,7 +1686,7 @@ def run_autonomous_viral_reels_engine(dry_run: bool = True) -> str:
             f"Pinned Question: {script_data.get('pinned_comment', '')}\n\n"
             f"#Shorts #Facts #Mystery #Trending"
         )
-        video_id = upload_to_youtube(rendered_file, script_data.get("title"), desc, tags)
+        video_id = upload_to_youtube(rendered_file, script_data.get("title"), desc, tags, pinned_comment=script_data.get("pinned_comment"))
     else:
         # Dry-run thumbnail generation
         try:
@@ -1686,6 +1699,17 @@ def run_autonomous_viral_reels_engine(dry_run: bool = True) -> str:
             )
         except Exception as th_err:
             print(f"   [Thumbnail Notice] {th_err}")
+
+        # Dry-run community engagement check
+        try:
+            from community_manager import community_manager
+            community_manager.post_engagement_question(
+                youtube_service=None,
+                video_id="dry_run_id",
+                comment_text=script_data.get("pinned_comment", "")
+            )
+        except Exception as c_err:
+            print(f"   [Community Notice] {c_err}")
 
     meta = {
         "id": f"REELS_{int(time.time())}",
