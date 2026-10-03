@@ -1611,6 +1611,19 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: List
 
         vid_id = response.get("id")
         print(f"🎉 [YouTube API] Published Successfully! Video Link: https://youtu.be/{vid_id}")
+
+        # Produce 3 thumbnail variants and upload winner
+        try:
+            from thumbnail_generator import thumbnail_generator
+            thumbnail_generator.produce_and_upload_thumbnail(
+                topic=title,
+                title=title,
+                youtube_service=yt,
+                video_id=vid_id
+            )
+        except Exception as th_err:
+            print(f"   [Thumbnail Notice] {th_err}")
+
         return vid_id
     except Exception as e:
         print(f"   [YouTube Upload Warning] {e}")
@@ -1661,6 +1674,18 @@ def run_autonomous_viral_reels_engine(dry_run: bool = True) -> str:
             f"#Shorts #Facts #Mystery #Trending"
         )
         video_id = upload_to_youtube(rendered_file, script_data.get("title"), desc, tags)
+    else:
+        # Dry-run thumbnail generation
+        try:
+            from thumbnail_generator import thumbnail_generator
+            thumbnail_generator.produce_and_upload_thumbnail(
+                topic=topic_data["topic"],
+                title=script_data.get("title", ""),
+                youtube_service=None,
+                video_id=None
+            )
+        except Exception as th_err:
+            print(f"   [Thumbnail Notice] {th_err}")
 
     meta = {
         "id": f"REELS_{int(time.time())}",
