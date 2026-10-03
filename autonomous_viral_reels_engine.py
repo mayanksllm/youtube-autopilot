@@ -1317,9 +1317,19 @@ class RemotionVideoAssembler:
             s_num = s.get("id", idx + 1)
             out_scene_mp4 = temp_scenes_dir / f"clip_{s_num:02d}.mp4"
 
-            # Visual Generation with Failover Cascade
+            # Visual Generation with Failover Cascade & Quality Gate
             prompt = s.get("prompt", f"Cinematic 3D hyper-realism, octane 3D render style, scene {s_num}, vertical 9:16, 8k")
             img_path_str = generate_scene_image_with_failover(prompt, s_num)
+            try:
+                from visual_quality_gate import quality_gate
+                img_path_str = quality_gate.verify_or_regenerate_frame(
+                    img_path_str=img_path_str,
+                    prompt=prompt,
+                    scene_idx=s_num,
+                    regenerate_func=generate_scene_image_with_failover
+                )
+            except Exception as qg_err:
+                print(f"   [Quality Gate Notice] {qg_err}")
             img_path = Path(img_path_str)
 
             # Caption keywords extraction
@@ -1390,13 +1400,13 @@ class RemotionVideoAssembler:
         master_audio = temp_audio_dir / "master_remotion_audio.wav"
         self._mix_audio(scene_audio_files, scene_durations, master_audio)
 
-        # Final Render
-        print(f"🚀 [Video Assembler] Rendering master reel: {output_file.name}...")
+        # Final Render with Cinematic Color Grade + Light 35mm Film Grain
+        print(f"🚀 [Video Assembler] Rendering master reel with color grade & grain: {output_file.name}...")
         cmd_final = [
             self.ffmpeg_exe, "-y",
             "-i", str(raw_video),
             "-i", str(master_audio),
-            "-vf", "unsharp=5:5:0.5:5:5:0.0,eq=contrast=1.05:saturation=1.10",
+            "-vf", "unsharp=5:5:0.6:5:5:0.0,eq=contrast=1.06:saturation=1.12:brightness=0.01,noise=c1s=6:c0f=u",
             "-c:v", "libx264",
             "-preset", "medium",
             "-crf", "18",
