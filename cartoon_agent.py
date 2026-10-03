@@ -66,7 +66,7 @@ ai_client      = genai.Client(
         retry_options=types.HttpRetryOptions(attempts=1)
     )
 )
-GEMINI_MODELS  = ["gemini-3.6-flash", "gemini-3.7-flash", "gemini-3.8-flash", "gemini-flash-latest"]
+GEMINI_MODELS  = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash", "gemini-flash-latest"]
 HISTORY_FILE   = BASE_DIR / "history.json"
 AVATAR_PATH    = ASSETS_DIR / "max_avatar.jpg"
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "")
@@ -961,6 +961,21 @@ def produce_cartoon_short(topic, cat_key, lang="hi", output_path=None,
     })
     hist["last_video_id"] = vid_id
     HISTORY_FILE.write_text(json.dumps(hist, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    # Record to Variety Store
+    try:
+        from yt_variety import variety_engine
+        v_bundle = variety_engine.pick_production_bundle(lang_preference=lang)
+        variety_engine.record_production(
+            topic=topic,
+            title=title,
+            bundle=v_bundle,
+            image_prompts=[sc.get("action", "") for sc in storyboard.get("scenes", [])],
+            video_id=vid_id
+        )
+    except Exception as v_err:
+        print(f"   [Variety Store Notice] {v_err}")
+
     elapsed = time.time() - t0
     return {"title": title, "video_id": vid_id, "category": cat_key, "topic": topic,
             "duration": round(total_dur, 1), "render_time": round(elapsed, 1),

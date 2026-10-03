@@ -51,6 +51,9 @@ history_log.json
 batch_log.json
 autopilot_state.json
 daily_report.json
+variety_store.json
+variety_store.sqlite
+
 .vscode/
 .idea/
 *.sublime-project

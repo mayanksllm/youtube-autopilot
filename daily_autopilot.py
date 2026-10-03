@@ -108,7 +108,7 @@ ai_client = genai.Client(
         retry_options=types.HttpRetryOptions(attempts=1)
     )
 )
-GEMINI_MODELS = ["gemini-3.6-flash", "gemini-3.7-flash", "gemini-3.8-flash", "gemini-flash-latest"]
+GEMINI_MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash", "gemini-flash-latest"]
 
 # ─── 10 Hindi batch topics (cycle through daily) ─────────────────────────────
 HINDI_BATCH_TOPICS = [
@@ -617,7 +617,7 @@ def _generate_mythology_storyboard(topic: str, deity: str) -> dict:
         " \"scenes\": [{\"scene_id\": 1, \"voiceover\": \"...\", \"subtitle_display\": \"...\","
         " \"highlight_words\": [...], \"pollinations_prompt\": \"...\"}]}"
     )
-    GEMINI_MODELS_LOCAL = ["gemini-3.6-flash", "gemini-3.7-flash", "gemini-3.8-flash", "gemini-flash-latest"]
+    GEMINI_MODELS_LOCAL = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash", "gemini-flash-latest"]
     for model in GEMINI_MODELS_LOCAL:
         try:
             resp = ai_client.models.generate_content(model=model, contents=prompt)
@@ -1288,23 +1288,37 @@ def analyze_reels_style(trending: list) -> dict:
 def is_pid_running(pid: int) -> bool:
     if pid <= 0:
         return False
-    try:
-        import subprocess
-        out = subprocess.check_output(
-            ["tasklist", "/fi", f"PID eq {pid}", "/fo", "csv"],
-            creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
-            text=True,
-            timeout=4
-        )
-        for line in out.strip().splitlines()[1:]:
-            parts = [p.strip('"') for p in line.split(",")]
-            if parts and len(parts) >= 2:
-                name = parts[0].lower()
-                if "python" in name:
-                    return True
-        return False
-    except Exception:
-        return False
+    import platform
+    if platform.system() == "Windows":
+        try:
+            import subprocess
+            out = subprocess.check_output(
+                ["tasklist", "/fi", f"PID eq {pid}", "/fo", "csv"],
+                creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
+                text=True,
+                timeout=4
+            )
+            for line in out.strip().splitlines()[1:]:
+                parts = [p.strip('"') for p in line.split(",")]
+                if parts and len(parts) >= 2:
+                    name = parts[0].lower()
+                    if "python" in name:
+                        return True
+            return False
+        except Exception:
+            return False
+    else:
+        # Linux/macOS (GitHub Actions runs Ubuntu)
+        try:
+            import os as _os
+            _os.kill(pid, 0)
+            return True
+        except ProcessLookupError:
+            return False
+        except PermissionError:
+            return True  # Process exists but we don't own it
+        except Exception:
+            return False
 
 
 def acquire_lock() -> bool:
@@ -1507,12 +1521,36 @@ def _run_daily_internal(dry_run: bool = False):
             log.info(f"  [{video_num}/10] ALREADY DONE: {existing.get('title', '')[:50]} (ID: {existing.get('video_id')}). Skipping!")
             continue
 
+        chosen_cat = "medical_biology_anomalies"
+        chosen_topic = ""
         if idx < len(adapted_topics):
-            cat_key = adapted_topics[idx].get("category", "medical_biology_anomalies")
-            topic   = adapted_topics[idx].get("topic", "")
-        else:
-            cat_key, topic = CARTOON_PILLARS_HI[idx % len(CARTOON_PILLARS_HI)]
+            cand_topic = adapted_topics[idx].get("topic", "")
+            cand_cat = adapted_topics[idx].get("category", "medical_biology_anomalies")
+            try:
+                from yt_variety import variety_engine
+                is_fresh, _ = variety_engine.is_fresh(topic=cand_topic)
+            except Exception:
+                is_fresh = True
+            if is_fresh:
+                chosen_topic = cand_topic
+                chosen_cat = cand_cat
 
+        if not chosen_topic:
+            # Pick fresh topic rotating through CARTOON_PILLARS_HI
+            try:
+                from yt_variety import variety_engine
+                for offset in range(len(CARTOON_PILLARS_HI)):
+                    p_cat, p_topic = CARTOON_PILLARS_HI[(idx + offset) % len(CARTOON_PILLARS_HI)]
+                    is_fresh, _ = variety_engine.is_fresh(topic=p_topic)
+                    if is_fresh:
+                        chosen_cat, chosen_topic = p_cat, p_topic
+                        break
+            except Exception:
+                pass
+            if not chosen_topic:
+                chosen_cat, chosen_topic = CARTOON_PILLARS_HI[idx % len(CARTOON_PILLARS_HI)]
+
+        cat_key, topic = chosen_cat, chosen_topic
         enriched_topic = topic
 
         out_path = BASE_DIR / f"cartoon_short_{video_num:02d}.mp4"
