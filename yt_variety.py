@@ -331,6 +331,92 @@ MUSIC_MOODS = [
     }
 ]
 
+THUMBNAIL_LAYOUTS = [
+    {
+        "id": "centered_punch",
+        "name": "Centered Hero Focus",
+        "y_anchor": 310,
+        "has_contrast_bar": False,
+        "description": "Full-bleed visual with centered high-contrast gradient text plate."
+    },
+    {
+        "id": "lower_third_bar",
+        "name": "Cinematic Lower-Third Bar",
+        "y_anchor": 520,
+        "has_contrast_bar": True,
+        "description": "Heavy dark lower-third container bar with bold kicker."
+    },
+    {
+        "id": "top_header_banner",
+        "name": "Top Header Alert Banner",
+        "y_anchor": 90,
+        "has_contrast_bar": True,
+        "description": "Top placement header banner for breaking mystery/fact reveals."
+    },
+    {
+        "id": "split_bottom_contrast",
+        "name": "Split Lower Third High-Key",
+        "y_anchor": 480,
+        "has_contrast_bar": True,
+        "description": "Split screen aesthetic with solid dark contrasting bottom slab."
+    }
+]
+
+THUMBNAIL_FONTS = [
+    {
+        "id": "impact_bebas",
+        "name": "Impact Bebas Ultra-Bold Sans",
+        "windows_font": "C:/Windows/Fonts/impact.ttf",
+        "linux_font": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        "size_multiplier": 1.0
+    },
+    {
+        "id": "cinematic_serif",
+        "name": "Cinematic Editorial Serif",
+        "windows_font": "C:/Windows/Fonts/georgiab.ttf",
+        "linux_font": "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+        "size_multiplier": 0.95
+    },
+    {
+        "id": "modern_neo_grotesque",
+        "name": "Modern Neo-Grotesque Heavy",
+        "windows_font": "C:/Windows/Fonts/arialbd.ttf",
+        "linux_font": "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf",
+        "size_multiplier": 0.92
+    }
+]
+
+THUMBNAIL_BADGES = [
+    {
+        "id": "neon_pill_badge",
+        "name": "Neon Pill Badge",
+        "kicker": "ALERT",
+        "box_color": (0, 0, 0, 220),
+        "border_width": 4
+    },
+    {
+        "id": "caution_hazard_tape",
+        "name": "Caution Hazard Ribbon",
+        "kicker": "TOP SECRET",
+        "box_color": (15, 10, 5, 230),
+        "border_width": 6
+    },
+    {
+        "id": "glowing_brackets",
+        "name": "Glowing Minimal Brackets",
+        "kicker": "UNSOLVED",
+        "box_color": (5, 10, 25, 210),
+        "border_width": 4
+    },
+    {
+        "id": "clean_minimalist",
+        "name": "Clean Minimalist Shadow",
+        "kicker": "",
+        "box_color": (0, 0, 0, 160),
+        "border_width": 0
+    }
+]
+
 
 # =============================================================================
 # PERSISTENT VARIETY STORE
@@ -550,6 +636,30 @@ class YouTubeVarietyEngine:
             id_key="id"
         )
 
+        # 8. Thumbnail Layout (Cooldown: 3)
+        thumb_layout = self._pick_with_cooldown(
+            items=THUMBNAIL_LAYOUTS,
+            key_history=last_used.setdefault("thumbnail_layout", []),
+            cooldown_count=COOLDOWNS.get("thumbnail_layout", 3),
+            id_key="id"
+        )
+
+        # 9. Thumbnail Font (Cooldown: 3)
+        thumb_font = self._pick_with_cooldown(
+            items=THUMBNAIL_FONTS,
+            key_history=last_used.setdefault("thumbnail_font", []),
+            cooldown_count=COOLDOWNS.get("thumbnail_font", 3),
+            id_key="id"
+        )
+
+        # 10. Thumbnail Badge Style (Cooldown: 3)
+        thumb_badge = self._pick_with_cooldown(
+            items=THUMBNAIL_BADGES,
+            key_history=last_used.setdefault("thumbnail_badge", []),
+            cooldown_count=COOLDOWNS.get("thumbnail_badge", 3),
+            id_key="id"
+        )
+
         bundle = {
             "category": category,
             "hook_format": hook,
@@ -558,6 +668,9 @@ class YouTubeVarietyEngine:
             "caption_style": caption,
             "voice": voice,
             "music_mood": music,
+            "thumbnail_layout": thumb_layout,
+            "thumbnail_font": thumb_font,
+            "thumbnail_badge": thumb_badge,
             "timestamp": time.time()
         }
 
@@ -612,6 +725,12 @@ class YouTubeVarietyEngine:
             last_used.setdefault("voice", []).append(bundle["voice"]["id"])
         if "music_mood" in bundle:
             last_used.setdefault("music_mood", []).append(bundle["music_mood"]["id"])
+        if "thumbnail_layout" in bundle:
+            last_used.setdefault("thumbnail_layout", []).append(bundle["thumbnail_layout"]["id"])
+        if "thumbnail_font" in bundle:
+            last_used.setdefault("thumbnail_font", []).append(bundle["thumbnail_font"]["id"])
+        if "thumbnail_badge" in bundle:
+            last_used.setdefault("thumbnail_badge", []).append(bundle["thumbnail_badge"]["id"])
 
         record = {
             "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
@@ -625,6 +744,9 @@ class YouTubeVarietyEngine:
             "caption_style": bundle.get("caption_style", {}).get("id"),
             "voice": bundle.get("voice", {}).get("id"),
             "music_mood": bundle.get("music_mood", {}).get("id"),
+            "thumbnail_layout": bundle.get("thumbnail_layout", {}).get("id"),
+            "thumbnail_font": bundle.get("thumbnail_font", {}).get("id"),
+            "thumbnail_badge": bundle.get("thumbnail_badge", {}).get("id"),
             "image_prompts": image_prompts or []
         }
 

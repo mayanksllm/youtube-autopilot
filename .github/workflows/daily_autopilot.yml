@@ -54,6 +54,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Restore Variety & Autopilot State Cache
+        uses: actions/cache/restore@v4
+        id: restore-state-cache
+        with:
+          path: |
+            variety_store.json
+            autopilot_state.json
+            history_log.json
+          key: variety-quota-state-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            variety-quota-state-${{ runner.os }}-
+            variety-quota-state-
+
       - name: Execute Autonomous Video Pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -89,9 +102,19 @@ jobs:
             python daily_autopilot.py $DRY_RUN_ARG
           fi
 
+      - name: Save Variety & Autopilot State Cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            variety_store.json
+            autopilot_state.json
+            history_log.json
+          key: variety-quota-state-${{ runner.os }}-${{ github.run_id }}
+
       - name: Commit & Push Daily Production State & Variety Memory
         if: always()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto: Autopilot run completed & state synchronized [skip ci]"
-          file_pattern: "history.json history_log.json daily_report.json autopilot_state.json variety_store.json"
+          file_pattern: "history.json history_log.json daily_report.json autopilot_state.json"

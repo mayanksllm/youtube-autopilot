@@ -1562,7 +1562,7 @@ def restore_youtube_credentials():
                 print(f"   [Auth Warning] Failed to build token.json from refresh token: {e}")
 
 
-def upload_to_youtube(video_path: Path, title: str, description: str, tags: List[str], pinned_comment: Optional[str] = None) -> Optional[str]:
+def upload_to_youtube(video_path: Path, title: str, description: str, tags: List[str], pinned_comment: Optional[str] = None, bundle: Optional[Dict[str, Any]] = None) -> Optional[str]:
     restore_youtube_credentials()
     token_file = BASE_DIR / "token.json"
     if not token_file.exists():
@@ -1619,14 +1619,15 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: List
         QuotaManager.consume_units("videos.insert")
         print(f"🎉 [YouTube API] Published Successfully! Video Link: https://youtu.be/{vid_id}")
 
-        # Produce 3 thumbnail variants and upload winner
+        # Produce 3 thumbnail variants with rotating variety layout, font, and badge
         try:
             from thumbnail_generator import thumbnail_generator
             thumbnail_generator.produce_and_upload_thumbnail(
                 topic=title,
                 title=title,
                 youtube_service=yt,
-                video_id=vid_id
+                video_id=vid_id,
+                bundle=bundle
             )
         except Exception as th_err:
             print(f"   [Thumbnail Notice] {th_err}")
@@ -1700,7 +1701,7 @@ def run_autonomous_viral_reels_engine(dry_run: bool = True) -> str:
             f"Pinned Question: {script_data.get('pinned_comment', '')}\n\n"
             f"#Shorts #Facts #Mystery #Trending"
         )
-        video_id = upload_to_youtube(rendered_file, script_data.get("title"), desc, tags, pinned_comment=script_data.get("pinned_comment"))
+        video_id = upload_to_youtube(rendered_file, script_data.get("title"), desc, tags, pinned_comment=script_data.get("pinned_comment"), bundle=bundle)
     else:
         # Dry-run thumbnail generation
         try:
@@ -1709,7 +1710,8 @@ def run_autonomous_viral_reels_engine(dry_run: bool = True) -> str:
                 topic=topic_data["topic"],
                 title=script_data.get("title", ""),
                 youtube_service=None,
-                video_id=None
+                video_id=None,
+                bundle=bundle
             )
         except Exception as th_err:
             print(f"   [Thumbnail Notice] {th_err}")

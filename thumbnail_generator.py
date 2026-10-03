@@ -52,17 +52,30 @@ from autopilot_config import (
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 
 
-def _get_bold_font(size: int = 80) -> ImageFont.ImageFont:
-    font_paths = [
+def _get_styled_font(size: int = 80, font_info: Optional[Dict[str, Any]] = None) -> ImageFont.ImageFont:
+    paths_to_try = []
+    if font_info:
+        if sys.platform == "win32" and "windows_font" in font_info:
+            paths_to_try.append(font_info["windows_font"])
+        elif "linux_font" in font_info:
+            paths_to_try.append(font_info["linux_font"])
+
+    paths_to_try.extend([
         "C:/Windows/Fonts/impact.ttf",
         "C:/Windows/Fonts/arialbd.ttf",
+        "C:/Windows/Fonts/georgiab.ttf",
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-        "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf"
-    ]
-    for fp in font_paths:
+        "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
+    ])
+    calc_size = size
+    if font_info and "size_multiplier" in font_info:
+        calc_size = int(size * font_info["size_multiplier"])
+
+    for fp in paths_to_try:
         if os.path.exists(fp):
             try:
-                return ImageFont.truetype(fp, size)
+                return ImageFont.truetype(fp, calc_size)
             except Exception:
                 pass
     return ImageFont.load_default()
@@ -71,6 +84,7 @@ def _get_bold_font(size: int = 80) -> ImageFont.ImageFont:
 class ThumbnailGenerator:
     """
     3-Variant Thumbnail Synthesizer with Vision Model Ranking and Resilient Upload.
+    Rotates layouts, font families, and badge styles through yt_variety.
     """
 
     def __init__(self, output_dir: Path = THUMBNAILS_DIR):
@@ -83,12 +97,10 @@ class ThumbnailGenerator:
     @classmethod
     def extract_3_word_hook(cls, topic: str, title: str) -> str:
         """Derives a punchy, high-CTR headline containing AT MOST 3 words."""
-        # Check title words first
         clean = re.sub(r'#\w+', '', title)
         clean = re.sub(r'[^\w\s]', '', clean).strip()
         words = clean.split()
 
-        # Look for emotional shock phrases
         shock_vault = [
             "IT NEVER DIES",
             "DON'T LOOK DOWN",
@@ -103,9 +115,7 @@ class ThumbnailGenerator:
         if len(words) <= 3 and len(words) > 0:
             return " ".join(words).upper()
 
-        # Extract 2-3 key words
         if words:
-            # Pick first 3 impactful words
             candidate = " ".join(words[:3]).upper()
             if len(candidate) <= 22:
                 return candidate
@@ -149,21 +159,26 @@ class ThumbnailGenerator:
         return img
 
     # -------------------------------------------------------------------------
-    # 3. Variant Compositing Engine (A, B, C)
+    # 3. Variant Compositing Engine (A, B, C) with Layouts, Fonts & Badges
     # -------------------------------------------------------------------------
-    def generate_variant_a(self, topic: str, hook_text: str, base_seed: int) -> Path:
-        """Variant A: High-Contrast Close-Up Subject Focus (Electric Yellow Badge)."""
+    def generate_variant_a(
+        self,
+        topic: str,
+        hook_text: str,
+        base_seed: int,
+        layout: Optional[Dict[str, Any]] = None,
+        font_style: Optional[Dict[str, Any]] = None,
+        badge_style: Optional[Dict[str, Any]] = None
+    ) -> Path:
+        """Variant A: High-Contrast Close-Up Subject Focus (Electric Yellow Accent)."""
         prompt = f"Extreme macro dramatic cinematic portrait, {topic}, volumetric spotlight, ultra sharp details, Kodak Portra"
         bg = self._fetch_thumbnail_background(prompt, base_seed + 101, "v1")
 
-        # Color lift & vignette
         enhancer = ImageEnhance.Contrast(bg)
         bg = enhancer.enhance(1.15)
-
         draw = ImageDraw.Draw(bg)
-        font = _get_bold_font(84)
 
-        # Draw bold hook text with thick black outline & drop shadow
+        font = _get_styled_font(84, font_style)
         words = hook_text.upper().split()[:3]
         display_text = " ".join(words)
 
@@ -172,13 +187,30 @@ class ThumbnailGenerator:
         th = bbox[3] - bbox[1]
 
         x = (1280 - tw) // 2
-        y = 520  # Lower third
+        y = layout.get("y_anchor", 520) if layout else 520
+
+        # Contrast bar if layout specifies
+        if layout and layout.get("has_contrast_bar"):
+            draw.rectangle([(0, y - 25), (1280, y + th + 25)], fill=(0, 0, 0, 170))
 
         # Background badge pill
         pad = 20
         badge_box = [x - pad, y - pad, x + tw + pad, y + th + pad]
-        draw.rectangle(badge_box, fill=(0, 0, 0, 220))
-        draw.rectangle(badge_box, outline=(255, 235, 30), width=4)
+        box_color = badge_style.get("box_color", (0, 0, 0, 220)) if badge_style else (0, 0, 0, 220)
+        border_width = badge_style.get("border_width", 4) if badge_style else 4
+
+        draw.rectangle(badge_box, fill=box_color)
+        if border_width > 0:
+            draw.rectangle(badge_box, outline=(255, 235, 30), width=border_width)
+
+        # Optional kicker above text
+        kicker = badge_style.get("kicker") if badge_style else ""
+        if kicker:
+            k_font = _get_styled_font(26, font_style)
+            k_bbox = draw.textbbox((0, 0), kicker, font=k_font)
+            kw = k_bbox[2] - k_bbox[0]
+            draw.rectangle([(x, y - pad - 26), (x + kw + 14, y - pad)], fill=(255, 235, 30))
+            draw.text((x + 7, y - pad - 24), kicker, font=k_font, fill=(0, 0, 0))
 
         # Text with heavy black stroke
         for ox in range(-5, 6):
@@ -190,13 +222,21 @@ class ThumbnailGenerator:
         bg.save(out_path, quality=94)
         return out_path
 
-    def generate_variant_b(self, topic: str, hook_text: str, base_seed: int) -> Path:
+    def generate_variant_b(
+        self,
+        topic: str,
+        hook_text: str,
+        base_seed: int,
+        layout: Optional[Dict[str, Any]] = None,
+        font_style: Optional[Dict[str, Any]] = None,
+        badge_style: Optional[Dict[str, Any]] = None
+    ) -> Path:
         """Variant B: Neon Cyan Dual-Tone Intrigue."""
         prompt = f"3D medical cutaway anomaly, {topic}, glowing bioluminescent neon cyan veins, high contrast octane render"
         bg = self._fetch_thumbnail_background(prompt, base_seed + 202, "v2")
 
         draw = ImageDraw.Draw(bg)
-        font = _get_bold_font(90)
+        font = _get_styled_font(88, font_style)
 
         words = hook_text.upper().split()[:3]
         display_text = " ".join(words)
@@ -206,12 +246,27 @@ class ThumbnailGenerator:
         th = bbox[3] - bbox[1]
 
         x = (1280 - tw) // 2
-        y = 80  # Top placement
+        y = layout.get("y_anchor", 90) if layout else 90
+
+        if layout and layout.get("has_contrast_bar"):
+            draw.rectangle([(0, y - 25), (1280, y + th + 25)], fill=(10, 15, 30, 180))
 
         pad = 22
         badge_box = [x - pad, y - pad, x + tw + pad, y + th + pad]
-        draw.rectangle(badge_box, fill=(10, 15, 30, 230))
-        draw.rectangle(badge_box, outline=(0, 240, 255), width=5)
+        box_color = badge_style.get("box_color", (10, 15, 30, 230)) if badge_style else (10, 15, 30, 230)
+        border_width = badge_style.get("border_width", 5) if badge_style else 5
+
+        draw.rectangle(badge_box, fill=box_color)
+        if border_width > 0:
+            draw.rectangle(badge_box, outline=(0, 240, 255), width=border_width)
+
+        kicker = badge_style.get("kicker") if badge_style else ""
+        if kicker:
+            k_font = _get_styled_font(26, font_style)
+            k_bbox = draw.textbbox((0, 0), kicker, font=k_font)
+            kw = k_bbox[2] - k_bbox[0]
+            draw.rectangle([(x, y - pad - 26), (x + kw + 14, y - pad)], fill=(0, 240, 255))
+            draw.text((x + 7, y - pad - 24), kicker, font=k_font, fill=(0, 0, 0))
 
         for ox in range(-6, 7):
             for oy in range(-6, 7):
@@ -222,13 +277,21 @@ class ThumbnailGenerator:
         bg.save(out_path, quality=94)
         return out_path
 
-    def generate_variant_c(self, topic: str, hook_text: str, base_seed: int) -> Path:
+    def generate_variant_c(
+        self,
+        topic: str,
+        hook_text: str,
+        base_seed: int,
+        layout: Optional[Dict[str, Any]] = None,
+        font_style: Optional[Dict[str, Any]] = None,
+        badge_style: Optional[Dict[str, Any]] = None
+    ) -> Path:
         """Variant C: Golden Amber Minimalist Cinematic Vista."""
         prompt = f"Epic ancient monolithic temple silhouette, {topic}, golden hour sunbeams cutting through haze, cinematic 35mm"
         bg = self._fetch_thumbnail_background(prompt, base_seed + 303, "v3")
 
         draw = ImageDraw.Draw(bg)
-        font = _get_bold_font(88)
+        font = _get_styled_font(86, font_style)
 
         words = hook_text.upper().split()[:3]
         display_text = " ".join(words)
@@ -238,12 +301,27 @@ class ThumbnailGenerator:
         th = bbox[3] - bbox[1]
 
         x = (1280 - tw) // 2
-        y = 310  # Centered dramatic punch
+        y = layout.get("y_anchor", 310) if layout else 310
+
+        if layout and layout.get("has_contrast_bar"):
+            draw.rectangle([(0, y - 25), (1280, y + th + 25)], fill=(20, 10, 5, 175))
 
         pad = 24
         badge_box = [x - pad, y - pad, x + tw + pad, y + th + pad]
-        draw.rectangle(badge_box, fill=(20, 10, 5, 225))
-        draw.rectangle(badge_box, outline=(255, 190, 40), width=4)
+        box_color = badge_style.get("box_color", (20, 10, 5, 225)) if badge_style else (20, 10, 5, 225)
+        border_width = badge_style.get("border_width", 4) if badge_style else 4
+
+        draw.rectangle(badge_box, fill=box_color)
+        if border_width > 0:
+            draw.rectangle(badge_box, outline=(255, 190, 40), width=border_width)
+
+        kicker = badge_style.get("kicker") if badge_style else ""
+        if kicker:
+            k_font = _get_styled_font(26, font_style)
+            k_bbox = draw.textbbox((0, 0), kicker, font=k_font)
+            kw = k_bbox[2] - k_bbox[0]
+            draw.rectangle([(x, y - pad - 26), (x + kw + 14, y - pad)], fill=(255, 190, 40))
+            draw.text((x + 7, y - pad - 24), kicker, font=k_font, fill=(0, 0, 0))
 
         for ox in range(-5, 6):
             for oy in range(-5, 6):
@@ -350,37 +428,57 @@ class ThumbnailGenerator:
     # -------------------------------------------------------------------------
     # 6. Master Production Pipeline
     # -------------------------------------------------------------------------
+    # 6. Master Production Pipeline with Rotating Layouts & Badges
+    # -------------------------------------------------------------------------
+    def produce_3_variants(
+        self,
+        topic: str,
+        category: str = "",
+        title: str = "",
+        bundle: Optional[Dict[str, Any]] = None
+    ) -> List[Tuple[str, Path]]:
+        """Generates 3 distinct composition variants using bundle's layout, font, and badge."""
+        hook_3_words = self.extract_3_word_hook(topic, title)
+        base_seed = random.randint(100, 99999)
+
+        layout = bundle.get("thumbnail_layout") if bundle else None
+        font_style = bundle.get("thumbnail_font") if bundle else None
+        badge_style = bundle.get("thumbnail_badge") if bundle else None
+
+        path_a = self.generate_variant_a(topic, hook_3_words, base_seed, layout, font_style, badge_style)
+        path_b = self.generate_variant_b(topic, hook_3_words, base_seed, layout, font_style, badge_style)
+        path_c = self.generate_variant_c(topic, hook_3_words, base_seed, layout, font_style, badge_style)
+
+        return [
+            ("Variant A (Close-Up Yellow)", path_a),
+            ("Variant B (Neon Cyan)", path_b),
+            ("Variant C (Golden Amber)", path_c)
+        ]
+
     def produce_and_upload_thumbnail(
         self,
         topic: str,
         title: str,
         youtube_service: Optional[Any] = None,
-        video_id: Optional[str] = None
+        video_id: Optional[str] = None,
+        bundle: Optional[Dict[str, Any]] = None
     ) -> Path:
         """
         Full thumbnail lifecycle:
         1. Derives <= 3 words punchy text
-        2. Generates 3 distinct composition variants (A, B, C)
+        2. Generates 3 distinct composition variants with rotating layout, font, and badge
         3. Ranks variants via Vision AI
         4. Uploads winner or saves gracefully
         """
         print("\n" + "=" * 70)
         print("  🖼️ 3-VARIANT THUMBNAIL ENGINE (CTR Architecture & Vision Ranking)")
+        if bundle:
+            print(f"  Layout: {bundle.get('thumbnail_layout', {}).get('name', 'Default')}")
+            print(f"  Font:   {bundle.get('thumbnail_font', {}).get('name', 'Default')}")
+            print(f"  Badge:  {bundle.get('thumbnail_badge', {}).get('name', 'Default')}")
         print("=" * 70)
 
-        hook_3_words = self.extract_3_word_hook(topic, title)
-        print(f"🪝 [Thumbnail Hook Text]: \"{hook_3_words}\" (Strict <= 3 words)")
-
-        base_seed = random.randint(100, 99999)
-        path_a = self.generate_variant_a(topic, hook_3_words, base_seed)
-        path_b = self.generate_variant_b(topic, hook_3_words, base_seed)
-        path_c = self.generate_variant_c(topic, hook_3_words, base_seed)
-
-        variants = [
-            ("Variant A (Close-Up Yellow)", path_a),
-            ("Variant B (Neon Cyan)", path_b),
-            ("Variant C (Golden Amber)", path_c)
-        ]
+        variants = self.produce_3_variants(topic=topic, title=title, bundle=bundle)
         for name, p in variants:
             print(f"   • Generated {name}: {p.name} ({p.stat().st_size // 1024} KB)")
 

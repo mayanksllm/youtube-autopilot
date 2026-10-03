@@ -29,6 +29,9 @@ COOLDOWNS = {
     "music_mood": int(os.environ.get("COOLDOWN_MUSIC", "4")),
     "voice": int(os.environ.get("COOLDOWN_VOICE", "3")),
     "category": int(os.environ.get("COOLDOWN_CATEGORY", "3")),
+    "thumbnail_layout": int(os.environ.get("COOLDOWN_THUMB_LAYOUT", "3")),
+    "thumbnail_font": int(os.environ.get("COOLDOWN_THUMB_FONT", "3")),
+    "thumbnail_badge": int(os.environ.get("COOLDOWN_THUMB_BADGE", "3")),
 }
 
 # Master Variety Stores
