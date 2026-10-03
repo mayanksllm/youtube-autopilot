@@ -205,6 +205,7 @@ class VisualQualityGate:
 
 # Global singleton instance
 quality_gate = VisualQualityGate()
+visual_quality_gate = quality_gate
 
 if __name__ == "__main__":
     test_img = Path("assets/director_scenes")
