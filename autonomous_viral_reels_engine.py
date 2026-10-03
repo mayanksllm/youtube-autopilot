@@ -580,6 +580,17 @@ def _sanitize_script_response(raw_text: str, topic_name: str) -> Optional[Dict[s
     return data
 
 
+def _apply_critic_pass(data: Dict[str, Any], topic_name: str, bundle: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    """Pass 2: Runs adversarial critic scoring & auto-rewrite loop."""
+    try:
+        from script_critic import script_critic
+        final_script, critique = script_critic.run_writer_critic_pipeline(data, topic_name, bundle=bundle)
+        return final_script
+    except Exception as e:
+        print(f"   [Script Critic Pass Notice] {e}")
+        return data
+
+
 def generate_script_with_failover(topic_data: Any, bundle: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     """
     SCRIPT GENERATION CASCADE (Chain of 5 Providers)
@@ -670,7 +681,7 @@ def generate_script_with_failover(topic_data: Any, bundle: Optional[Dict[str, An
                 data = _sanitize_script_response(resp.text, topic_name)
                 if data:
                     print(f"   [Tier 1: Gemini ({g_model})] Script generated successfully.")
-                    return data
+                    return _apply_critic_pass(data, topic_name, bundle=bundle)
             except Exception as e:
                 print(f"   [Gemini {g_model} Script Notice]: {e}")
                 continue
@@ -699,7 +710,7 @@ def generate_script_with_failover(topic_data: Any, bundle: Optional[Dict[str, An
                 data = _sanitize_script_response(txt, topic_name)
                 if data:
                     print("   [Tier 2: Groq Cloud Llama 3.3] Script generated successfully.")
-                    return data
+                    return _apply_critic_pass(data, topic_name, bundle=bundle)
             print(f"[WARNING] Provider Groq Cloud API rate-limited (HTTP {r.status_code}). Falling back to Provider DeepSeek / OpenRouter...")
         except Exception as e:
             print(f"[WARNING] Provider Groq Cloud API rate-limited. Falling back to Provider DeepSeek / OpenRouter... (Error: {e})")
@@ -733,7 +744,7 @@ def generate_script_with_failover(topic_data: Any, bundle: Optional[Dict[str, An
                 data = _sanitize_script_response(txt, topic_name)
                 if data:
                     print(f"   [Tier 3: {model_name}] Script generated successfully.")
-                    return data
+                    return _apply_critic_pass(data, topic_name, bundle=bundle)
             print(f"[WARNING] Provider DeepSeek / OpenRouter rate-limited (HTTP {r.status_code}). Falling back to Provider Cohere API...")
         except Exception as e:
             print(f"[WARNING] Provider DeepSeek / OpenRouter rate-limited. Falling back to Provider Cohere API... (Error: {e})")
@@ -756,7 +767,7 @@ def generate_script_with_failover(topic_data: Any, bundle: Optional[Dict[str, An
                 data = _sanitize_script_response(txt, topic_name)
                 if data:
                     print("   [Tier 4: Cohere Command-R] Script generated successfully.")
-                    return data
+                    return _apply_critic_pass(data, topic_name, bundle=bundle)
             print(f"[WARNING] Provider Cohere API rate-limited (HTTP {r.status_code}). Falling back to Provider Pollinations AI Text...")
         except Exception as e:
             print(f"[WARNING] Provider Cohere API rate-limited. Falling back to Provider Pollinations AI Text... (Error: {e})")
@@ -780,14 +791,15 @@ def generate_script_with_failover(topic_data: Any, bundle: Optional[Dict[str, An
             data = _sanitize_script_response(r.text, topic_name)
             if data:
                 print("   [Tier 5: Pollinations AI Text] Script generated successfully without any API keys.")
-                return data
+                return _apply_critic_pass(data, topic_name, bundle=bundle)
         print(f"[WARNING] Provider Pollinations AI Text returned HTTP {r.status_code}. Falling back to Pre-Crafted Vault...")
     except Exception as e:
         print(f"[WARNING] Provider Pollinations AI Text failed. Falling back to Pre-Crafted Vault... (Error: {e})")
 
     # Final Safety Net: Pre-crafted script from vault
     print("   [Script Fallback] Selecting pre-crafted master viral script.")
-    return PRE_CRAFTED_SCRIPTS.get("The Lepakshi Hanging Pillar Gravity Paradox")
+    fallback = PRE_CRAFTED_SCRIPTS.get("The Lepakshi Hanging Pillar Gravity Paradox")
+    return _apply_critic_pass(fallback, topic_name, bundle=bundle) if fallback else data
 
 
 class ScriptGenerator:
