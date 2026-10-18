@@ -4,7 +4,9 @@ on:
   schedule:
     # Schedule 1: 02:00 UTC (7:30 AM IST) -> Morning Discovery Window
     - cron: '0 2 * * *'
-    # Schedule 2: 11:00 UTC (4:30 PM IST) -> Evening Indian Leisure Window
+    # Schedule 2: 07:15 UTC (12:45 PM IST) -> Immediate Quota Reset Window (00:15 Pacific Time)
+    - cron: '15 7 * * *'
+    # Schedule 3: 11:00 UTC (4:30 PM IST) -> Evening Indian Leisure Window
     - cron: '0 11 * * *'
   workflow_dispatch:
     inputs:
@@ -89,17 +91,19 @@ jobs:
           MAX_DAILY_UPLOADS: "5"
         run: |
           DRY_RUN_ARG=""
+          UPLOAD_ARG="--upload"
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             DRY_RUN_ARG="--dry-run"
+            UPLOAD_ARG=""
           fi
 
           PIPELINE="${{ inputs.pipeline }}"
           if [ -z "$PIPELINE" ] || [ "$PIPELINE" = "autonomous_viral_reels" ]; then
             echo "🎬 Running Autonomous Viral Reels Engine..."
-            python autonomous_viral_reels_engine.py $DRY_RUN_ARG
+            python autonomous_viral_reels_engine.py $DRY_RUN_ARG $UPLOAD_ARG
           else
             echo "📺 Running Daily Autopilot Full Engine..."
-            python daily_autopilot.py $DRY_RUN_ARG
+            python daily_autopilot.py $DRY_RUN_ARG $UPLOAD_ARG
           fi
 
       - name: Save Variety & Autopilot State Cache
