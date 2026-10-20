@@ -89,6 +89,7 @@ jobs:
           YOUTUBE_CLIENT_SECRET_BASE64: ${{ secrets.YOUTUBE_CLIENT_SECRET_BASE64 }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           MAX_DAILY_UPLOADS: "5"
+          PYTHONUNBUFFERED: "1"
         run: |
           DRY_RUN_ARG=""
           UPLOAD_ARG="--upload"
@@ -121,4 +122,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto: Autopilot run completed & state synchronized [skip ci]"
-          file_pattern: "history.json history_log.json daily_report.json autopilot_state.json"
+          file_pattern: "history.json history_log.json daily_report.json autopilot_state.json variety_store.json"

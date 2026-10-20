@@ -154,7 +154,30 @@ VIRAL_VISUAL_STYLES = [
 ]
 
 import edge_tts
-from viral_director_engine import get_ffmpeg_binary
+def get_ffmpeg_binary() -> str:
+    """Finds FFmpeg via imageio_ffmpeg, system PATH, or common locations without external module dependencies."""
+    try:
+        import imageio_ffmpeg
+        exe = imageio_ffmpeg.get_ffmpeg_exe()
+        if exe and os.path.exists(exe):
+            return exe
+    except Exception:
+        pass
+
+    sys_ffmpeg = shutil.which("ffmpeg")
+    if sys_ffmpeg:
+        return sys_ffmpeg
+
+    win_candidates = [
+        r"C:\ffmpeg\bin\ffmpeg.exe",
+        r"C:\Program Files\ffmpeg\bin\ffmpeg.exe",
+        os.path.expanduser(r"~\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-7.1-full_build\bin\ffmpeg.exe"),
+    ]
+    for p in win_candidates:
+        if os.path.exists(p):
+            return p
+
+    return "ffmpeg"
 
 
 # =============================================================================
@@ -1348,12 +1371,12 @@ class RemotionVideoAssembler:
                 y_expr = "ih/2-(ih/zoom/2)"
             elif c_id == "parallax_subtle_pan_right":
                 z_expr = "1.08"
-                x_expr = "(iw-iw/zoom)*(on/d)"
+                x_expr = "(iw-iw/zoom)*(on/duration)"
                 y_expr = "ih/2-(ih/zoom/2)"
             elif c_id == "smooth_vertical_pedestal":
                 z_expr = "1.08"
                 x_expr = "iw/2-(iw/zoom/2)"
-                y_expr = "(ih-ih/zoom)*(on/d)"
+                y_expr = "(ih-ih/zoom)*(on/duration)"
             else:
                 # Default: ken_burns_slow_dolly_in
                 z_expr = "min(zoom+0.0015,1.15)"
@@ -1377,7 +1400,24 @@ class RemotionVideoAssembler:
                 "-pix_fmt", "yuv420p",
                 str(out_scene_mp4)
             ]
-            subprocess.run(cmd, capture_output=True, check=True)
+            try:
+                subprocess.run(cmd, capture_output=True, text=True, check=True)
+            except subprocess.CalledProcessError as err:
+                print(f"⚠️ [FFmpeg Scene Notice] Zoompan filter failed on scene {i+1}: {err.stderr.strip()[:200] if err.stderr else 'unknown'}")
+                print("   Applying reliable static composition fallback for scene...")
+                fb_cmd = [
+                    self.ffmpeg_exe, "-y",
+                    "-loop", "1", "-i", str(img_path),
+                    "-loop", "1", "-i", str(b_png),
+                    "-filter_complex", "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[bg]; [bg][1:v]overlay=0:0[outv]",
+                    "-map", "[outv]",
+                    "-t", f"{dur:.3f}",
+                    "-c:v", "libx264",
+                    "-preset", "veryfast",
+                    "-pix_fmt", "yuv420p",
+                    str(out_scene_mp4)
+                ]
+                subprocess.run(fb_cmd, capture_output=True, text=True, check=True)
             rendered_scene_mp4s.append(out_scene_mp4)
 
         # Concatenate video clips

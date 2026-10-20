@@ -45,7 +45,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import requests
-import schedule
+try:
+    import schedule
+except ImportError:
+    schedule = None
 
 # Voice & AI libraries
 from google import genai
