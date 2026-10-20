@@ -1,6 +1,13 @@
 name: YouTube Master Autopilot (Consolidated High-Retention Pipeline)
 
 on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'README.md'
+      - 'assets/**'
+      - '*.json'
   schedule:
     # Schedule 1: 02:00 UTC (7:30 AM IST) -> Morning Discovery Window
     - cron: '0 2 * * *'
