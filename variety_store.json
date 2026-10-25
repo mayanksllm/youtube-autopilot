@@ -431,6 +431,30 @@
         "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, climactic visual proof, vertical 9:16, vivid textures, scene 5, fast motion macro shot of classified government files bursting into flames and spreading dark smoke across a gritty table",
         "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, circular infinite loop reveal, vertical 9:16, dramatic silhouette, scene 6, mysterious shadowy mastermind stepping into a bright archway doorway in a long dark corridor, infinite loop composition"
       ]
+    },
+    {
+      "timestamp": "2026-10-25 14:44:58",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Elephant Cancer Paradox",
+      "title": "Lepakshi Ka Hawa Me Latakta Khamba 🏛️ #Shorts #Mystery",
+      "category": "bizarre_biology_anomalies",
+      "hook_format": "direct_provocative_question",
+      "visual_style": "cosmic_james_webb_deep_space",
+      "camera_move": "parallax_subtle_pan_right",
+      "caption_style": "pure_white_heavy_stroke",
+      "voice": "hi_swara_expressive",
+      "music_mood": "suspense_ticking_clock",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "Cinematic 3D hyper-realism, octane 3D render style, extreme macro shot of the base of an ancient carved monolithic stone pillar floating 2 inches above a smooth granite floor, visible gap with dramatic dust particles, vertical 9:16, 8k, dynamic dramatic volumetric lighting, ancient Sanskrit carvings",
+        "Cinematic 3D hyper-realism, octane 3D render style, majestic wide eye-level perspective inside Veerabhadra temple at Lepakshi, towering Vijayanagara stone pillars, flickering brass oil lamps casting warm amber glow on dark weathered stone, vertical 9:16, 8k, dynamic lighting",
+        "Cinematic 3D hyper-realism, octane 3D render style, low-angle dynamic close-up of a crimson silk cloth smoothly sliding completely underneath the floating stone pillar without touching the floor, ray-traced shadows, vertical 9:16, 8k, dynamic volumetric lighting",
+        "Cinematic 3D hyper-realism, octane 3D render style, historical colonial engineer in 1800s trying to move the hanging pillar with iron crowbars, ceiling stones groaning with dynamic dust falling from above, high-contrast cinematic chiaroscuro lighting, vertical 9:16, 8k, dynamic camera angle",
+        "Cinematic 3D hyper-realism, octane 3D render style, futuristic cyan holographic stress-line CAD telemetry projected onto ancient stone pillar demonstrating anti-seismic balance joint, high-tech archaeological inspection, vertical 9:16, 8k, dynamic lighting",
+        "Cinematic 3D hyper-realism, octane 3D render style, extreme vertical panoramic vista of Lepakshi temple silhouette under starry cosmic night sky with deep purple nebula and glowing golden aura tracing the temple gopuram, vertical 9:16, 8k, dynamic lighting"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -453,7 +477,8 @@
       "cyberpunk_neon_matrix",
       "ancient_indian_monolith",
       "national_geographic_macro",
-      "investigative_noir_magnates"
+      "investigative_noir_magnates",
+      "cosmic_james_webb_deep_space"
     ],
     "hook_format": [
       "shocking_metric",
@@ -473,7 +498,8 @@
       "classified_declassified_reveal",
       "shocking_metric",
       "negative_constraint",
-      "impossible_claim_in_media_res"
+      "impossible_claim_in_media_res",
+      "direct_provocative_question"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -493,7 +519,8 @@
       "ken_burns_slow_dolly_in",
       "dynamic_dutch_push",
       "smooth_vertical_pedestal",
-      "dramatic_pull_out_reveal"
+      "dramatic_pull_out_reveal",
+      "parallax_subtle_pan_right"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -513,7 +540,8 @@
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
       "electric_yellow_active_badge",
-      "golden_amber_spotlight"
+      "golden_amber_spotlight",
+      "pure_white_heavy_stroke"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -533,7 +561,8 @@
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
-      "ancient_tribal_reverberation"
+      "ancient_tribal_reverberation",
+      "suspense_ticking_clock"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -553,7 +582,8 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -573,7 +603,8 @@
       "bizarre_biology_anomalies",
       "unexplained_history_enigmas",
       "extreme_physics_space",
-      "high_stakes_heists_scandals"
+      "high_stakes_heists_scandals",
+      "bizarre_biology_anomalies"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -593,7 +624,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -613,7 +645,8 @@
       "impact_bebas",
       "modern_neo_grotesque",
       "cinematic_serif",
-      "cinematic_serif"
+      "cinematic_serif",
+      "impact_bebas"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -633,7 +666,8 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   }
 }

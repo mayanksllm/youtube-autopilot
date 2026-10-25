@@ -251,6 +251,20 @@
       "pinned_comment": "Agar aapke paas koi secret information ho, toh kya aap apne hi partner par bharosa karenge? Comment down below!",
       "youtube_video_id": null,
       "status": "RENDER_COMPLETE"
+    },
+    {
+      "id": "REELS_1792939498",
+      "date": "2026-10-25 14:44:58",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "The Elephant Cancer Paradox",
+      "title": "Lepakshi Ka Hawa Me Latakta Khamba 🏛️ #Shorts #Mystery",
+      "category": "bizarre_biology_anomalies",
+      "duration": "24-28 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1792939435.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Kya aapko lagta hai pracheen Bharat ke paas aisi takneek thi jo aaj kho chuki hai? Comment me batao! 👇 #shorts",
+      "youtube_video_id": null,
+      "status": "RENDER_COMPLETE"
     }
   ]
 }
