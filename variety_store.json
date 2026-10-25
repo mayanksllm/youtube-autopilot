@@ -1,0 +1,65 @@
+{
+  "productions": [
+    {
+      "timestamp": "2026-10-03 22:57:12",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Mariana Trench Challenger Deep Pressure Monsters",
+      "title": "Lepakshi Ka Hawa Me Latakta Khamba 🏛️ #Shorts #Mystery",
+      "category": "deep_ocean_abyss",
+      "hook_format": "classified_declassified_reveal",
+      "visual_style": "graphic_novel_neo_noir",
+      "camera_move": "dramatic_pull_out_reveal",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_swara_expressive",
+      "music_mood": "dark_sub_bass_pulse",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "Cinematic 3D hyper-realism, octane 3D render style, extreme macro shot of the base of an ancient carved monolithic stone pillar floating 2 inches above a smooth granite floor, visible gap with dramatic dust particles, vertical 9:16, 8k, dynamic dramatic volumetric lighting, ancient Sanskrit carvings",
+        "Cinematic 3D hyper-realism, octane 3D render style, majestic wide eye-level perspective inside Veerabhadra temple at Lepakshi, towering Vijayanagara stone pillars, flickering brass oil lamps casting warm amber glow on dark weathered stone, vertical 9:16, 8k, dynamic lighting",
+        "Cinematic 3D hyper-realism, octane 3D render style, low-angle dynamic close-up of a crimson silk cloth smoothly sliding completely underneath the floating stone pillar without touching the floor, ray-traced shadows, vertical 9:16, 8k, dynamic volumetric lighting",
+        "Cinematic 3D hyper-realism, octane 3D render style, historical colonial engineer in 1800s trying to move the hanging pillar with iron crowbars, ceiling stones groaning with dynamic dust falling from above, high-contrast cinematic chiaroscuro lighting, vertical 9:16, 8k, dynamic camera angle",
+        "Cinematic 3D hyper-realism, octane 3D render style, futuristic cyan holographic stress-line CAD telemetry projected onto ancient stone pillar demonstrating anti-seismic balance joint, high-tech archaeological inspection, vertical 9:16, 8k, dynamic lighting",
+        "Cinematic 3D hyper-realism, octane 3D render style, extreme vertical panoramic vista of Lepakshi temple silhouette under starry cosmic night sky with deep purple nebula and glowing golden aura tracing the temple gopuram, vertical 9:16, 8k, dynamic lighting"
+      ]
+    }
+  ],
+  "replied_comment_ids": {},
+  "last_used": {
+    "visual_style": [
+      "graphic_novel_neo_noir"
+    ],
+    "hook_format": [
+      "classified_declassified_reveal"
+    ],
+    "camera_move": [
+      "dramatic_pull_out_reveal"
+    ],
+    "caption_style": [
+      "neon_cyan_glow"
+    ],
+    "music_mood": [
+      "dark_sub_bass_pulse"
+    ],
+    "voice": [
+      "hi_swara_expressive"
+    ],
+    "category": [
+      "deep_ocean_abyss"
+    ],
+    "thumbnail_layout": [
+      "centered_punch"
+    ],
+    "thumbnail_font": [
+      "modern_neo_grotesque"
+    ],
+    "thumbnail_badge": [
+      "clean_minimalist"
+    ]
+  },
+  "quota_tracking": {
+    "date": "2026-10-18",
+    "used_units": 8255
+  }
+}

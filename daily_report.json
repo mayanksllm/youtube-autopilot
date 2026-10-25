@@ -1,0 +1,868 @@
+[
+  {
+    "date": "2026-09-20",
+    "run_time_local": "2026-09-20 14:47:31",
+    "total_runtime_minutes": 31.3,
+    "dry_run": false,
+    "status": "COMPLETED",
+    "analytics_audit_summary": {
+      "videos_checked": 10,
+      "total_views": 4,
+      "total_likes": 0,
+      "avg_views_per_short": 0,
+      "low_performing_count": 10,
+      "mode": "live_api"
+    },
+    "growth_issues": [
+      {
+        "rank": 1,
+        "problem": "Insufficient posting frequency",
+        "fix": "Post 10 Shorts daily",
+        "impact": "HIGH"
+      }
+    ],
+    "trending_india_today": [
+      "Casa Tupka Anthemo | @YoYoHoneySingh  feat. Priyanshi | Full",
+      "Sigma - Official Trailer | Sundeep Kishan | Faria Abdullah |",
+      "Boys vs Girls Skyscraper Challenge in Minecraft..",
+      "श्री राधा रानी आरती | Radha Ji Ki Aarti | श्री राधा जी की आर",
+      "Dorothy (Tamil) | Official Trailer | Karthik Subbaraj | Keer",
+      "RANK PUSH TO CONQUEROR BEGINS! | TAG LoLzZz OR WHAT | BGMI L",
+      "Full Video: Manemma - Irumudi | Ravi Teja | Baby Nakshatra |",
+      "Gladiators Movie - Official Tamil Trailer | Ajith Kumar | AK",
+      "Bari (Official Music Video) NIJJAR | Autobiography | Latest ",
+      "Dhoomakethu - Official Trailer | Sudhi Maddison | Sajin Gopu"
+    ],
+    "reel_style_dna": {
+      "hook_formula": "Maine secretly [X] challenge organise kiya aur aage jo hua tum soch bhi nahi sakte...",
+      "visual_style": "High-saturation hyper-contrasted gameplay combined with punchy oversized kinetic typography and fast-paced zoom cuts",
+      "dominant_emotion": "curiosity",
+      "optimal_scene_duration": "1.5-2.5 seconds",
+      "top_3_topics": [
+        "High-Stakes Gaming Challenges (Minecraft Boys vs Girls & Secret Tournaments)",
+        "Mass Action Cinema Trailers & Music Video Drops",
+        "Radha Ashtami Devotional Celebrations & Festive Bhajans"
+      ],
+      "script_style": "High-adrenaline Hinglish delivery, zero filler, immediate stake declaration in first 2 seconds, rhythmic mic pauses before reveals",
+      "pollinations_visual_dna": "high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-angle action perspective, ultra-detailed 8k render, motion blur accents",
+      "kids_visual_dna": "bright colorful 3D block voxel animation, glowing neon sky, isometric playful perspective, high contrast cheerful lighting, cute expressive Minecraft-style avatars",
+      "today_viral_formula": "Pair an impossible high-stakes challenge or secret reveal with hyper-saturated voxel/cinematic visuals cut at a breathless 2-second pace."
+    },
+    "strategy": {
+      "winner_type": "Visceral bodily horror and direct physical danger (Swallowing insects / throat choke)",
+      "loser_type": "Abstract cosmic science and complex historical mysteries (Vacuum decay, Quantum glitch, Cotard Delusion)",
+      "today_trend": "High-stakes survival, intense adrenaline, dark thriller cinema and gladiator-style combat",
+      "strategy_note": "Audiences aged 13-35 completely reject abstract, theoretical science concepts like Vacuum Decay or Quantum Glitch in Shorts format. The data shows interest strictly spikes on instant, tangible bodily threats (like swallowing a wasp). By anchoring Zack D. Films-style 3D animations of 'Max' encountering everyday, terrifying physical traumas (Q-tips, superglue, ear parasites) combined with high-urgency Hindi hooks, retention and initial click-through rates will multiply immediately."
+    },
+    "cartoon_shorts_produced": 10,
+    "cartoon_short_results": [
+      {
+        "title": "कान में Q-tip डालने की भयंकर भूल! 😱",
+        "video_id": "ERR_1789892436",
+        "category": "medical_bodily_danger",
+        "topic": "अगर Max ने कान साफ़ करते हुए Q-tip बहुत अंदर ठोक दिया तो क्या होगा? 😱. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 27.3,
+        "render_time": 262.4,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_01.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "कान में घुसा कॉकरोच और दिए अंडे! 🪳",
+        "video_id": "ERR_1789892749",
+        "category": "parasite_horror",
+        "topic": "अगर Max के कान में ज़िंदा कॉकरोच घुसकर अंडे दे दे तो क्या होगा? 🪳. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 30.1,
+        "render_time": 292.0,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_03.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "एस्केलेटर में हाथ फंस जाए तो क्या होगा? 🩸",
+        "video_id": "ERR_1789893092",
+        "category": "extreme_accidents",
+        "topic": "अगर Max का हाथ चलती एस्केलेटर (Escalator) के गैप में फंस जाए तो क्या होगा? 🩸. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 35.7,
+        "render_time": 325.4,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_05.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "अगर Max ने गलती से Fevikwik (Superglue) निगल लिया तो पेट में क्या 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1789894214",
+        "category": "visceral_ingestion",
+        "topic": "अगर Max ने गलती से Fevikwik (Superglue) निगल लिया तो पेट में क्या होगा? ⚠️. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 28.8,
+        "render_time": 241.4,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_02.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "अगर Max ने अपनी ज़ोरदार छींक (Sneeze) अंदर ही रोक ली, तो क्या गर् 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1789894438",
+        "category": "body_reaction_limits",
+        "topic": "अगर Max ने अपनी ज़ोरदार छींक (Sneeze) अंदर ही रोक ली, तो क्या गर्दन फट जाएगी? 💥. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 28.8,
+        "render_time": 219.8,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_04.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "अगर Max के पेट में ज़िंदा जोंक (Leech) चली जाए, तो क्या वो खून चू 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1789894662",
+        "category": "biological_anomalies",
+        "topic": "अगर Max के पेट में ज़िंदा जोंक (Leech) चली जाए, तो क्या वो खून चूसकर मार देगी? 🪱. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 28.8,
+        "render_time": 220.5,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_06.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "अगर Max बर्फ की जमी हुई झील में गिर जाए, तो 60 सेकंड में बाहर कैस 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1789894893",
+        "category": "survival_mechanics",
+        "topic": "अगर Max बर्फ की जमी हुई झील में गिर जाए, तो 60 सेकंड में बाहर कैसे निकले? ❄️. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 28.8,
+        "render_time": 227.2,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_07.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "अगर Max उबलती हुई मैगी का सूप सीधा सांस की नली में खींच ले तो क्य 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1789895143",
+        "category": "daily_hazard",
+        "topic": "अगर Max उबलती हुई मैगी का सूप सीधा सांस की नली में खींच ले तो क्या होगा? 🫁. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 28.8,
+        "render_time": 246.0,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_08.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "अगर Max 48 घंटे तक बिना पलक झपकाए फोन देखे, तो क्या आँखें पिघल जा 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1789895390",
+        "category": "eye_trauma",
+        "topic": "अगर Max 48 घंटे तक बिना पलक झपकाए फोन देखे, तो क्या आँखें पिघल जाएंगी? 📱. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 28.8,
+        "render_time": 242.2,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_09.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "अगर Max की रीढ़ की हड्डी में हेयरपिन चुभ जाए, तो 3 सेकंड में क्या 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1789895614",
+        "category": "dark_body_curiosity",
+        "topic": "अगर Max की रीढ़ की हड्डी में हेयरपिन चुभ जाए, तो 3 सेकंड में क्या होगा? ⚡. Visual style: high-octane dramatic cinematic lighting, hyper-saturated neon glow, dynamic low-. Hook: Maine secretly [X] challenge organise kiya aur aage jo hua t. Script tone: High-adrenaline Hinglish delivery, zero filler, immediate st.",
+        "duration": 28.8,
+        "render_time": 220.8,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_10.mp4",
+        "status": "OK"
+      }
+    ],
+    "kids_long_cartoon": {
+      "title": "Max Sikhata Hai #KidsCartoon #Learning",
+      "video_id": "SAVED_LOCAL_1789895851",
+      "topic": "Max Aur Uski Magical Bus: Sharir Ke Ang (Body Organs) Kaise Kaam Karte Hain? - Fun Dancing & Musical Adventure in Hindi. Visual style: bright colorful 3D block voxel animation, glowing neon sky, isometric playful pe.",
+      "type": "kids_cartoon",
+      "duration": 26.4,
+      "render_time": 236.1,
+      "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\kids_long_cartoon.mp4",
+      "status": "OK"
+    },
+    "thriller_long_video": {
+      "category": "thriller_dark_psychology",
+      "title": "डार्क साइकोलॉजी की 7 खतरनाक तकनीकें 😱 #Hindi #Viral",
+      "video_id": "UPLOAD_ERR_1789893848",
+      "duration": 56.88,
+      "status": "OK"
+    },
+    "total_videos_posted": 12
+  },
+  {
+    "date": "2026-09-21",
+    "run_time_local": "2026-09-21 22:33:01",
+    "total_runtime_minutes": 19.4,
+    "dry_run": false,
+    "status": "IN_PROGRESS",
+    "analytics_audit_summary": {
+      "videos_checked": 0,
+      "total_views": 0,
+      "total_likes": 0,
+      "avg_views_per_short": 0,
+      "low_performing_count": 0,
+      "mode": "live_api"
+    },
+    "growth_issues": [
+      {
+        "rank": 1,
+        "problem": "Zero algorithmic momentum due to cold-start activity and lack of consistent metadata indexing in the Hindi thriller niche.",
+        "fix": "Commit to publishing 1 high-tension Short daily for the next 10 days at 6:30 PM IST using structured Hinglish titles and high-contrast thumbnails.",
+        "impact": "HIGH"
+      },
+      {
+        "rank": 2,
+        "problem": "High initial swipe-away rate caused by traditional intro filler and delayed topic payoffs.",
+        "fix": "Eliminate greetings like 'Dosto' or 'Welcome'; start frame 1 (<0.5 seconds) directly with a high-stakes statement or visual shock.",
+        "impact": "HIGH"
+      },
+      {
+        "rank": 3,
+        "problem": "Retention drops mid-video due to slow visual editing pacing and lack of auditory hooks.",
+        "fix": "Add dark ambient drone audio, sub-bass drops every 3 seconds, and visual cuts every 1.2 to 1.5 seconds to maintain high viewer engagement.",
+        "impact": "MEDIUM"
+      }
+    ],
+    "trending_india_today": [
+      "Casa Tupka Anthemo | @YoYoHoneySingh  feat. Priyanshi | Full",
+      "MYSAA Teaser (Telugu) | Rashmika | Rawindra Pulle | Jakes Be",
+      "GTA V LIVE 🔥#shortsfeed #shortslive #gta #shorts #live #gta5",
+      "Bari (Official Music Video) NIJJAR | Autobiography | Latest ",
+      "Sigma - Official Trailer | Sundeep Kishan | Faria Abdullah |",
+      "GTA 5 LIVE  #gta5 #gtav #gaming",
+      "श्री राधा रानी आरती | Radha Ji Ki Aarti | श्री राधा जी की आर",
+      "Dorothy (Tamil) | Official Trailer | Karthik Subbaraj | Keer",
+      "Boys vs Girls Skyscraper Challenge in Minecraft..",
+      "Yeh Prem Mol Liya- Title Track | Ayushmann, Sharvari, Sooraj"
+    ],
+    "reel_style_dna": {
+      "hook_formula": "Agar tumne 3 seconds mein yeh X nahi dekha, toh tum Y miss kar doge!",
+      "visual_style": "High-contrast cinematic trailer aesthetic, saturated dynamic gaming feeds, dramatic neon text overlays with rapid focal zooms",
+      "dominant_emotion": "awe",
+      "optimal_scene_duration": "1.5 - 2.5 seconds",
+      "top_3_topics": [
+        "Pan-India Movie Teasers & Action Trailers",
+        "High-Stakes Gaming Challenges (GTA V & Minecraft)",
+        "High-Energy Music Releases & Devotional Anthems"
+      ],
+      "script_style": "Fast-paced, urgent Hinglish narrative with dramatic bass-drop pauses, high-conviction commentary, and immediate call-to-action hooks within the first 2 seconds.",
+      "pollinations_visual_dna": "3D stylized cartoon character Max, vibrant Pixar-octane render, literal step-by-step physical postures, isometric cross-section diagrams, 3D anatomical x-ray cutaways, green checkmark and red X infographic cues, studio lighting, hyper-detailed textures, 9:16 vertical 8k render",
+      "kids_visual_dna": "Vibrant 3D Minecraft voxel aesthetics, saturated primary colors, expressive animated avatar expressions, bouncy sound-reactive motion, big colorful 3D text pop-ups",
+      "today_viral_formula": "Fuse cinematic high-stakes movie trailer energy with ultra-fast gaming challenge storytelling and rhythmic bass-heavy music drops to lock engagement in the first 2 seconds."
+    },
+    "strategy": {
+      "winner_type": "thriller science",
+      "loser_type": "unknown",
+      "today_trend": "dark facts",
+      "strategy_note": "Focus on thriller + science content with strong Hindi hooks."
+    },
+    "cartoon_shorts_produced": 0,
+    "cartoon_short_results": [
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 1
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 2
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 3
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 4
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 5
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 6
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 7
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 8
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 9
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 10
+      }
+    ],
+    "kids_long_cartoon": {
+      "status": "FAILED",
+      "error": "'NoneType' object has no attribute 'write'"
+    },
+    "thriller_long_video": {
+      "status": "FAILED",
+      "error": "'NoneType' object has no attribute 'write'"
+    },
+    "total_videos_posted": 0
+  },
+  {
+    "date": "2026-09-22",
+    "run_time_local": "2026-09-22 23:27:20",
+    "total_runtime_minutes": 14.3,
+    "dry_run": false,
+    "status": "IN_PROGRESS",
+    "analytics_audit_summary": {
+      "videos_checked": 0,
+      "total_views": 0,
+      "total_likes": 0,
+      "avg_views_per_short": 0,
+      "low_performing_count": 0,
+      "mode": "live_api"
+    },
+    "growth_issues": [
+      {
+        "rank": 1,
+        "problem": "Zero publishing momentum and content pipeline stagnation (0 active shorts indexed), preventing the YouTube Shorts algorithm from establishing an initial seed audience profile.",
+        "fix": "Commit to a strict 1-Short-per-day posting schedule at 6:30 PM IST for the next 10 days using a standardized 30-second script structure (0-3s Hook, 3-22s Escalation, 23-30s Mind-Bend Twist).",
+        "impact": "HIGH"
+      },
+      {
+        "rank": 2,
+        "problem": "Low retention past the 3-second mark due to standard AI voiceover tone and flat pacing, which kills reach in the competitive Hindi mystery/psychology niche.",
+        "fix": "Switch to expressive Hindi voiceover with dynamic pitch variation, adding riser sound effects (SFX) every 2 seconds and high-contrast yellow/white kinetic captions.",
+        "impact": "HIGH"
+      },
+      {
+        "rank": 3,
+        "problem": "Lack of loop optimization and re-watch triggers resulting in Average Percentage Viewed (APV) staying below the required 85%+ threshold for viral distribution.",
+        "fix": "Implement seamless audio-visual looping by tying the final sentence of the script directly back into the opening word of the hook without a gap.",
+        "impact": "MEDIUM"
+      }
+    ],
+    "trending_india_today": [
+      "Casa Tupka Anthemo | @YoYoHoneySingh  feat. Priyanshi | Full",
+      "MYSAA Teaser (Telugu) | Rashmika | Rawindra Pulle | Jakes Be",
+      "Minecraft But Our Drops are Random SUPERHEROS!",
+      "#Video | Jaan Hamar Jaan Ke Dusman | Khesari Lal Yadav | Ft.",
+      "Sigma - Official Trailer | Sundeep Kishan | Faria Abdullah |",
+      "I Started a PETROL PUMP Business in Minecraft!",
+      "#Video | गुलाबी नगर | #Raushan Rohi | #Srishti Bharti | Gula",
+      "Dorothy (Tamil) | Official Trailer | Karthik Subbaraj | Keer",
+      "Mimic Party vs Harshit & Anky Bhaiya",
+      "Anjaana Anjaani - Audio | The Paradise | Nani | Kayadu Lohar"
+    ],
+    "reel_style_dna": {
+      "hook_formula": "Agar tumne galti se bhi [forbidden action/extreme object] try kiya, toh tumhare saath achanak ye hoga...",
+      "visual_style": "Hyper-saturated high-contrast 3D simulation mixed with bold split-second motion graphics and neon text overlays",
+      "dominant_emotion": "curiosity",
+      "optimal_scene_duration": "1.5-2.2 seconds",
+      "top_3_topics": [
+        "Absurd business & survival sandbox simulations (What happens if you run X)",
+        "High-stakes physical consequence and body transformation breakdowns",
+        "Mass-action hyper-stylized regional drama & adrenaline challenges"
+      ],
+      "script_style": "High-urgency colloquial Hinglish, rapid micro-revelations every 2 seconds, eliminating filler intros, blunt declarative punchlines with escalating stakes",
+      "pollinations_visual_dna": "3D stylized cartoon character Max, Zack D. Films pictorial infographic style, vibrant Pixar-octane render, literal 1:1 step-by-step physical postures, isometric cross-section diagrams, 3D anatomical x-ray cutaways, glowing green checkmark and red X holographic indicator cues, clean studio lighting, 9:16 vertical 8k render",
+      "kids_visual_dna": "Vibrant saturated candy-pop colors, bouncy 3D blocky superhero avatars, fast-paced playful sound effects, oversized cartoon props, dynamic low-angle chase camera",
+      "today_viral_formula": "Hook with an impossible premise or lethal curiosity within 1.5 seconds, then validate it instantly through rapid literal visual demonstrations and zero-fluff pacing."
+    },
+    "strategy": {
+      "winner_type": "thriller science",
+      "loser_type": "unknown",
+      "today_trend": "dark facts",
+      "strategy_note": "Focus on thriller + science content with strong Hindi hooks."
+    },
+    "cartoon_shorts_produced": 0,
+    "cartoon_short_results": [
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 1
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 2
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 3
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 4
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 5
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 6
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 7
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 8
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 9
+      },
+      {
+        "status": "FAILED",
+        "error": "'NoneType' object has no attribute 'write'",
+        "num": 10
+      }
+    ],
+    "kids_long_cartoon": {
+      "status": "FAILED",
+      "error": "'NoneType' object has no attribute 'write'"
+    },
+    "thriller_long_video": {
+      "status": "FAILED",
+      "error": "'NoneType' object has no attribute 'write'"
+    },
+    "total_videos_posted": 0
+  },
+  {
+    "date": "2026-09-28",
+    "run_time_local": "2026-09-28 20:00:21",
+    "total_runtime_minutes": 0.3,
+    "dry_run": false,
+    "status": "IN_PROGRESS",
+    "analytics_audit_summary": {
+      "mode": "offline"
+    },
+    "growth_issues": [
+      {
+        "rank": 1,
+        "problem": "AI prompt leakage, title truncation, and duplicate uploads (e.g., 'Visual style: 3D', 'Visual s', and duplicate Black Hole uploads) destroy CTR and trigger spam filters.",
+        "fix": "Sanitize title generation by stripping all prompt tags, enforce a 45-55 character limit, and ensure zero duplicate uploads in the upload queue.",
+        "impact": "HIGH"
+      },
+      {
+        "rank": 2,
+        "problem": "Algorithmic cannibalization due to burst-uploading videos every 9-10 minutes instead of scheduled distribution across peak Indian engagement windows.",
+        "fix": "Limit cadence to 2-3 Shorts daily, spaced strictly at peak IST hours (1:00 PM, 6:30 PM, and 9:30 PM) to allow the algorithm to test each Short's seed audience.",
+        "impact": "HIGH"
+      },
+      {
+        "rank": 3,
+        "problem": "Third-person framing ('Max ko saanp ne kaata') detaches the audience instead of leveraging direct-address psychological fear and personal relevance.",
+        "fix": "Replace third-person character narratives with second-person immediate danger framing ('Agar AAPKO saanp kaat le to agle 60 seconds mein kya hoga').",
+        "impact": "MEDIUM"
+      }
+    ],
+    "trending_india_today": [
+      "Real-Life Cyber Frauds & Digital Arrest Scam Exposés",
+      "Ancient Indian Engineering & Unsolved Temple Mysteries",
+      "Next-Gen AI Tools & Automation Impact on Indian Jobs",
+      "Geopolitical Power Shifts: India's Global Strategic Moves",
+      "Dark Reality of Easy Money & Fake Trading Gurus",
+      "Relatable Indian Corporate & Middle-Class Family Skits",
+      "Dopamine Detox & Stoic Discipline for Exam/Career Aspirants",
+      "ISRO Missions & Deep Space Discoveries Explained",
+      "Untold Historical Conspiracies & Declassified Files",
+      "Modern 3D Animated Indian Mythology & Folklore"
+    ],
+    "reel_style_dna": {
+      "hook_formula": "Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kaley sach se bilkul anjaan hain?",
+      "visual_style": "Fast-paced dark thriller visuals, high-contrast kinetic typography, dynamic red/green screen overlays, combined with 3D animated structural breakdowns.",
+      "dominant_emotion": "curiosity",
+      "optimal_scene_duration": "1.5-2.5 seconds",
+      "top_3_topics": [
+        "Real-Life Cyber Frauds & Digital Arrest Scam Exposés",
+        "Ancient Indian Engineering & Unsolved Temple Mysteries",
+        "Next-Gen AI Tools & Automation Impact on Indian Jobs"
+      ],
+      "script_style": "Urgent Hinglish audio, rapid-fire facts with zero fluff, high-stakes warnings, authoritative tone, ending with a compelling question or direct call to action.",
+      "pollinations_visual_dna": "3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step physical postures, isometric cross-section diagrams, 3D anatomical x-ray cutaways, green checkmark and red X infographic cues, 9:16 vertical 8k render",
+      "kids_visual_dna": "Vibrant 3D Pixar-style render, colorful mythological Indian heroes, bright rainbow lighting, happy expressive faces, 9:16 vertical aspect ratio",
+      "today_viral_formula": "Exposing hidden scams and ancient mysteries using high-urgency Hinglish hooks paired with fast-paced 3D animated infographics."
+    },
+    "strategy": {
+      "winner_type": "thriller science",
+      "loser_type": "unknown",
+      "today_trend": "dark facts",
+      "strategy_note": "Focus on thriller + science content with strong Hindi hooks."
+    },
+    "cartoon_shorts_produced": 10,
+    "cartoon_short_results": [
+      {
+        "title": "ब्लीच पीने पर शरीर के अंदर क्या होता है?",
+        "video_id": "LOCAL_1790583755",
+        "category": "medical_biology_anomalies",
+        "topic": "agar tum bleach pi lo toh Max ke andar kya hoga. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 32.5,
+        "render_time": 1225.4,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_01.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Manipulation ki 3 technique jo Max ne aazmayi aur sab hairan ho g 😱 #Shorts",
+        "video_id": "LOCAL_1790584374",
+        "category": "thriller_dark_psychology",
+        "topic": "Manipulation ki 3 technique jo Max ne aazmayi aur sab hairan ho gaye. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 28.8,
+        "render_time": 614.5,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_02.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Microwave mein dhatu kyun aaag lagti hai - Max ka experiment. Vis 😱 #Shorts",
+        "video_id": "LOCAL_1790584980",
+        "category": "how_it_actually_works",
+        "topic": "Microwave mein dhatu kyun aaag lagti hai - Max ka experiment. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 28.8,
+        "render_time": 602.9,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_03.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "सांप के काटने पर 60 सेकंड में क्या करें?",
+        "video_id": "LOCAL_1790585804",
+        "category": "survival_emergency_anatomy",
+        "topic": "Max ko saanp ne kaata - 60 second mein kya hoga. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 35.8,
+        "render_time": 819.3,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_04.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Black hole ke andar Max gaya - wapas nahi aa sakta kyun. Visual s 😱 #Shorts",
+        "video_id": "LOCAL_1790586427",
+        "category": "extreme_physics_space_terrors",
+        "topic": "Black hole ke andar Max gaya - wapas nahi aa sakta kyun. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 28.8,
+        "render_time": 619.4,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_05.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "India ki sabse badi mystery - Max dhundh raha hai jawab. Visual s 😱 #Shorts",
+        "video_id": "LOCAL_1790587040",
+        "category": "unexplained_real_mysteries",
+        "topic": "India ki sabse badi mystery - Max dhundh raha hai jawab. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 28.8,
+        "render_time": 608.8,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_06.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "मैंटिस श्रिम्प का जानलेवा मुक्का!",
+        "video_id": "LOCAL_1790587679",
+        "category": "bizarre_nature_monsters",
+        "topic": "Mantis Shrimp ka punch - Max ko dekha aur kya hua. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 42.3,
+        "render_time": 635.0,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_07.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "आँखों का सबसे खतरनाक भ्रम और दिमाग का खेल",
+        "video_id": "LOCAL_1790588627",
+        "category": "perception_sensory_traps",
+        "topic": "Max ne ye optical illusion dekha aur dimag ne dhoka diya. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 41.1,
+        "render_time": 944.6,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_08.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "क्या हम एक सिमुलेशन में जी रहे हैं?",
+        "video_id": "LOCAL_1790589388",
+        "category": "reality_simulation_paradoxes",
+        "topic": "Max ne socha woh simulation mein hai - kya sach mein hai. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 52.1,
+        "render_time": 756.4,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_09.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Max ne 1 din mein 1 crore kaise churaaye - real story. Visual sty 😱 #Shorts",
+        "video_id": "LOCAL_1790589999",
+        "category": "high_stakes_heists_scandals",
+        "topic": "Max ne 1 din mein 1 crore kaise churaaye - real story. Visual style: 3D stylized cartoon character, vibrant Pixar-octane render, literal step-by-step. Hook: Kya aapko pata hai ki 99% log [Topic/Scam/Mystery] ke is kal. Script tone: Urgent Hinglish audio, rapid-fire facts with zero fluff, hig.",
+        "duration": 28.8,
+        "render_time": 606.9,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_10.mp4",
+        "status": "OK"
+      }
+    ],
+    "kids_long_cartoon": {
+      "title": "Max Ke Sath 1 Se 10 Tak Ginti | Learn Numbers in Hindi with Max | Nursery Rhyme",
+      "video_id": "LOCAL_1790590673",
+      "topic": "Max teaches kids numbers 1 to 10 in Hindi - dancing and singing cartoon. Visual style: Vibrant 3D Pixar-style render, colorful mythological Indian heroes, bright rainb.",
+      "type": "kids_cartoon",
+      "duration": 76.7,
+      "render_time": 674.6,
+      "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\kids_long_cartoon.mp4",
+      "status": "OK"
+    },
+    "thriller_long_video": {
+      "status": "FAILED",
+      "error": "Failed to synthesize valid thriller storyboard with Gemini."
+    },
+    "total_videos_posted": 11
+  },
+  {
+    "date": "2026-09-30",
+    "run_time_local": "2026-09-30 20:36:42",
+    "total_runtime_minutes": 107.8,
+    "dry_run": false,
+    "status": "COMPLETED",
+    "analytics_audit_summary": {
+      "videos_checked": 0,
+      "total_views": 0,
+      "total_likes": 0,
+      "avg_views_per_short": 0,
+      "low_performing_count": 0,
+      "mode": "live_api"
+    },
+    "growth_issues": [
+      {
+        "rank": 1,
+        "problem": "Zero Algorithmic Seeding & Cold Start Paralysis: Videos fail to cross the 3-second swipe threshold due to slow visual intros, leaving YouTube with zero retention signals to target the Hindi mystery/thriller audience.",
+        "fix": "Implement a high-contrast visual pattern interrupt in frame 1 coupled with an aggressive audio trigger within 0.5 seconds to push View vs Swiped Away (VVSA) above 75%.",
+        "impact": "HIGH"
+      },
+      {
+        "rank": 2,
+        "problem": "Passive Narrative Framing: Script hooks present topics as detached educational facts rather than high-stakes, personal psychological threats or urgent open loops.",
+        "fix": "Reframe every title and first 2 seconds into second-person direct address ('Aapka dimaag...') with an unresolved psychological tension that forces viewers to stay.",
+        "impact": "HIGH"
+      },
+      {
+        "rank": 3,
+        "problem": "Pacing & Auditory Monotony: Retention crashes mid-short due to static visual overlays and a lack of rhythmic sound design tailored to Hindi viral storytelling.",
+        "fix": "Cut video pacing down to transitions every 1.2 to 1.8 seconds and layer cinematic dark-thriller SFX (sub-bass drops, risers, text-pop swooshes) on every key keyword.",
+        "impact": "MEDIUM"
+      }
+    ],
+    "analytics_fixes_applied": " FIX: Implement a high-contrast visual pattern interrupt in frame 1 coupled with an aggressive audio trigger within 0.5 seconds to push View vs Swiped Away (VVSA) above 75%.; Reframe every title and f",
+    "trending_india_today": [
+      "Jadal Zamana (Interval Theme) | The Paradise | Nani | Anirud",
+      "Prahaar: The Untold Story of Ujjwal Nikam | Official Trailer",
+      "🔴 GTA 5 LIVE – DON’T BLINK! SECRET MOD ACTIVATED 😺 #gtalive ",
+      "One Name (From \"Jailer 2\")",
+      "सान्दुम Official Trailer | New Boro Film 2026 | @BBoysTube |",
+      "[HINDI] BMSD 2026 | Qualifiers Week 3 | Day 2 #BGMILIVE",
+      "Video | लहंगा लहके लहके | #Pawan Singh | Lehanga Lahke Lahke",
+      "RAMAYANA | PATH OF DHARMA | Official Trailer | Hindi",
+      "Tuition Badmashi Kaa - Hemant Faujdar, Kiran, Masoom Sharma,",
+      "Ramayana | Path of Dharma Trailer Review | Yogi Bolta Hai"
+    ],
+    "reel_style_dna": {
+      "hook_formula": "Agar tum sochte ho ki [Character/Topic] ka sabse bada sach [Common Belief] hai, toh agle 20 second me tumhara dimaag ghumne wala hai...",
+      "visual_style": "High-contrast cinematic framing, neon-tinted game overlays, aggressive zoom-ins, bold yellow-and-white kinetic typography with red highlight accents",
+      "dominant_emotion": "awe",
+      "optimal_scene_duration": "1.5 to 2.2 seconds",
+      "top_3_topics": [
+        "Ramayana: Path of Dharma trailer breakdowns & hidden mythological easter eggs",
+        "Secret custom mods & insane elemental survival challenges in GTA 5 and Minecraft",
+        "Prahaar & Ujjwal Nikam: Dark courtroom secrets and real-life high-profile case files"
+      ],
+      "script_style": "Urgent Hinglish cadence, staccato punchlines, zero conversational filler, tension buildup every 5 seconds using declarative statements and micro-cliffhangers",
+      "pollinations_visual_dna": "3D stylized cartoon character Max, vibrant Pixar-octane render, literal step-by-step physical postures, isometric cross-section diagrams, 3D anatomical x-ray cutaways, floating 3D green checkmark and red X infographic cues, pristine studio lighting, clinical educational composition, 9:16 vertical 8k render",
+      "kids_visual_dna": "Hyper-saturated neon voxel 3D style, bouncy Minecraft elemental towers, glowing fire-and-water particles, slapstick character physics, dynamic tilt-shift framing, ultra-bright saturated pastel textures, 9:16 vertical 4k",
+      "today_viral_formula": "Pair epic cinematic/mythological high stakes with hyper-accelerated 2-second visual cuts and secret-reveal curiosity hooks."
+    },
+    "strategy": {
+      "winner_type": "N/A (No performance data recorded yesterday; establishing fresh baseline)",
+      "loser_type": "N/A (No performance data recorded yesterday)",
+      "today_trend": "Dark Crime Thrillers, Psychological Mind Games & High-Stakes Action (Prahaar, Paradise, Ramayana)",
+      "strategy_note": "Leveraging the Zack D. Films visual body/mind exploration style featuring 'Max', these topics capitalized on today's massive trending wave of crime thrillers and intense psychological courtroom dramas in India (Prahaar, Paradise). By combining ultra-fast visual cuts (<1.2s), Hindi audio hooks within 1.5 seconds, and high-stakes survival or dark psychology questions, we exploit high curiosity triggers among the 13-35 Indian youth demographic to maximize retention, repeat views, and comment section debates."
+    },
+    "cartoon_shorts_produced": 10,
+    "cartoon_short_results": [
+      {
+        "title": "7 दिन ना सोने पर दिमाग का क्या होगा?",
+        "video_id": "SAVED_LOCAL_1790762466",
+        "category": "medical_biology_anomalies",
+        "topic": "Kya Hoga Agar Max 7 Din Tak Bilkul Na Soye? (Sleep Deprivation Brain Destruction)",
+        "duration": 43.6,
+        "render_time": 1051.7,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_01.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "3 सेकंड में झूठ पकड़ो! Max की Secret Eye Trick",
+        "video_id": "SAVED_LOCAL_1790763267",
+        "category": "dark_psychology_hacks",
+        "topic": "Kisi Ka Jhuth 3 Second Mein Kaise Pakdein? Max's Eye-Contact Trick",
+        "duration": 32.2,
+        "render_time": 797.0,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_02.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Agar Max Zinda Zameen Mein Dhafna Diya Jaye To Wo Kitni Der Zinda 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1790763998",
+        "category": "body_survival_traps",
+        "topic": "Agar Max Zinda Zameen Mein Dhafna Diya Jaye To Wo Kitni Der Zinda Rahega?",
+        "duration": 26.8,
+        "render_time": 727.5,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_03.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Gaslighting Attack! Max Ke Dimag Ko Freeze Hone Se Bchane Ka Secr 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1790767770",
+        "category": "mind_manipulation",
+        "topic": "Gaslighting Attack! Max Ke Dimag Ko Freeze Hone Se Bchane Ka Secret Trick?",
+        "duration": 28.0,
+        "render_time": 3767.6,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_04.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Agar Max Ke Kaan Mein Kida Ghus Jaye To Wo Brain Tak Kaise Pahunc 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1790768353",
+        "category": "medical_biology_anomalies",
+        "topic": "Agar Max Ke Kaan Mein Kida Ghus Jaye To Wo Brain Tak Kaise Pahunchega?",
+        "duration": 26.5,
+        "render_time": 579.1,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_05.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Free-Falling Lift Mein Jump Karne Se Max Ki Jaan Bachegi Ya Nahi? 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1790768906",
+        "category": "body_survival_traps",
+        "topic": "Free-Falling Lift Mein Jump Karne Se Max Ki Jaan Bachegi Ya Nahi?",
+        "duration": 26.1,
+        "render_time": 548.8,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_06.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "किसी से भी 'हाँ' मनवाने की सीक्रेट ट्रिक!",
+        "video_id": "SAVED_LOCAL_1790769610",
+        "category": "dark_psychology_hacks",
+        "topic": "Subconscious Mind Control: Max Ne Kisi Ko Apni Baat Manwane Ke Liye Kya Kiya?",
+        "duration": 37.6,
+        "render_time": 700.3,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_07.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Kya Hoga Agar Max Apni Saans 3 Minute Tak Roke? Visual Oxygen Col 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1790774934",
+        "category": "medical_biology_anomalies",
+        "topic": "Kya Hoga Agar Max Apni Saans 3 Minute Tak Roke? Visual Oxygen Collapse",
+        "duration": 27.5,
+        "render_time": 599.8,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_08.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Dark Triad Personality: Max Is Trap Se Kaise Nikal Payega? 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1790775509",
+        "category": "mind_manipulation",
+        "topic": "Dark Triad Personality: Max Is Trap Se Kaise Nikal Payega?",
+        "duration": 27.3,
+        "render_time": 570.8,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_09.mp4",
+        "status": "OK"
+      },
+      {
+        "title": "Agar Max Venomous Snake Bite Ke Baad Poision Chusne Lagaye To Kya 😱 #Shorts",
+        "video_id": "SAVED_LOCAL_1790776066",
+        "category": "body_survival_traps",
+        "topic": "Agar Max Venomous Snake Bite Ke Baad Poision Chusne Lagaye To Kya Hoga?",
+        "duration": 26.3,
+        "render_time": 553.0,
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\cartoon_short_10.mp4",
+        "status": "OK"
+      }
+    ],
+    "kids_long_cartoon": {
+      "title": "Max vs Junk Food Monster - Healthy Habits Rhyme in Hindi",
+      "video_id": "SAVED_LOCAL_1790776850",
+      "topic": "Max Teaches Kids Healthy Habits vs Junk Food Monster - Colorful Dancing & Singing Hindi Rhyme. Visual style: Hyper-saturated neon voxel 3D style, bouncy Minecraft elemental towers, glowing .",
+      "type": "kids_cartoon",
+      "duration": 70.3,
+      "render_time": 784.3,
+      "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\kids_long_cartoon.mp4",
+      "status": "OK"
+    },
+    "thriller_long_video": {
+      "category": "thriller_dark_psychology",
+      "title": "दिमाग काबू करने के 7 काले तरीके 🧠💀 #Hindi #Viral",
+      "video_id": "nRQOrGIT6oo",
+      "duration": 55.56,
+      "status": "OK"
+    },
+    "mythology_shorts_produced": 5,
+    "mythology_short_results": [
+      {
+        "status": "OK",
+        "title": "कर्ण का वो अंतिम सच जो आपसे छुपाया गया! 🏹 #Mahabharat",
+        "video_id": "nO246sC2vQI",
+        "deity": "mahabharat",
+        "topic": "Mahabharat ka woh ek sach jo aaj bhi log nahi jaante - Karna ka asli dard",
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\mythology_short_01.mp4"
+      },
+      {
+        "status": "OK",
+        "title": "Ramayan ki woh kahani jo kisi ne nahi sunai - Sita mata ka s 🙏 #Shorts #Mythology",
+        "video_id": "SAVED_LOCAL_1790779013",
+        "deity": "ramayan",
+        "topic": "Ramayan ki woh kahani jo kisi ne nahi sunai - Sita mata ka sabse bada imtihaan",
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\mythology_short_02.mp4"
+      },
+      {
+        "status": "OK",
+        "title": "Shiv Shankar ki shakti ka raaz - Neelkanth kyun bane aur usk 🙏 #Shorts #Mythology",
+        "video_id": "SAVED_LOCAL_1790779628",
+        "deity": "shiv",
+        "topic": "Shiv Shankar ki shakti ka raaz - Neelkanth kyun bane aur uska asar aaj bhi kyun hai",
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\mythology_short_03.mp4"
+      },
+      {
+        "status": "OK",
+        "title": "Hanuman ji ki woh shakti jo Ram ne khud chhupai thi - anjaan 🙏 #Shorts #Mythology",
+        "video_id": "SAVED_LOCAL_1790780216",
+        "deity": "hanuman",
+        "topic": "Hanuman ji ki woh shakti jo Ram ne khud chhupai thi - anjaan sach",
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\mythology_short_04.mp4"
+      },
+      {
+        "status": "OK",
+        "title": "Shri Krishna ki woh baat jo Arjun ko Kurukshetra mein sun ke 🙏 #Shorts #Mythology",
+        "video_id": "SAVED_LOCAL_1790780802",
+        "deity": "krishna",
+        "topic": "Shri Krishna ki woh baat jo Arjun ko Kurukshetra mein sun ke aankhein bhar aayi",
+        "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\mythology_short_05.mp4"
+      }
+    ],
+    "total_videos_posted": 17
+  },
+  {
+    "id": "LOCAL_1790920879",
+    "date": "2026-10-02 11:31:19",
+    "topic": "YZ Ceti b Radio Signal Discovery",
+    "title": "The Terrifying Truth Behind the Alien Radio Signal #Shorts",
+    "facts": [
+      "The detected radio signal does not actually originate from the planet itself, but is generated on the host star, triggered by the planet plowing through the star's magnetic field like a cosmic guitar pick.",
+      "The planet, despite being rocky and Earth-sized, orbits its sun so closely that a single 'year' lasts just 31 hours, forcing it to endure a constant, crushing storm of solar plasma.",
+      "The signal is the electromagnetic signature of an aurora (Northern Lights) happening on the star itself, rather than on the planet."
+    ],
+    "beats_count": 8,
+    "quality_score": 96,
+    "file": "C:\\Users\\DEVELOPER\\.antigravity-ide\\youtube_automation\\ai_producer_short_1790920288.mp4",
+    "render_time_sec": 759.3
+  }
+]

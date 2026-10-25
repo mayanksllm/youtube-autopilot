@@ -632,10 +632,8 @@ def generate_script_with_failover(topic_data: Any, bundle: Optional[Dict[str, An
         headline = ""
         paradox = ""
 
-    # Check for direct vault hit first
-    if topic_name in PRE_CRAFTED_SCRIPTS:
-        print(f"📜 [Script Generator] Using pre-crafted 24-28s script for '{topic_name}'.")
-        return PRE_CRAFTED_SCRIPTS[topic_name]
+    # Dynamic AI Script Generation is prioritized for 100% variety.
+    # PRE_CRAFTED_SCRIPTS is reserved strictly as the final emergency fallback.
 
     # Select distinct visual aesthetic and hook from bundle or matrix
     if bundle and "visual_style" in bundle:
@@ -948,32 +946,29 @@ def _generate_procedural_fallback_frame(prompt: str, scene_idx: int, out_path: P
     return out_path
 
 
-def generate_scene_image_with_failover(prompt: str, scene_idx: int) -> str:
+def generate_scene_image_with_failover(prompt: str, scene_idx: int, topic_name: Optional[str] = None) -> str:
     """
     VISUAL GENERATION CASCADE (Chain of 6 Multi-Engine Tiers)
-    - Tier 1: Pollinations AI FLUX / Turbo (with Browser Headers, Keyless & 9:16 Vertical)
+    - Tier 1: Pollinations AI FLUX (Dynamic random seed, Keyless & 9:16 Vertical)
     - Tier 2: Free Pexels 4K Stock Photography (via PEXELS_API_KEY)
-    - Tier 3: Wikimedia Commons High-Res Topic Photography (Keyless & Zero Cost)
+    - Tier 3: Wikimedia Commons High-Res Topic Photography (Keyless & Rotating)
     - Tier 4: Lorem Picsum HD Photographic Cinematic Assets (Keyless & Zero Cost)
-    - Tier 5: Local Dynamic B-Roll Vault (assets/fallback_vault/)
+    - Tier 5: Local Dynamic B-Roll Vault (assets/fallback_vault/ - randomized)
     - Tier 6: Multi-Style Procedural Cinematic Graphic (The Absolute Guarantee)
     """
     import io as _io
     clean_prompt = prompt.replace("\n", " ").strip()
-    target_path = DIRECTOR_SCENES_DIR / f"scene_{scene_idx:02d}_{int(time.time())}.jpg"
-    seed = random.randint(100, 99999)
+    target_path = DIRECTOR_SCENES_DIR / f"scene_{scene_idx:02d}_{int(time.time())}_{random.randint(1000, 9999)}.jpg"
+    seed = random.randint(100000, 9999999) + (scene_idx * 1337)
 
     # -------------------------------------------------------------------------
-    # Tier 1: Pollinations AI FLUX / Turbo / Default (With Browser UA Headers)
+    # Tier 1: Pollinations AI FLUX (With High-Entropy Seed & Browser UA Headers)
     # -------------------------------------------------------------------------
-    for model_name in ["flux", "turbo", "default"]:
+    for model_name in ["flux"]:
         try:
             encoded_prompt = urllib.parse.quote(clean_prompt[:350])
-            if model_name == "default":
-                poll_url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1080&height=1920&nologo=true&seed={seed}"
-            else:
-                poll_url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1080&height=1920&model={model_name}&nologo=true&seed={seed}"
-            r = requests.get(poll_url, headers=BROWSER_HEADERS, timeout=28)
+            poll_url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1080&height=1920&model={model_name}&nologo=true&seed={seed}"
+            r = requests.get(poll_url, headers=BROWSER_HEADERS, timeout=35)
             if r.status_code == 200 and len(r.content) > 25 * 1024:
                 with open(target_path, "wb") as f:
                     f.write(r.content)
@@ -981,8 +976,7 @@ def generate_scene_image_with_failover(prompt: str, scene_idx: int) -> str:
                     print(f"   [Tier 1: Pollinations ({model_name})] Scene {scene_idx:02d} rendered ({target_path.stat().st_size // 1024} KB).")
                     return str(target_path)
             elif r.status_code in (402, 429):
-                print(f"   [Pollinations {model_name}] rate-limited ({r.status_code}), cascading to next tier...")
-                break
+                print(f"   [Pollinations {model_name}] status {r.status_code}, cascading to next tier...")
         except Exception as e:
             print(f"   [Pollinations {model_name}] notice: {e}")
 
@@ -1008,15 +1002,19 @@ def generate_scene_image_with_failover(prompt: str, scene_idx: int) -> str:
             print(f"   [Tier 2 Pexels Warning] {e}")
 
     # -------------------------------------------------------------------------
-    # Tier 3: Wikimedia Commons High-Res Topic Photography (Keyless & Zero Cost)
+    # Tier 3: Wikimedia Commons High-Res Topic Photography (Keyless & Rotating)
     # -------------------------------------------------------------------------
     try:
-        q_clean = re.sub(r'[^a-zA-Z0-9 ]', '', clean_prompt.split(',')[0])[:35].strip()
-        if q_clean:
-            w_url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch={urllib.parse.quote(q_clean)}&gsrlimit=3&pithumbsize=1080"
-            wr = requests.get(w_url, headers={"User-Agent": "YouTubeAutopilotProducer/2.0"}, timeout=8).json()
-            pages = wr.get("query", {}).get("pages", {})
-            for page in pages.values():
+        # Extract meaningful subject words (ignore generic aesthetic prefixes)
+        words = [w for w in re.findall(r'[a-zA-Z]{3,}', clean_prompt) if w.lower() not in ("masterpiece", "candid", "photograph", "shot", "anamorphic", "lens", "dramatic", "chiaroscuro", "lighting", "photorealistic", "vertical", "cinematic", "hyper", "realism", "octane", "render", "style", "extreme", "macro", "viewfinder")]
+        query_kw = " ".join(words[:4]) or (topic_name[:35] if topic_name else "ancient mystery")
+        w_url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch={urllib.parse.quote(query_kw)}&gsrlimit=6&pithumbsize=1080"
+        wr = requests.get(w_url, headers={"User-Agent": "YouTubeAutopilotProducer/2.0"}, timeout=8).json()
+        pages = list(wr.get("query", {}).get("pages", {}).values())
+        if pages:
+            # Rotate across results so scenes 1-6 never get identical images
+            rot_pages = pages[scene_idx % len(pages):] + pages[:scene_idx % len(pages)]
+            for page in rot_pages:
                 thumb = page.get("thumbnail", {}).get("source")
                 if thumb:
                     tc = requests.get(thumb, headers=BROWSER_HEADERS, timeout=10).content
@@ -1024,7 +1022,7 @@ def generate_scene_image_with_failover(prompt: str, scene_idx: int) -> str:
                         with Image.open(_io.BytesIO(tc)) as w_im:
                             w_im.convert("RGB").resize((1080, 1920), Image.Resampling.LANCZOS).save(target_path, quality=93)
                         if _validate_image_file(target_path):
-                            print(f"   [Tier 3: Wikimedia Topic Photo] Scene {scene_idx:02d} sourced ({target_path.stat().st_size // 1024} KB).")
+                            print(f"   [Tier 3: Wikimedia Topic Photo] Scene {scene_idx:02d} sourced via '{query_kw}' ({target_path.stat().st_size // 1024} KB).")
                             return str(target_path)
     except Exception as e:
         print(f"   [Tier 3 Wikimedia Warning] {e}")
@@ -1052,7 +1050,9 @@ def generate_scene_image_with_failover(prompt: str, scene_idx: int) -> str:
         vault_images = list(DIRECTOR_SCENES_DIR.glob("*.jpg"))
 
     if vault_images:
-        chosen_vault_img = vault_images[(scene_idx - 1) % len(vault_images)]
+        # High-entropy seed selection so scenes don't repeat the same vault image
+        rng = random.Random(seed + scene_idx * 997)
+        chosen_vault_img = rng.choice(vault_images)
         try:
             with Image.open(chosen_vault_img) as im:
                 im_resized = im.resize((1080, 1920), Image.Resampling.LANCZOS)
@@ -1606,7 +1606,13 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: List
     restore_youtube_credentials()
     token_file = BASE_DIR / "token.json"
     if not token_file.exists():
-        print("   [Upload Info] No token.json available. Video rendered and saved locally.")
+        print("\n" + "=" * 70)
+        print("❌ [UPLOAD SKIPPED] No 'token.json' found.")
+        print("   Video rendered & saved locally at:", video_path)
+        print("   👉 ACTION REQUIRED FOR GITHUB ACTIONS:")
+        print("   1. Run 'python auth_youtube.py' locally to generate a fresh token.json.")
+        print("   2. Add 'YOUTUBE_TOKEN_JSON' to GitHub Secrets: https://github.com/mayanksllm/youtube-autopilot/settings/secrets/actions")
+        print("=" * 70 + "\n")
         return None
 
     try:

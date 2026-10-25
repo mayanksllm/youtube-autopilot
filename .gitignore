@@ -46,12 +46,13 @@ wheels/
 .gemini/
 *.log
 *.lock
-history.json
-history_log.json
+# State and variety memory files tracked across runs to prevent duplicate topics
+!history.json
+!history_log.json
+!autopilot_state.json
+!daily_report.json
+!variety_store.json
 batch_log.json
-autopilot_state.json
-daily_report.json
-variety_store.json
 variety_store.sqlite
 
 .vscode/
