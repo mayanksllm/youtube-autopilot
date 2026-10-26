@@ -265,6 +265,20 @@
       "pinned_comment": "Kya aapko lagta hai pracheen Bharat ke paas aisi takneek thi jo aaj kho chuki hai? Comment me batao! 👇 #shorts",
       "youtube_video_id": null,
       "status": "RENDER_COMPLETE"
+    },
+    {
+      "id": "REELS_1793000845",
+      "date": "2026-10-26 07:47:25",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "The Accidental Thief Paradox",
+      "title": "The Accidental Thief Paradox 🧠⚠️ #Shorts #Psychology #Secrets",
+      "category": "dark_psychology_behavior",
+      "duration": "24-28 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1793000623.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Kya aapne kabhi kisi aur ka idea bhool kar apna samajh kar claim kiya hai? Comment me batao! 👇",
+      "youtube_video_id": null,
+      "status": "RENDER_COMPLETE"
     }
   ]
 }

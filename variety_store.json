@@ -455,6 +455,30 @@
         "Cinematic 3D hyper-realism, octane 3D render style, futuristic cyan holographic stress-line CAD telemetry projected onto ancient stone pillar demonstrating anti-seismic balance joint, high-tech archaeological inspection, vertical 9:16, 8k, dynamic lighting",
         "Cinematic 3D hyper-realism, octane 3D render style, extreme vertical panoramic vista of Lepakshi temple silhouette under starry cosmic night sky with deep purple nebula and glowing golden aura tracing the temple gopuram, vertical 9:16, 8k, dynamic lighting"
       ]
+    },
+    {
+      "timestamp": "2026-10-26 07:47:25",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Accidental Thief Paradox",
+      "title": "The Accidental Thief Paradox 🧠⚠️ #Shorts #Psychology #Secrets",
+      "category": "dark_psychology_behavior",
+      "hook_format": "classified_declassified_reveal",
+      "visual_style": "3d_anatomical_zackd",
+      "camera_move": "ken_burns_slow_dolly_in",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_swara_expressive",
+      "music_mood": "dark_sub_bass_pulse",
+      "thumbnail_layout": "lower_third_bar",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "neon_pill_badge",
+      "image_prompts": [
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, a translucent human brain showing a glowing classified folder icon buried deep inside neural synapses, dramatic opening hook visual, vertical 9:16, dynamic cinematic lighting, scene 1",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, extreme pressure causing red warning sparks across brain cortex layers, revealing backstory detail, vertical 9:16, high contrast, scene 2",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, memory tag dissolving into tiny glowing gold particles in the hippocampus, escalation of tension, vertical 9:16, moody chiaroscuro, scene 3",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, lightbulb eureka moment exploding green inside the frontal lobe, shocking twist discovery, vertical 9:16, volumetric lighting, scene 4",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, polygraph wires attached to translucent head with steady green flatline pulse signal, climactic visual proof, vertical 9:16, vivid textures, scene 5",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, glowing neural circuit forming a continuous infinite circular arrow inside brain core, circular infinite loop reveal, vertical 9:16, dramatic silhouette, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -478,7 +502,8 @@
       "ancient_indian_monolith",
       "national_geographic_macro",
       "investigative_noir_magnates",
-      "cosmic_james_webb_deep_space"
+      "cosmic_james_webb_deep_space",
+      "3d_anatomical_zackd"
     ],
     "hook_format": [
       "shocking_metric",
@@ -499,7 +524,8 @@
       "shocking_metric",
       "negative_constraint",
       "impossible_claim_in_media_res",
-      "direct_provocative_question"
+      "direct_provocative_question",
+      "classified_declassified_reveal"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -520,7 +546,8 @@
       "dynamic_dutch_push",
       "smooth_vertical_pedestal",
       "dramatic_pull_out_reveal",
-      "parallax_subtle_pan_right"
+      "parallax_subtle_pan_right",
+      "ken_burns_slow_dolly_in"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -541,7 +568,8 @@
       "neon_cyan_glow",
       "electric_yellow_active_badge",
       "golden_amber_spotlight",
-      "pure_white_heavy_stroke"
+      "pure_white_heavy_stroke",
+      "neon_cyan_glow"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -562,7 +590,8 @@
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
-      "suspense_ticking_clock"
+      "suspense_ticking_clock",
+      "dark_sub_bass_pulse"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -583,6 +612,7 @@
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
+      "hi_swara_expressive",
       "hi_swara_expressive"
     ],
     "category": [
@@ -604,7 +634,8 @@
       "unexplained_history_enigmas",
       "extreme_physics_space",
       "high_stakes_heists_scandals",
-      "bizarre_biology_anomalies"
+      "bizarre_biology_anomalies",
+      "dark_psychology_behavior"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -625,7 +656,8 @@
       "lower_third_bar",
       "top_header_banner",
       "split_bottom_contrast",
-      "centered_punch"
+      "centered_punch",
+      "lower_third_bar"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -646,7 +678,8 @@
       "modern_neo_grotesque",
       "cinematic_serif",
       "cinematic_serif",
-      "impact_bebas"
+      "impact_bebas",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -667,7 +700,8 @@
       "neon_pill_badge",
       "glowing_brackets",
       "caution_hazard_tape",
-      "clean_minimalist"
+      "clean_minimalist",
+      "neon_pill_badge"
     ]
   }
 }
