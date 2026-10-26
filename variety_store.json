@@ -479,6 +479,30 @@
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, polygraph wires attached to translucent head with steady green flatline pulse signal, climactic visual proof, vertical 9:16, vivid textures, scene 5",
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, glowing neural circuit forming a continuous infinite circular arrow inside brain core, circular infinite loop reveal, vertical 9:16, dramatic silhouette, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-10-26 17:55:00",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Ocean's Supercritical Water Paradox",
+      "title": "400°C Water That NEVER Boils! 🌊🔥 #Shorts",
+      "category": "deep_ocean_abyss",
+      "hook_format": "shocking_metric",
+      "visual_style": "national_geographic_macro",
+      "camera_move": "smooth_vertical_pedestal",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "mysterious_cyber_synth",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, dramatic opening hook visual, vertical 9:16, dynamic cinematic lighting, extreme close-up macro shot of shimmering deep sea hydrothermal fluid spewing from dark oceanic basalt rock, intense distortion ripples under extreme pressure, scene 1",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, revealing backstory detail, vertical 9:16, high contrast, extreme macro split screen concept showing soft steam rising from boiling water contrasted with super-dense viscous liquid shimmering deep underwater without gas bubbles, scene 2",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, escalation of tension, vertical 9:16, moody chiaroscuro, macro focus on dense oceanic floor crust under crushing atmospheric pressure visualised as heavy liquid distortion, rich mineral tones, scene 3",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, shocking twist discovery, vertical 9:16, volumetric lighting, extreme close-up of solid basalt rock surface dissolving into glowing mineral-rich liquid streams, sharp crystalline details, scene 4",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, climactic visual proof, vertical 9:16, vivid textures, macro detail of deep-sea tube worms and translucent crustaceans thriving near glowing hydrothermal vents in total dark ocean abyss, scene 5",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, circular infinite loop reveal, vertical 9:16, dramatic silhouette, cinematic pull-back macro shot into the mysterious dark abyssal trench, perfectly setting up seamless loop back to deep ocean depths, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -503,7 +527,8 @@
       "national_geographic_macro",
       "investigative_noir_magnates",
       "cosmic_james_webb_deep_space",
-      "3d_anatomical_zackd"
+      "3d_anatomical_zackd",
+      "national_geographic_macro"
     ],
     "hook_format": [
       "shocking_metric",
@@ -525,7 +550,8 @@
       "negative_constraint",
       "impossible_claim_in_media_res",
       "direct_provocative_question",
-      "classified_declassified_reveal"
+      "classified_declassified_reveal",
+      "shocking_metric"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -547,7 +573,8 @@
       "smooth_vertical_pedestal",
       "dramatic_pull_out_reveal",
       "parallax_subtle_pan_right",
-      "ken_burns_slow_dolly_in"
+      "ken_burns_slow_dolly_in",
+      "smooth_vertical_pedestal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -569,7 +596,8 @@
       "electric_yellow_active_badge",
       "golden_amber_spotlight",
       "pure_white_heavy_stroke",
-      "neon_cyan_glow"
+      "neon_cyan_glow",
+      "electric_yellow_active_badge"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -591,7 +619,8 @@
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
-      "dark_sub_bass_pulse"
+      "dark_sub_bass_pulse",
+      "mysterious_cyber_synth"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -613,7 +642,8 @@
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -635,7 +665,8 @@
       "extreme_physics_space",
       "high_stakes_heists_scandals",
       "bizarre_biology_anomalies",
-      "dark_psychology_behavior"
+      "dark_psychology_behavior",
+      "deep_ocean_abyss"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -657,7 +688,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -679,6 +711,7 @@
       "cinematic_serif",
       "cinematic_serif",
       "impact_bebas",
+      "modern_neo_grotesque",
       "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
@@ -701,7 +734,8 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   }
 }
