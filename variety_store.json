@@ -503,6 +503,30 @@
         "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, climactic visual proof, vertical 9:16, vivid textures, macro detail of deep-sea tube worms and translucent crustaceans thriving near glowing hydrothermal vents in total dark ocean abyss, scene 5",
         "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, circular infinite loop reveal, vertical 9:16, dramatic silhouette, cinematic pull-back macro shot into the mysterious dark abyssal trench, perfectly setting up seamless loop back to deep ocean depths, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-10-27 08:17:49",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Orbit-Visible Scar of Benthic Trawling",
+      "title": "Ocean Floor Trapped Carbon Exposed to Orbit! 🌊🛰️ #Shorts",
+      "category": "extreme_physics_space",
+      "hook_format": "negative_constraint",
+      "visual_style": "investigative_noir_magnates",
+      "camera_move": "dramatic_pull_out_reveal",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_swara_expressive",
+      "music_mood": "epic_orchestral_crescendo",
+      "thumbnail_layout": "split_bottom_contrast",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "caution_hazard_tape",
+      "image_prompts": [
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, low-angle orbital perspective of Earth with deep noir oceanic abyss, glowing satellite crosshairs tracking faint underwater disturbances, high-contrast chiaroscuro, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, massive industrial fishing vessel cutting through pitch-black foggy sea, giant steel cables plunging into the dark ocean depths, archival grainy texture, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, heavy benthic trawl metal sled ripping violently through ancient seabed floor, billowing underwater dust cloud exploding upward, high contrast shadows, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, microscopic view of centuries-old locked marine carbon particles dissolving into dark swirling water currents, intense volumetric lighting beam, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, ultra-wide orbital view of a massive milky sediment scar spanning hundreds of kilometers across the black ocean surface, resembling a colossal desert dust storm, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, dark intelligence monitoring room, silhouette of an investigator observing satellite telemetry maps showing glowing tracking plumes looping back into outer space view, vertical 9:16"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -528,7 +552,8 @@
       "investigative_noir_magnates",
       "cosmic_james_webb_deep_space",
       "3d_anatomical_zackd",
-      "national_geographic_macro"
+      "national_geographic_macro",
+      "investigative_noir_magnates"
     ],
     "hook_format": [
       "shocking_metric",
@@ -551,7 +576,8 @@
       "impossible_claim_in_media_res",
       "direct_provocative_question",
       "classified_declassified_reveal",
-      "shocking_metric"
+      "shocking_metric",
+      "negative_constraint"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -574,7 +600,8 @@
       "dramatic_pull_out_reveal",
       "parallax_subtle_pan_right",
       "ken_burns_slow_dolly_in",
-      "smooth_vertical_pedestal"
+      "smooth_vertical_pedestal",
+      "dramatic_pull_out_reveal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -597,6 +624,7 @@
       "golden_amber_spotlight",
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
+      "electric_yellow_active_badge",
       "electric_yellow_active_badge"
     ],
     "music_mood": [
@@ -620,7 +648,8 @@
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
-      "mysterious_cyber_synth"
+      "mysterious_cyber_synth",
+      "epic_orchestral_crescendo"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -643,7 +672,8 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_swara_expressive",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -666,7 +696,8 @@
       "high_stakes_heists_scandals",
       "bizarre_biology_anomalies",
       "dark_psychology_behavior",
-      "deep_ocean_abyss"
+      "deep_ocean_abyss",
+      "extreme_physics_space"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -689,7 +720,8 @@
       "split_bottom_contrast",
       "centered_punch",
       "lower_third_bar",
-      "top_header_banner"
+      "top_header_banner",
+      "split_bottom_contrast"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -712,7 +744,8 @@
       "cinematic_serif",
       "impact_bebas",
       "modern_neo_grotesque",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -735,7 +768,8 @@
       "caution_hazard_tape",
       "clean_minimalist",
       "neon_pill_badge",
-      "glowing_brackets"
+      "glowing_brackets",
+      "caution_hazard_tape"
     ]
   }
 }
