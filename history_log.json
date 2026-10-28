@@ -321,6 +321,20 @@
       "pinned_comment": "Kya aapko pata tha ki aapki aankhein har din hazaron baar andhi hoti hain? Comment karke batao!",
       "youtube_video_id": null,
       "status": "RENDER_COMPLETE"
+    },
+    {
+      "id": "REELS_1793206802",
+      "date": "2026-10-28 17:00:02",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "The Subterranean Fortress of Bologna",
+      "title": "Bologna's Hidden Underground Secret Network! 🌊🏰 #Shorts",
+      "category": "unexplained_history_enigmas",
+      "duration": "24-28 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1793206594.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Kya aapko lagta hai ki aaj ke modern cities bhi aisi underground tech use kar sakte hain? Comment mein bataiye!",
+      "youtube_video_id": null,
+      "status": "RENDER_COMPLETE"
     }
   ]
 }

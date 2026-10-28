@@ -551,6 +551,30 @@
         "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, ultra-fast shutter macro shot of racket strings compressing against fuzzy tennis ball fibers, climactic visual proof, vertical 9:16, vivid textures, scene 5",
         "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, extreme close up of a human pupil snapping back into focus under golden hour sky, circular infinite loop reveal, vertical 9:16, dramatic silhouette, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-10-28 17:00:02",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Subterranean Fortress of Bologna",
+      "title": "Bologna's Hidden Underground Secret Network! 🌊🏰 #Shorts",
+      "category": "unexplained_history_enigmas",
+      "hook_format": "direct_provocative_question",
+      "visual_style": "cosmic_james_webb_deep_space",
+      "camera_move": "ken_burns_slow_dolly_in",
+      "caption_style": "pure_white_heavy_stroke",
+      "voice": "hi_swara_expressive",
+      "music_mood": "suspense_ticking_clock",
+      "thumbnail_layout": "lower_third_bar",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "neon_pill_badge",
+      "image_prompts": [
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, dramatic opening hook visual, glowing subterranean cosmic river channels beneath stellar dust, dynamic cinematic lighting, scene 1",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, revealing backstory detail, cosmic fortress silhouette surrounding glowing accretion ring, high contrast, scene 2",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, escalation of tension, energetic indigo cosmic currents swirling in hidden cosmic channels, moody chiaroscuro, scene 3",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, shocking twist discovery, glowing violet energy veins branching subterranean under cosmic surface crust, volumetric lighting, scene 4",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, climactic visual proof, vast 60km cosmic energy matrix pulsing across deep space nebula, vivid textures, scene 5",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, circular infinite loop reveal, cosmic vortex spiraling into central starfield abyss, dramatic silhouette, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -578,7 +602,8 @@
       "3d_anatomical_zackd",
       "national_geographic_macro",
       "investigative_noir_magnates",
-      "national_geographic_macro"
+      "national_geographic_macro",
+      "cosmic_james_webb_deep_space"
     ],
     "hook_format": [
       "shocking_metric",
@@ -603,7 +628,8 @@
       "classified_declassified_reveal",
       "shocking_metric",
       "negative_constraint",
-      "impossible_claim_in_media_res"
+      "impossible_claim_in_media_res",
+      "direct_provocative_question"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -628,7 +654,8 @@
       "ken_burns_slow_dolly_in",
       "smooth_vertical_pedestal",
       "dramatic_pull_out_reveal",
-      "dynamic_dutch_push"
+      "dynamic_dutch_push",
+      "ken_burns_slow_dolly_in"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -653,7 +680,8 @@
       "neon_cyan_glow",
       "electric_yellow_active_badge",
       "electric_yellow_active_badge",
-      "golden_amber_spotlight"
+      "golden_amber_spotlight",
+      "pure_white_heavy_stroke"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -678,7 +706,8 @@
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
-      "ancient_tribal_reverberation"
+      "ancient_tribal_reverberation",
+      "suspense_ticking_clock"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -703,7 +732,8 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -728,7 +758,8 @@
       "dark_psychology_behavior",
       "deep_ocean_abyss",
       "extreme_physics_space",
-      "bizarre_biology_anomalies"
+      "bizarre_biology_anomalies",
+      "unexplained_history_enigmas"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -753,7 +784,8 @@
       "lower_third_bar",
       "top_header_banner",
       "split_bottom_contrast",
-      "centered_punch"
+      "centered_punch",
+      "lower_third_bar"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -778,7 +810,8 @@
       "modern_neo_grotesque",
       "modern_neo_grotesque",
       "cinematic_serif",
-      "impact_bebas"
+      "impact_bebas",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -803,7 +836,8 @@
       "neon_pill_badge",
       "glowing_brackets",
       "caution_hazard_tape",
-      "clean_minimalist"
+      "clean_minimalist",
+      "neon_pill_badge"
     ]
   }
 }
