@@ -307,6 +307,20 @@
       "pinned_comment": "Kya aapko lagta hai commercial bottom trawling ko globally ban kar dena chahiye? Comment your thoughts below!",
       "youtube_video_id": null,
       "status": "RENDER_COMPLETE"
+    },
+    {
+      "id": "REELS_1793196496",
+      "date": "2026-10-28 14:08:16",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "The Brain's Hidden Blindness Switch",
+      "title": "The Brain's Secret Blindness Switch! 🧠⚡ #Shorts",
+      "category": "bizarre_biology_anomalies",
+      "duration": "24-28 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1793196375.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Kya aapko pata tha ki aapki aankhein har din hazaron baar andhi hoti hain? Comment karke batao!",
+      "youtube_video_id": null,
+      "status": "RENDER_COMPLETE"
     }
   ]
 }

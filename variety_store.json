@@ -527,6 +527,30 @@
         "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, ultra-wide orbital view of a massive milky sediment scar spanning hundreds of kilometers across the black ocean surface, resembling a colossal desert dust storm, vertical 9:16",
         "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, dark intelligence monitoring room, silhouette of an investigator observing satellite telemetry maps showing glowing tracking plumes looping back into outer space view, vertical 9:16"
       ]
+    },
+    {
+      "timestamp": "2026-10-28 14:08:16",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Brain's Hidden Blindness Switch",
+      "title": "The Brain's Secret Blindness Switch! 🧠⚡ #Shorts",
+      "category": "bizarre_biology_anomalies",
+      "hook_format": "impossible_claim_in_media_res",
+      "visual_style": "national_geographic_macro",
+      "camera_move": "dynamic_dutch_push",
+      "caption_style": "golden_amber_spotlight",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "ancient_tribal_reverberation",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, extreme macro shot of a human iris dilating violently with tiny dust particles suspended in golden light, dramatic opening hook visual, vertical 9:16, dynamic cinematic lighting, scene 1",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro high-speed close up of a neon yellow tennis ball spinning rapidly through warm sun flares, revealing backstory detail, vertical 9:16, high contrast, scene 2",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, organic biological visualization of brain synapses flashing with golden energy, escalation of tension, vertical 9:16, moody chiaroscuro, scene 3",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, ultra close-up macro of an athlete's sweat-beaded temple and intense eye reflection, shocking twist discovery, vertical 9:16, volumetric lighting, scene 4",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, ultra-fast shutter macro shot of racket strings compressing against fuzzy tennis ball fibers, climactic visual proof, vertical 9:16, vivid textures, scene 5",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, extreme close up of a human pupil snapping back into focus under golden hour sky, circular infinite loop reveal, vertical 9:16, dramatic silhouette, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -553,7 +577,8 @@
       "cosmic_james_webb_deep_space",
       "3d_anatomical_zackd",
       "national_geographic_macro",
-      "investigative_noir_magnates"
+      "investigative_noir_magnates",
+      "national_geographic_macro"
     ],
     "hook_format": [
       "shocking_metric",
@@ -577,7 +602,8 @@
       "direct_provocative_question",
       "classified_declassified_reveal",
       "shocking_metric",
-      "negative_constraint"
+      "negative_constraint",
+      "impossible_claim_in_media_res"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -601,7 +627,8 @@
       "parallax_subtle_pan_right",
       "ken_burns_slow_dolly_in",
       "smooth_vertical_pedestal",
-      "dramatic_pull_out_reveal"
+      "dramatic_pull_out_reveal",
+      "dynamic_dutch_push"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -625,7 +652,8 @@
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
       "electric_yellow_active_badge",
-      "electric_yellow_active_badge"
+      "electric_yellow_active_badge",
+      "golden_amber_spotlight"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -649,7 +677,8 @@
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
-      "epic_orchestral_crescendo"
+      "epic_orchestral_crescendo",
+      "ancient_tribal_reverberation"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -673,7 +702,8 @@
       "hi_swara_expressive",
       "hi_swara_expressive",
       "hi_madhur_dynamic",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -697,7 +727,8 @@
       "bizarre_biology_anomalies",
       "dark_psychology_behavior",
       "deep_ocean_abyss",
-      "extreme_physics_space"
+      "extreme_physics_space",
+      "bizarre_biology_anomalies"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -721,7 +752,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -745,7 +777,8 @@
       "impact_bebas",
       "modern_neo_grotesque",
       "modern_neo_grotesque",
-      "cinematic_serif"
+      "cinematic_serif",
+      "impact_bebas"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -769,7 +802,8 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   }
 }
