@@ -599,6 +599,30 @@
         "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, surface silhouette of a massive container ship against a raging lightning storm above, acoustic sound rays funneling downward through ocean thermoclines into the Mariana Trench like an acoustic vortex, dramatic chiaroscuro",
         "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, extreme macro shot of titanium hydrophone head submerged on ocean floor of Challenger Deep, subtle micro-vibrations kicking up tiny plumes of abyssal sediment into the submersible spotlight beam, eerie infinity loop visual"
       ]
+    },
+    {
+      "timestamp": "2026-10-29 17:49:04",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Silent Charisma Illusion",
+      "title": "The Dark Psychology of Silent Charisma 🤫🗿 #Shorts",
+      "category": "dark_psychology_behavior",
+      "hook_format": "shocking_metric",
+      "visual_style": "ancient_indian_monolith",
+      "camera_move": "smooth_vertical_pedestal",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "mysterious_cyber_synth",
+      "thumbnail_layout": "split_bottom_contrast",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "caution_hazard_tape",
+      "image_prompts": [
+        "Cinematic macro shot of glowing electric neural pathways morphing seamlessly into massive, dark monolithic stone pillars inside an ancient Indian rock-cut temple, dark moody lighting, volumetric atmospheric shadows, ultra-detailed 8k render.",
+        "Low-angle dramatic shot of a giant monolithic king statue carved out of a single black granite cliff wall, imposing monolithic architecture, epic cinematic scale, high contrast lighting.",
+        "Medium shot inside a deep monolithic Indian cave shrine, silent misty atmosphere, ancient intricate carvings reflecting soft golden side-light, extreme visual depth and shadow.",
+        "Close-up of ancient glowing Sanskrit-style symbols carving themselves automatically into a massive dark granite wall, symbolizing dark secret thoughts filling the void, photorealistic rock texture.",
+        "High-angle wide shot of shadowy human silhouettes standing reverently before a colossal, unmoving ancient Indian monolithic monument carved into a mountain, fog, chiaroscuro visual design.",
+        "Fast zoom into the stone eye of a giant monolithic carved face as electric blue energy crackles across the rock surface, preparing for a seamless loop back into neural scale, hyper-realistic depth."
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -628,7 +652,8 @@
       "investigative_noir_magnates",
       "national_geographic_macro",
       "cosmic_james_webb_deep_space",
-      "cinematic_35mm_portra"
+      "cinematic_35mm_portra",
+      "ancient_indian_monolith"
     ],
     "hook_format": [
       "shocking_metric",
@@ -655,7 +680,8 @@
       "negative_constraint",
       "impossible_claim_in_media_res",
       "direct_provocative_question",
-      "classified_declassified_reveal"
+      "classified_declassified_reveal",
+      "shocking_metric"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -682,7 +708,8 @@
       "dramatic_pull_out_reveal",
       "dynamic_dutch_push",
       "ken_burns_slow_dolly_in",
-      "parallax_subtle_pan_right"
+      "parallax_subtle_pan_right",
+      "smooth_vertical_pedestal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -709,6 +736,7 @@
       "electric_yellow_active_badge",
       "golden_amber_spotlight",
       "pure_white_heavy_stroke",
+      "neon_cyan_glow",
       "neon_cyan_glow"
     ],
     "music_mood": [
@@ -736,7 +764,8 @@
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
-      "dark_sub_bass_pulse"
+      "dark_sub_bass_pulse",
+      "mysterious_cyber_synth"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -763,7 +792,8 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -790,7 +820,8 @@
       "extreme_physics_space",
       "bizarre_biology_anomalies",
       "unexplained_history_enigmas",
-      "deep_ocean_abyss"
+      "deep_ocean_abyss",
+      "dark_psychology_behavior"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -817,7 +848,8 @@
       "split_bottom_contrast",
       "centered_punch",
       "lower_third_bar",
-      "top_header_banner"
+      "top_header_banner",
+      "split_bottom_contrast"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -844,7 +876,8 @@
       "cinematic_serif",
       "impact_bebas",
       "modern_neo_grotesque",
-      "cinematic_serif"
+      "cinematic_serif",
+      "impact_bebas"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -871,7 +904,8 @@
       "caution_hazard_tape",
       "clean_minimalist",
       "neon_pill_badge",
-      "glowing_brackets"
+      "glowing_brackets",
+      "caution_hazard_tape"
     ]
   }
 }
