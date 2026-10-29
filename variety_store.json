@@ -575,6 +575,30 @@
         "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, climactic visual proof, vast 60km cosmic energy matrix pulsing across deep space nebula, vivid textures, scene 5",
         "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, circular infinite loop reveal, cosmic vortex spiraling into central starfield abyss, dramatic silhouette, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-10-29 15:03:09",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Abyssal Amphitheater Paradox",
+      "title": "Mariana Trench Is NOT Silent! 🌊🔊 #Shorts",
+      "category": "deep_ocean_abyss",
+      "hook_format": "classified_declassified_reveal",
+      "visual_style": "cinematic_35mm_portra",
+      "camera_move": "parallax_subtle_pan_right",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_swara_expressive",
+      "music_mood": "dark_sub_bass_pulse",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, dark storm-tossed research vessel deck at midnight, yellow industrial floodlights cutting through mist, marine scientists lowering a heavy titanium acoustic hydrophone probe over the steel railing into pitch black ocean, high contrast, tense candid atmosphere",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, inside cramped dim ship laboratory, green phosphor glow from vintage hydro-acoustic monitoring screens illuminating tired oceanographer's face, classified research document stamped with confidential markings lying beside audio console",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, abyssal ocean depth cross-section, deep indigo to pitch black gradient, titanium sensor suspended seven miles beneath surface in freezing hadal zone, faint bioluminescent particles drifting slowly in high-pressure water column",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, colossal underwater trench walls forming a monolithic natural stone amphitheater, eerie acoustic vibration ripples rendered visibly through deep blue density, extreme scale, claustrophobic yet massive abyss",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, surface silhouette of a massive container ship against a raging lightning storm above, acoustic sound rays funneling downward through ocean thermoclines into the Mariana Trench like an acoustic vortex, dramatic chiaroscuro",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, extreme macro shot of titanium hydrophone head submerged on ocean floor of Challenger Deep, subtle micro-vibrations kicking up tiny plumes of abyssal sediment into the submersible spotlight beam, eerie infinity loop visual"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -603,7 +627,8 @@
       "national_geographic_macro",
       "investigative_noir_magnates",
       "national_geographic_macro",
-      "cosmic_james_webb_deep_space"
+      "cosmic_james_webb_deep_space",
+      "cinematic_35mm_portra"
     ],
     "hook_format": [
       "shocking_metric",
@@ -629,7 +654,8 @@
       "shocking_metric",
       "negative_constraint",
       "impossible_claim_in_media_res",
-      "direct_provocative_question"
+      "direct_provocative_question",
+      "classified_declassified_reveal"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -655,7 +681,8 @@
       "smooth_vertical_pedestal",
       "dramatic_pull_out_reveal",
       "dynamic_dutch_push",
-      "ken_burns_slow_dolly_in"
+      "ken_burns_slow_dolly_in",
+      "parallax_subtle_pan_right"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -681,7 +708,8 @@
       "electric_yellow_active_badge",
       "electric_yellow_active_badge",
       "golden_amber_spotlight",
-      "pure_white_heavy_stroke"
+      "pure_white_heavy_stroke",
+      "neon_cyan_glow"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -707,7 +735,8 @@
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
-      "suspense_ticking_clock"
+      "suspense_ticking_clock",
+      "dark_sub_bass_pulse"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -733,6 +762,7 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_madhur_dynamic",
+      "hi_swara_expressive",
       "hi_swara_expressive"
     ],
     "category": [
@@ -759,7 +789,8 @@
       "deep_ocean_abyss",
       "extreme_physics_space",
       "bizarre_biology_anomalies",
-      "unexplained_history_enigmas"
+      "unexplained_history_enigmas",
+      "deep_ocean_abyss"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -785,7 +816,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -811,7 +843,8 @@
       "modern_neo_grotesque",
       "cinematic_serif",
       "impact_bebas",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -837,7 +870,8 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   }
 }
