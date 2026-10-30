@@ -623,6 +623,30 @@
         "High-angle wide shot of shadowy human silhouettes standing reverently before a colossal, unmoving ancient Indian monolithic monument carved into a mountain, fog, chiaroscuro visual design.",
         "Fast zoom into the stone eye of a giant monolithic carved face as electric blue energy crackles across the rock surface, preparing for a seamless loop back into neural scale, hyper-realistic depth."
       ]
+    },
+    {
+      "timestamp": "2026-10-30 08:36:05",
+      "video_id": "LOCAL_RENDER",
+      "topic": "How Tennis Pros Hit 'Unseeable' Serves",
+      "title": "Unseeable 120 MPH Tennis Serves 🎾⚡ #Shorts",
+      "category": "how_it_actually_works",
+      "hook_format": "negative_constraint",
+      "visual_style": "national_geographic_macro",
+      "camera_move": "dynamic_dutch_push",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "epic_orchestral_crescendo",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, dramatic opening hook visual, high-speed tennis ball streaking past camera lens, macro close-up of human eye iris dilating, dynamic cinematic lighting, scene 1",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, revealing backstory detail, macro shot of vibrant yellow tennis ball felt exploding with dust motes at high speed, extreme detail, high contrast, scene 2",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, escalation of tension, macro detail of athlete tense shoulder muscle flexing with glistening sweat drops under warm sunlight, moody chiaroscuro, scene 3",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, shocking twist discovery, macro close-up of pro tennis racket strings twisting under extreme impact force, dynamic particles floating, volumetric lighting, scene 4",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, climactic visual proof, hyper-detailed macro view of human brain neural firing overlay on clay court baseline, vivid textures, scene 5",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, circular infinite loop reveal, golden hour backlit silhouette of serve motion with micro dust floating around racket, dramatic silhouette, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -653,7 +677,8 @@
       "national_geographic_macro",
       "cosmic_james_webb_deep_space",
       "cinematic_35mm_portra",
-      "ancient_indian_monolith"
+      "ancient_indian_monolith",
+      "national_geographic_macro"
     ],
     "hook_format": [
       "shocking_metric",
@@ -681,7 +706,8 @@
       "impossible_claim_in_media_res",
       "direct_provocative_question",
       "classified_declassified_reveal",
-      "shocking_metric"
+      "shocking_metric",
+      "negative_constraint"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -709,7 +735,8 @@
       "dynamic_dutch_push",
       "ken_burns_slow_dolly_in",
       "parallax_subtle_pan_right",
-      "smooth_vertical_pedestal"
+      "smooth_vertical_pedestal",
+      "dynamic_dutch_push"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -737,7 +764,8 @@
       "golden_amber_spotlight",
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
-      "neon_cyan_glow"
+      "neon_cyan_glow",
+      "electric_yellow_active_badge"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -765,7 +793,8 @@
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
-      "mysterious_cyber_synth"
+      "mysterious_cyber_synth",
+      "epic_orchestral_crescendo"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -793,6 +822,7 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_swara_expressive",
+      "hi_madhur_dynamic",
       "hi_madhur_dynamic"
     ],
     "category": [
@@ -821,7 +851,8 @@
       "bizarre_biology_anomalies",
       "unexplained_history_enigmas",
       "deep_ocean_abyss",
-      "dark_psychology_behavior"
+      "dark_psychology_behavior",
+      "how_it_actually_works"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -849,7 +880,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -877,7 +909,8 @@
       "impact_bebas",
       "modern_neo_grotesque",
       "cinematic_serif",
-      "impact_bebas"
+      "impact_bebas",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -905,7 +938,8 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   }
 }

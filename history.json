@@ -1682,6 +1682,20 @@
       "pinned_comment": "Kya aapne kabhi kisi ki khamoshi se darr ya respect feel kiya hai? Comments mein apna experience share karo! 👇",
       "youtube_video_id": null,
       "status": "RENDER_COMPLETE"
+    },
+    {
+      "id": "REELS_1793349365",
+      "date": "2026-10-30 08:36:05",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "How Tennis Pros Hit 'Unseeable' Serves",
+      "title": "Unseeable 120 MPH Tennis Serves 🎾⚡ #Shorts",
+      "category": "how_it_actually_works",
+      "duration": "24-28 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1793349006.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Kya aapko lagta hai ki reaction speed se zyada prediction important hai? Comment karke batao! 🎾👇",
+      "youtube_video_id": null,
+      "status": "RENDER_COMPLETE"
     }
   ],
   "uploaded_videos": [
