@@ -671,6 +671,30 @@
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, glowing green nutrients flooding through pulsating orange vascular networks as osteoblast cells actively rebuild and lengthen glowing white spinal bones back to full size.",
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, seamless loop transition showing the fully regrown marine iguana on dark volcanic rock with glowing translucent skeleton starting to compress again under rising heatwaves."
       ]
+    },
+    {
+      "timestamp": "2026-10-30 17:05:22",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Galactic Ejection Paradox",
+      "title": "Supermassive Black Hole Flings Rogue Star! 🌌⚡ #Shorts",
+      "category": "extreme_physics_space",
+      "hook_format": "direct_provocative_question",
+      "visual_style": "3d_anatomical_zackd",
+      "camera_move": "parallax_subtle_pan_right",
+      "caption_style": "pure_white_heavy_stroke",
+      "voice": "hi_swara_expressive",
+      "music_mood": "suspense_ticking_clock",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, a burning celestial star shown with internal anatomical muscle cross-sections and glowing pulsating neural vascular networks, dark void studio lighting, vertical 9:16, scene 1",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, binary twin stars bound together by thick glowing sinewy tendon-like gravitational cords, translucent stellar organs visible, high contrast dramatic studio lighting, scene 2",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, a colossal black hole vortex pulling one twin star into its event horizon, stretching biological-style glowing gravity tendons under intense tension, moody chiaroscuro, scene 3",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, extreme macro shot of the gravitational cord snapping violently like a severed elastic nerve, sparking translucent fluid and energy shockwaves, volumetric lighting, scene 4",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, the surviving rogue star slingshotting forward at hypervelocity speed, its internal core pulsing with vivid translucent energetic chambers, vivid textures, scene 5",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, the solitary star speeding endlessly into the pitch-black abyss, leaving a fading trail of luminous nerve-like plasma, camera pivoting back to center for circular infinite loop, dramatic silhouette, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -703,6 +727,7 @@
       "cinematic_35mm_portra",
       "ancient_indian_monolith",
       "national_geographic_macro",
+      "3d_anatomical_zackd",
       "3d_anatomical_zackd"
     ],
     "hook_format": [
@@ -733,7 +758,8 @@
       "classified_declassified_reveal",
       "shocking_metric",
       "negative_constraint",
-      "impossible_claim_in_media_res"
+      "impossible_claim_in_media_res",
+      "direct_provocative_question"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -763,7 +789,8 @@
       "parallax_subtle_pan_right",
       "smooth_vertical_pedestal",
       "dynamic_dutch_push",
-      "dramatic_pull_out_reveal"
+      "dramatic_pull_out_reveal",
+      "parallax_subtle_pan_right"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -793,7 +820,8 @@
       "neon_cyan_glow",
       "neon_cyan_glow",
       "electric_yellow_active_badge",
-      "golden_amber_spotlight"
+      "golden_amber_spotlight",
+      "pure_white_heavy_stroke"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -823,7 +851,8 @@
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
-      "ancient_tribal_reverberation"
+      "ancient_tribal_reverberation",
+      "suspense_ticking_clock"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -853,6 +882,7 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
+      "hi_swara_expressive",
       "hi_swara_expressive"
     ],
     "category": [
@@ -883,7 +913,8 @@
       "deep_ocean_abyss",
       "dark_psychology_behavior",
       "how_it_actually_works",
-      "bizarre_biology_anomalies"
+      "bizarre_biology_anomalies",
+      "extreme_physics_space"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -913,7 +944,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -943,7 +975,8 @@
       "cinematic_serif",
       "impact_bebas",
       "cinematic_serif",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -973,7 +1006,8 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   }
 }
