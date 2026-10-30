@@ -647,6 +647,30 @@
         "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, climactic visual proof, hyper-detailed macro view of human brain neural firing overlay on clay court baseline, vivid textures, scene 5",
         "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, circular infinite loop reveal, golden hour backlit silhouette of serve motion with micro dust floating around racket, dramatic silhouette, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-10-30 14:28:24",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Reptiles That Shrink Their Own Skeletons",
+      "title": "This Reptile Melts Its Own Bones To Survive! 🦎🦴 #Shorts",
+      "category": "bizarre_biology_anomalies",
+      "hook_format": "impossible_claim_in_media_res",
+      "visual_style": "3d_anatomical_zackd",
+      "camera_move": "dramatic_pull_out_reveal",
+      "caption_style": "golden_amber_spotlight",
+      "voice": "hi_swara_expressive",
+      "music_mood": "ancient_tribal_reverberation",
+      "thumbnail_layout": "lower_third_bar",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "neon_pill_badge",
+      "image_prompts": [
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, a marine iguana spine glowing neon cyan through semi-transparent scales as individual vertebrae visibly shrink and pull closer together against a black studio backdrop.",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, underwater cross-section showing warm ocean currents wiping out algae beds while the iguana translucent stomach glows hollow red indicating acute starvation.",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, extreme microscopic cutaway inside the solid bone matrix showing active glowing osteoclast cells dissolving calcium and collagen trabeculae like melting glass.",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, full body anatomical ghost outline comparison illustrating a 20 percent total body length shrinkage with glowing blue metabolic energy meters dropping.",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, glowing green nutrients flooding through pulsating orange vascular networks as osteoblast cells actively rebuild and lengthen glowing white spinal bones back to full size.",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, seamless loop transition showing the fully regrown marine iguana on dark volcanic rock with glowing translucent skeleton starting to compress again under rising heatwaves."
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -678,7 +702,8 @@
       "cosmic_james_webb_deep_space",
       "cinematic_35mm_portra",
       "ancient_indian_monolith",
-      "national_geographic_macro"
+      "national_geographic_macro",
+      "3d_anatomical_zackd"
     ],
     "hook_format": [
       "shocking_metric",
@@ -707,7 +732,8 @@
       "direct_provocative_question",
       "classified_declassified_reveal",
       "shocking_metric",
-      "negative_constraint"
+      "negative_constraint",
+      "impossible_claim_in_media_res"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -736,7 +762,8 @@
       "ken_burns_slow_dolly_in",
       "parallax_subtle_pan_right",
       "smooth_vertical_pedestal",
-      "dynamic_dutch_push"
+      "dynamic_dutch_push",
+      "dramatic_pull_out_reveal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -765,7 +792,8 @@
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
       "neon_cyan_glow",
-      "electric_yellow_active_badge"
+      "electric_yellow_active_badge",
+      "golden_amber_spotlight"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -794,7 +822,8 @@
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
-      "epic_orchestral_crescendo"
+      "epic_orchestral_crescendo",
+      "ancient_tribal_reverberation"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -823,7 +852,8 @@
       "hi_swara_expressive",
       "hi_swara_expressive",
       "hi_madhur_dynamic",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -852,7 +882,8 @@
       "unexplained_history_enigmas",
       "deep_ocean_abyss",
       "dark_psychology_behavior",
-      "how_it_actually_works"
+      "how_it_actually_works",
+      "bizarre_biology_anomalies"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -881,7 +912,8 @@
       "lower_third_bar",
       "top_header_banner",
       "split_bottom_contrast",
-      "centered_punch"
+      "centered_punch",
+      "lower_third_bar"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -910,7 +942,8 @@
       "modern_neo_grotesque",
       "cinematic_serif",
       "impact_bebas",
-      "cinematic_serif"
+      "cinematic_serif",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -939,7 +972,8 @@
       "neon_pill_badge",
       "glowing_brackets",
       "caution_hazard_tape",
-      "clean_minimalist"
+      "clean_minimalist",
+      "neon_pill_badge"
     ]
   }
 }

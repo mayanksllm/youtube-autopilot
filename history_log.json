@@ -377,6 +377,20 @@
       "pinned_comment": "Kya aapko lagta hai ki reaction speed se zyada prediction important hai? Comment karke batao! 🎾👇",
       "youtube_video_id": null,
       "status": "RENDER_COMPLETE"
+    },
+    {
+      "id": "REELS_1793370504",
+      "date": "2026-10-30 14:28:24",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "The Reptiles That Shrink Their Own Skeletons",
+      "title": "This Reptile Melts Its Own Bones To Survive! 🦎🦴 #Shorts",
+      "category": "bizarre_biology_anomalies",
+      "duration": "24-28 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1793369981.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Agar insaan apni haddiyan 20% chhoti kar pate, toh kya hum starvation se bach jate? Tell your thoughts below!",
+      "youtube_video_id": null,
+      "status": "RENDER_COMPLETE"
     }
   ]
 }
