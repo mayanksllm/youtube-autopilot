@@ -719,6 +719,30 @@
         "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, breathtaking reveal of an ancient petrified red sand desert trapped beneath crystalline salt ceilings, glowing hyper-saline toxic rift lakes, surreal amber and deep purple hues, vertical 9:16",
         "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, seismic monitors flickering with classified subterranean depth scans revealing ancient Gondwana fault lines, leaking data folders on desk in foreground, high contrast comic book frame, vertical 9:16"
       ]
+    },
+    {
+      "timestamp": "2026-10-31 13:56:49",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The 1946 War to Steal Back an Election",
+      "title": "When Veterans Went to War Against Corrupt Police! 💣🇺🇸 #Shorts",
+      "category": "high_stakes_heists_scandals",
+      "hook_format": "shocking_metric",
+      "visual_style": "cyberpunk_neon_matrix",
+      "camera_move": "ken_burns_slow_dolly_in",
+      "caption_style": "pure_white_heavy_stroke",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "mysterious_cyber_synth",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "Cyberpunk Neon Matrix style, low angle cinematic shot of 300 heavily armed tactical veterans breaching a dark futuristic brick jail with glowing green dynamite charges, neon matrix green grid overlaid on dark rain, explosive spark trails.",
+        "Cyberpunk Matrix aesthetic, corrupt sheriff in a glowing cyan neon trench coat barricading metallic ballot boxes inside a high-tech dark precinct, rain matrix code falling on screen, dramatic green wireframe shadows.",
+        "Cyberpunk action frame, veterans firing rapid automatic weapons with bright neon bullet trails cutting through rain, dynamic motion blur, high contrast green and dark cybernetic atmosphere.",
+        "Cyberpunk Matrix style visual, corrupt futuristic police officers dropping weapons and kneeling under intense neon spotlighting, glowing digital glitch effects and dark smoke background.",
+        "Cyberpunk aesthetic, triumphant veterans standing victorious atop a futuristic neon-lit government building, holographic glowing American flag flickering in matrix code rain, extreme wide angle.",
+        "Cyberpunk Neon Matrix seamless loop visual, infinite dark matrix digital tunnel swirling into a glowing green optical vortex, seamlessly blending back into tactical military silhouette silhouettes."
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -753,7 +777,8 @@
       "national_geographic_macro",
       "3d_anatomical_zackd",
       "3d_anatomical_zackd",
-      "graphic_novel_neo_noir"
+      "graphic_novel_neo_noir",
+      "cyberpunk_neon_matrix"
     ],
     "hook_format": [
       "shocking_metric",
@@ -785,7 +810,8 @@
       "negative_constraint",
       "impossible_claim_in_media_res",
       "direct_provocative_question",
-      "classified_declassified_reveal"
+      "classified_declassified_reveal",
+      "shocking_metric"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -817,7 +843,8 @@
       "dynamic_dutch_push",
       "dramatic_pull_out_reveal",
       "parallax_subtle_pan_right",
-      "smooth_vertical_pedestal"
+      "smooth_vertical_pedestal",
+      "ken_burns_slow_dolly_in"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -849,7 +876,8 @@
       "electric_yellow_active_badge",
       "golden_amber_spotlight",
       "pure_white_heavy_stroke",
-      "neon_cyan_glow"
+      "neon_cyan_glow",
+      "pure_white_heavy_stroke"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -881,7 +909,8 @@
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
-      "dark_sub_bass_pulse"
+      "dark_sub_bass_pulse",
+      "mysterious_cyber_synth"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -913,6 +942,7 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_swara_expressive",
+      "hi_madhur_dynamic",
       "hi_madhur_dynamic"
     ],
     "category": [
@@ -945,7 +975,8 @@
       "how_it_actually_works",
       "bizarre_biology_anomalies",
       "extreme_physics_space",
-      "unexplained_history_enigmas"
+      "unexplained_history_enigmas",
+      "high_stakes_heists_scandals"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -977,7 +1008,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1009,7 +1041,8 @@
       "cinematic_serif",
       "modern_neo_grotesque",
       "cinematic_serif",
-      "impact_bebas"
+      "impact_bebas",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1041,7 +1074,8 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   }
 }
