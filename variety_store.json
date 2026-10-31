@@ -695,6 +695,30 @@
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, the surviving rogue star slingshotting forward at hypervelocity speed, its internal core pulsing with vivid translucent energetic chambers, vivid textures, scene 5",
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, the solitary star speeding endlessly into the pitch-black abyss, leaving a fading trail of luminous nerve-like plasma, camera pivoting back to center for circular infinite loop, dramatic silhouette, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-10-31 08:56:42",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Petrified Desert Beneath Brazil's Ocean",
+      "title": "The Petrified Desert Trapped Beneath Brazil's Ocean 🌊🏜️ #Shorts",
+      "category": "unexplained_history_enigmas",
+      "hook_format": "classified_declassified_reveal",
+      "visual_style": "graphic_novel_neo_noir",
+      "camera_move": "smooth_vertical_pedestal",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "dark_sub_bass_pulse",
+      "thumbnail_layout": "split_bottom_contrast",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "caution_hazard_tape",
+      "image_prompts": [
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a shadowy petroleum geologist in a dark control room staring at illuminated classified sonar maps stamped with REDACTED, heavy black ink hatching, glowing amber monitors, vertical 9:16",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a colossal industrial drill pipe piercing down into the pitch-black ocean abyss from an offshore platform, eerie bioluminescent cyan ocean depths, vertical 9:16",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, extreme macro low-angle shot of a massive diamond drill bit grinding into an impenetrable translucent two-mile-thick crystalline salt barrier, glowing friction sparks, vertical 9:16",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, epic cross-section geological view showing ocean on top, a massive creeping white salt sheet in the middle, and an empty black cavernous void underneath, vertical 9:16",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, breathtaking reveal of an ancient petrified red sand desert trapped beneath crystalline salt ceilings, glowing hyper-saline toxic rift lakes, surreal amber and deep purple hues, vertical 9:16",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, seismic monitors flickering with classified subterranean depth scans revealing ancient Gondwana fault lines, leaking data folders on desk in foreground, high contrast comic book frame, vertical 9:16"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -728,7 +752,8 @@
       "ancient_indian_monolith",
       "national_geographic_macro",
       "3d_anatomical_zackd",
-      "3d_anatomical_zackd"
+      "3d_anatomical_zackd",
+      "graphic_novel_neo_noir"
     ],
     "hook_format": [
       "shocking_metric",
@@ -759,7 +784,8 @@
       "shocking_metric",
       "negative_constraint",
       "impossible_claim_in_media_res",
-      "direct_provocative_question"
+      "direct_provocative_question",
+      "classified_declassified_reveal"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -790,7 +816,8 @@
       "smooth_vertical_pedestal",
       "dynamic_dutch_push",
       "dramatic_pull_out_reveal",
-      "parallax_subtle_pan_right"
+      "parallax_subtle_pan_right",
+      "smooth_vertical_pedestal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -821,7 +848,8 @@
       "neon_cyan_glow",
       "electric_yellow_active_badge",
       "golden_amber_spotlight",
-      "pure_white_heavy_stroke"
+      "pure_white_heavy_stroke",
+      "neon_cyan_glow"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -852,7 +880,8 @@
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
-      "suspense_ticking_clock"
+      "suspense_ticking_clock",
+      "dark_sub_bass_pulse"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -883,7 +912,8 @@
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -914,7 +944,8 @@
       "dark_psychology_behavior",
       "how_it_actually_works",
       "bizarre_biology_anomalies",
-      "extreme_physics_space"
+      "extreme_physics_space",
+      "unexplained_history_enigmas"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -945,7 +976,8 @@
       "split_bottom_contrast",
       "centered_punch",
       "lower_third_bar",
-      "top_header_banner"
+      "top_header_banner",
+      "split_bottom_contrast"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -976,7 +1008,8 @@
       "impact_bebas",
       "cinematic_serif",
       "modern_neo_grotesque",
-      "cinematic_serif"
+      "cinematic_serif",
+      "impact_bebas"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1007,7 +1040,8 @@
       "caution_hazard_tape",
       "clean_minimalist",
       "neon_pill_badge",
-      "glowing_brackets"
+      "glowing_brackets",
+      "caution_hazard_tape"
     ]
   }
 }
