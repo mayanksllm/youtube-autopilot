@@ -767,6 +767,30 @@
         "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, V-2 rocket cutting through dark cloud layer guided by calculated coordinate grids, dramatic volumetric lighting, vertical 9:16",
         "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, dramatic silhouette of a person tuning a glowing vintage radio dial in a dark room, endless circular loop visual, vertical 9:16"
       ]
+    },
+    {
+      "timestamp": "2026-11-01 09:11:11",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Dark Psychology of the Sudden Windfall",
+      "title": "The Dark Truth About Free Money 💰 #Shorts #Psychology",
+      "category": "dark_psychology_behavior",
+      "hook_format": "impossible_claim_in_media_res",
+      "visual_style": "national_geographic_macro",
+      "camera_move": "parallax_subtle_pan_right",
+      "caption_style": "golden_amber_spotlight",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "ancient_tribal_reverberation",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, dramatic opening hook visual, vertical 9:16, dynamic cinematic lighting, scene 1, extreme macro shot of a black harvester ant discovering a giant glowing droplet of golden amber liquid on damp bark, razor-sharp detail on insect chitin and glowing light droplets.",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, revealing backstory detail, vertical 9:16, high contrast, scene 2, ultra close-up shot of a praying mantis standing triumphantly over a mound of sparkling golden flower pollen, crisp textures on spiky limbs and compound eyes.",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, escalation of tension, vertical 9:16, moody chiaroscuro, scene 3, macro view of a dark spider wrapping golden silk thread around a glowing golden cocoon, golden hour backlight catching fine silk filaments and dark damp moss.",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, shocking twist discovery, vertical 9:16, volumetric lighting, scene 4, extreme telephoto macro of a chameleon pupil contracting, reflecting a glittering pile of gold dust in its cold glossy eye, sharp skin scale texture.",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, climactic visual proof, vertical 9:16, vivid textures, scene 5, macro shot of a black raven beak holding a polished raw golden gemstone, detailed feather barbules glowing under warm directional dusk light.",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, circular infinite loop reveal, vertical 9:16, dramatic silhouette, scene 6, macro silhouette of a scorpion tail poised above golden cracked desert mud, backlit by setting golden sunbeams."
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -803,7 +827,8 @@
       "3d_anatomical_zackd",
       "graphic_novel_neo_noir",
       "cyberpunk_neon_matrix",
-      "investigative_noir_magnates"
+      "investigative_noir_magnates",
+      "national_geographic_macro"
     ],
     "hook_format": [
       "shocking_metric",
@@ -837,7 +862,8 @@
       "direct_provocative_question",
       "classified_declassified_reveal",
       "shocking_metric",
-      "negative_constraint"
+      "negative_constraint",
+      "impossible_claim_in_media_res"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -871,7 +897,8 @@
       "parallax_subtle_pan_right",
       "smooth_vertical_pedestal",
       "ken_burns_slow_dolly_in",
-      "dynamic_dutch_push"
+      "dynamic_dutch_push",
+      "parallax_subtle_pan_right"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -905,7 +932,8 @@
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
       "pure_white_heavy_stroke",
-      "electric_yellow_active_badge"
+      "electric_yellow_active_badge",
+      "golden_amber_spotlight"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -939,7 +967,8 @@
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
-      "epic_orchestral_crescendo"
+      "epic_orchestral_crescendo",
+      "ancient_tribal_reverberation"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -973,7 +1002,8 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1007,7 +1037,8 @@
       "extreme_physics_space",
       "unexplained_history_enigmas",
       "high_stakes_heists_scandals",
-      "how_it_actually_works"
+      "how_it_actually_works",
+      "dark_psychology_behavior"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1041,7 +1072,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1075,7 +1107,8 @@
       "cinematic_serif",
       "impact_bebas",
       "cinematic_serif",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1109,7 +1142,8 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   }
 }
