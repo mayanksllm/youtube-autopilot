@@ -461,6 +461,20 @@
       "pinned_comment": "Agar aapko achanak 10 Crore rupaye mil jaayein, toh kya aap pehle se zyada madadgaar banenge ya zyada swarthi? Comment me batao! 👇",
       "youtube_video_id": null,
       "status": "RENDER_COMPLETE"
+    },
+    {
+      "id": "REELS_1793543982",
+      "date": "2026-11-01 14:39:42",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "The Brain's Self-Sabotage Mechanism",
+      "title": "Brain's Secret Kill-Switch Exposed 🧠⚠️ #Shorts",
+      "category": "bizarre_biology_anomalies",
+      "duration": "24-28 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1793543297.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Agar ye biological lock hamesha khula rehta, toh kya hota? Share your theory below! 👇",
+      "youtube_video_id": null,
+      "status": "RENDER_COMPLETE"
     }
   ]
 }
