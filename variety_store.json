@@ -815,6 +815,30 @@
         "Macro shot of a glowing biometric lock meter cracking and shattering into floating glass shards under sheer internal force, dark crimson lighting, hyper-detailed MagnatesMedia visual documentary style.",
         "Slow tracking shot across an investigative chalkboard with red thread linking a human brain diagram back to a glowing question mark, atmospheric noir shadows, seamless loop transition composition."
       ]
+    },
+    {
+      "timestamp": "2026-11-02 09:36:00",
+      "video_id": "LOCAL_RENDER",
+      "topic": "Why Perfect Protein Crystals Can't Exist on Earth",
+      "title": "NASA's Secret Space Crystal Experiment 🧬✨ #Shorts",
+      "category": "extreme_physics_space",
+      "hook_format": "classified_declassified_reveal",
+      "visual_style": "cinematic_35mm_portra",
+      "camera_move": "smooth_vertical_pedestal",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "dark_sub_bass_pulse",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, dramatic opening hook visual, vertical 9:16, dynamic cinematic lighting, classified vintage NASA folder stamped top secret lying open on a dark mahogany desk under harsh single tungsten lamp, displaying microscopic crystal lattice charts and redacted documents, heavy shadows, dust motes floating in light beam.",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, revealing backstory detail, vertical 9:16, high contrast, cleanroom scientist in sterile bunny suit loading sealed metal canister with glass tubes into rocket cargo bay, cold industrial rim lighting, deep shadows, authentic analog textures.",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, escalation of tension, vertical 9:16, moody chiaroscuro, extreme macro view inside liquid vial on Earth, violent fluid convection currents swirling like chaotic smoke under polarized cross-lighting, tearing apart a fragile, jagged molecular crystal lattice.",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, shocking twist discovery, vertical 9:16, volumetric lighting, inside the ISS orbital laboratory, a perfectly translucent geometric protein crystal floating weightlessly inside a crystal-clear capillary tube, warm sunlight from cupola window grazing pristine edges.",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, climactic visual proof, vertical 9:16, vivid textures, dark radiography lab, green phosphor oscilloscope and X-ray crystallographic diffraction pattern showing immaculate concentric rings of perfect atomic macromolecule alignment, scientist's intense reflection in glass monitor.",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, circular infinite loop reveal, vertical 9:16, dramatic silhouette, back view of researcher standing in dark corridor gazing at illuminated vertical light table covered in orbital flight manifests and crystal schematics, cyclical mystery vibe."
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -853,7 +877,8 @@
       "cyberpunk_neon_matrix",
       "investigative_noir_magnates",
       "national_geographic_macro",
-      "investigative_noir_magnates"
+      "investigative_noir_magnates",
+      "cinematic_35mm_portra"
     ],
     "hook_format": [
       "shocking_metric",
@@ -889,7 +914,8 @@
       "shocking_metric",
       "negative_constraint",
       "impossible_claim_in_media_res",
-      "direct_provocative_question"
+      "direct_provocative_question",
+      "classified_declassified_reveal"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -925,7 +951,8 @@
       "ken_burns_slow_dolly_in",
       "dynamic_dutch_push",
       "parallax_subtle_pan_right",
-      "dramatic_pull_out_reveal"
+      "dramatic_pull_out_reveal",
+      "smooth_vertical_pedestal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -961,7 +988,8 @@
       "pure_white_heavy_stroke",
       "electric_yellow_active_badge",
       "golden_amber_spotlight",
-      "golden_amber_spotlight"
+      "golden_amber_spotlight",
+      "neon_cyan_glow"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -997,7 +1025,8 @@
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
-      "suspense_ticking_clock"
+      "suspense_ticking_clock",
+      "dark_sub_bass_pulse"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1032,6 +1061,7 @@
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
+      "hi_madhur_dynamic",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic"
     ],
@@ -1069,7 +1099,8 @@
       "high_stakes_heists_scandals",
       "how_it_actually_works",
       "dark_psychology_behavior",
-      "bizarre_biology_anomalies"
+      "bizarre_biology_anomalies",
+      "extreme_physics_space"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1105,7 +1136,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1141,6 +1173,7 @@
       "cinematic_serif",
       "modern_neo_grotesque",
       "cinematic_serif",
+      "impact_bebas",
       "impact_bebas"
     ],
     "thumbnail_badge": [
@@ -1177,7 +1210,8 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   }
 }
