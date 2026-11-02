@@ -863,6 +863,30 @@
         "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, climactic visual proof, majestic central temple courtyard with monolithic pillars casting long dramatic shadows, vivid tactile textures of weathered granite, intense golden sun halo, scene 5",
         "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, circular infinite loop reveal, camera tracking through a row of massive carved stone pillars panning back to the initial miniature mechanical carving, dramatic silhouette, blinding golden hour backdrop, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-11-02 20:43:14",
+      "video_id": "LOCAL_RENDER",
+      "topic": "How Irish Rebels Accidentally Created Canada",
+      "title": "How Irish Rebels Accidentally Created Canada! 🇨🇦⚔️ #Shorts",
+      "category": "deep_ocean_abyss",
+      "hook_format": "negative_constraint",
+      "visual_style": "graphic_novel_neo_noir",
+      "camera_move": "dynamic_dutch_push",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_swara_expressive",
+      "music_mood": "epic_orchestral_crescendo",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, Irish Fenian rebel army crossing a misty midnight river in rowboats, fixed bayonets reflecting moonlight, torn emerald green flag fluttering, dramatic low-angle shot, dynamic cinematic lighting, scene 1",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, Fenian brotherhood commanders plotting intensely over an ink-stained antique map in a dimly lit underground bunker, lantern casting deep golden highlights, scene 2",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, fierce battle of Ridgeway skirmish, rifle muzzle flashes illuminating gunsmoke, soldiers in green and red coats clashing violently, high-contrast ink splatter, scene 3",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, panicked colonial British governors huddled in a dark wood-paneled war room around a glowing telegraph machine, faces lit in stark chiaroscuro, scene 4",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, colonial leaders shaking hands aggressively over the Confederation pact of 1867, a giant glowing red maple leaf emblem materializing overhead, vivid textures, scene 5",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, lone silhouette of a stunned Irish soldier lowering his rifle at the newly fortified Canadian border frontier, fog rolling across the riverbank, dramatic infinite loop framing, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -903,7 +927,8 @@
       "national_geographic_macro",
       "investigative_noir_magnates",
       "cinematic_35mm_portra",
-      "ancient_indian_monolith"
+      "ancient_indian_monolith",
+      "graphic_novel_neo_noir"
     ],
     "hook_format": [
       "shocking_metric",
@@ -941,7 +966,8 @@
       "impossible_claim_in_media_res",
       "direct_provocative_question",
       "classified_declassified_reveal",
-      "shocking_metric"
+      "shocking_metric",
+      "negative_constraint"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -979,7 +1005,8 @@
       "parallax_subtle_pan_right",
       "dramatic_pull_out_reveal",
       "smooth_vertical_pedestal",
-      "ken_burns_slow_dolly_in"
+      "ken_burns_slow_dolly_in",
+      "dynamic_dutch_push"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1017,7 +1044,8 @@
       "golden_amber_spotlight",
       "golden_amber_spotlight",
       "neon_cyan_glow",
-      "pure_white_heavy_stroke"
+      "pure_white_heavy_stroke",
+      "electric_yellow_active_badge"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1055,7 +1083,8 @@
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
-      "mysterious_cyber_synth"
+      "mysterious_cyber_synth",
+      "epic_orchestral_crescendo"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1093,6 +1122,7 @@
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
+      "hi_swara_expressive",
       "hi_swara_expressive"
     ],
     "category": [
@@ -1131,7 +1161,8 @@
       "dark_psychology_behavior",
       "bizarre_biology_anomalies",
       "extreme_physics_space",
-      "high_stakes_heists_scandals"
+      "high_stakes_heists_scandals",
+      "deep_ocean_abyss"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1169,7 +1200,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1207,7 +1239,8 @@
       "cinematic_serif",
       "impact_bebas",
       "impact_bebas",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1245,7 +1278,8 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   }
 }
