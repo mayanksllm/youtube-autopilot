@@ -839,6 +839,30 @@
         "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, climactic visual proof, vertical 9:16, vivid textures, dark radiography lab, green phosphor oscilloscope and X-ray crystallographic diffraction pattern showing immaculate concentric rings of perfect atomic macromolecule alignment, scientist's intense reflection in glass monitor.",
         "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, circular infinite loop reveal, vertical 9:16, dramatic silhouette, back view of researcher standing in dark corridor gazing at illuminated vertical light table covered in orbital flight manifests and crystal schematics, cyclical mystery vibe."
       ]
+    },
+    {
+      "timestamp": "2026-11-02 17:20:33",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Italian Secret Behind 'American' Iron",
+      "title": "The Secret Italian Heart of American Iron! 🏍️🇮🇹 #Shorts",
+      "category": "high_stakes_heists_scandals",
+      "hook_format": "shocking_metric",
+      "visual_style": "ancient_indian_monolith",
+      "camera_move": "ken_burns_slow_dolly_in",
+      "caption_style": "pure_white_heavy_stroke",
+      "voice": "hi_swara_expressive",
+      "music_mood": "mysterious_cyber_synth",
+      "thumbnail_layout": "lower_third_bar",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "neon_pill_badge",
+      "image_prompts": [
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, dramatic opening hook visual, close-up of an intricate stone carving of a mechanical engine gear embedded in an ancient pillar, dust motes floating in sharp dramatic sunbeams, dynamic cinematic lighting, scene 1",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, revealing backstory detail, giant monolithic stone doorway leading into a shadow-draped temple corridor, high contrast, golden light highlighting carved official seals on stone walls, scene 2",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, escalation of tension, dark corridors inside a carved rock-cut temple with piercing light shafts hitting an ancient stone pedestal, moody chiaroscuro, scene 3",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, shocking twist discovery, detailed stone wall carving depicting winged aircraft structures alongside mechanical emblems, volumetric lighting, rich weathered textures, scene 4",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, climactic visual proof, majestic central temple courtyard with monolithic pillars casting long dramatic shadows, vivid tactile textures of weathered granite, intense golden sun halo, scene 5",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, circular infinite loop reveal, camera tracking through a row of massive carved stone pillars panning back to the initial miniature mechanical carving, dramatic silhouette, blinding golden hour backdrop, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -878,7 +902,8 @@
       "investigative_noir_magnates",
       "national_geographic_macro",
       "investigative_noir_magnates",
-      "cinematic_35mm_portra"
+      "cinematic_35mm_portra",
+      "ancient_indian_monolith"
     ],
     "hook_format": [
       "shocking_metric",
@@ -915,7 +940,8 @@
       "negative_constraint",
       "impossible_claim_in_media_res",
       "direct_provocative_question",
-      "classified_declassified_reveal"
+      "classified_declassified_reveal",
+      "shocking_metric"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -952,7 +978,8 @@
       "dynamic_dutch_push",
       "parallax_subtle_pan_right",
       "dramatic_pull_out_reveal",
-      "smooth_vertical_pedestal"
+      "smooth_vertical_pedestal",
+      "ken_burns_slow_dolly_in"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -989,7 +1016,8 @@
       "electric_yellow_active_badge",
       "golden_amber_spotlight",
       "golden_amber_spotlight",
-      "neon_cyan_glow"
+      "neon_cyan_glow",
+      "pure_white_heavy_stroke"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1026,7 +1054,8 @@
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
-      "dark_sub_bass_pulse"
+      "dark_sub_bass_pulse",
+      "mysterious_cyber_synth"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1063,7 +1092,8 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1100,7 +1130,8 @@
       "how_it_actually_works",
       "dark_psychology_behavior",
       "bizarre_biology_anomalies",
-      "extreme_physics_space"
+      "extreme_physics_space",
+      "high_stakes_heists_scandals"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1137,7 +1168,8 @@
       "lower_third_bar",
       "top_header_banner",
       "split_bottom_contrast",
-      "centered_punch"
+      "centered_punch",
+      "lower_third_bar"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1174,7 +1206,8 @@
       "modern_neo_grotesque",
       "cinematic_serif",
       "impact_bebas",
-      "impact_bebas"
+      "impact_bebas",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1211,7 +1244,8 @@
       "neon_pill_badge",
       "glowing_brackets",
       "caution_hazard_tape",
-      "clean_minimalist"
+      "clean_minimalist",
+      "neon_pill_badge"
     ]
   }
 }
