@@ -154,3 +154,164 @@ class QuotaManager:
         remaining = max(0, QUOTA_DAILY_MAX - used)
         return f"Daily API Quota: ~{used}/{QUOTA_DAILY_MAX} units consumed (Est. {remaining} units remaining today)"
 
+
+
+# -----------------------------------------------------------------------------
+# 8. Centralized YouTube Authentication & Credential Management
+# -----------------------------------------------------------------------------
+DEFAULT_YOUTUBE_SCOPES = [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube.readonly",
+    "https://www.googleapis.com/auth/youtube.force-ssl"
+]
+
+
+def restore_youtube_credentials(force: bool = False) -> bool:
+    """
+    Restores client_secrets.json and token.json from environment variables.
+    In CI (GitHub Actions) or when force=True, environment variables take precedence.
+    """
+    import base64
+    import json
+
+    token_file = BASE_DIR / "token.json"
+    client_secrets_file = BASE_DIR / "client_secrets.json"
+    is_ci = os.environ.get("GITHUB_ACTIONS") == "true"
+
+    # 1. Restore client_secrets.json
+    if not client_secrets_file.exists() or force or is_ci:
+        b64_cs = os.environ.get("YOUTUBE_CLIENT_SECRET_BASE64", "").strip()
+        raw_cs = os.environ.get("CLIENT_SECRETS_JSON", "").strip()
+        if b64_cs:
+            try:
+                decoded = base64.b64decode(b64_cs)
+                client_secrets_file.write_bytes(decoded)
+                print("   [Auth] Restored client_secrets.json from YOUTUBE_CLIENT_SECRET_BASE64.")
+            except Exception as e:
+                print(f"   [Auth Warning] Failed to decode YOUTUBE_CLIENT_SECRET_BASE64: {e}")
+        elif raw_cs:
+            try:
+                client_secrets_file.write_text(raw_cs, encoding="utf-8")
+                print("   [Auth] Restored client_secrets.json from CLIENT_SECRETS_JSON.")
+            except Exception as e:
+                print(f"   [Auth Warning] Failed to write CLIENT_SECRETS_JSON: {e}")
+
+    # 2. Restore token.json
+    raw_token = os.environ.get("YOUTUBE_TOKEN_JSON", "").strip()
+    refresh_token = os.environ.get("YOUTUBE_REFRESH_TOKEN", "").strip()
+
+    if raw_token and (not token_file.exists() or force or is_ci):
+        try:
+            token_file.write_text(raw_token, encoding="utf-8")
+            print("   [Auth] Restored token.json from YOUTUBE_TOKEN_JSON.")
+        except Exception as e:
+            print(f"   [Auth Warning] Failed to write YOUTUBE_TOKEN_JSON: {e}")
+
+    # 3. If YOUTUBE_REFRESH_TOKEN is explicitly given, ensure it updates or creates token.json
+    if refresh_token:
+        try:
+            if token_file.exists():
+                tok_data = json.loads(token_file.read_text(encoding="utf-8"))
+                if tok_data.get("refresh_token") != refresh_token:
+                    tok_data["refresh_token"] = refresh_token
+                    token_file.write_text(json.dumps(tok_data, indent=2), encoding="utf-8")
+                    print("   [Auth] Synchronized token.json refresh_token with YOUTUBE_REFRESH_TOKEN.")
+            elif client_secrets_file.exists():
+                cs_data = json.loads(client_secrets_file.read_text(encoding="utf-8"))
+                app_info = cs_data.get("installed") or cs_data.get("web") or {}
+                tok_struct = {
+                    "token": "",
+                    "refresh_token": refresh_token,
+                    "token_uri": app_info.get("token_uri", "https://oauth2.googleapis.com/token"),
+                    "client_id": app_info.get("client_id", ""),
+                    "client_secret": app_info.get("client_secret", ""),
+                    "scopes": DEFAULT_YOUTUBE_SCOPES
+                }
+                token_file.write_text(json.dumps(tok_struct, indent=2), encoding="utf-8")
+                print("   [Auth] Generated token.json from client_secrets.json + YOUTUBE_REFRESH_TOKEN.")
+        except Exception as e:
+            print(f"   [Auth Warning] Failed to process YOUTUBE_REFRESH_TOKEN: {e}")
+
+    return token_file.exists()
+
+
+_LAST_AUTH_ERROR = None
+
+def get_youtube_service(scopes=None, force_restore: bool = False):
+    """
+    Builds and returns an authenticated YouTube Data API v3 service resource.
+    Automatically refreshes expired access tokens and persists updated credentials.
+    Raises RuntimeError in CI if authentication fails so CI alerts the developer.
+    """
+    from google.oauth2.credentials import Credentials
+    from google.auth.transport.requests import Request
+    from googleapiclient.discovery import build
+
+    if scopes is None:
+        scopes = DEFAULT_YOUTUBE_SCOPES
+
+    restore_youtube_credentials(force=force_restore)
+    token_file = BASE_DIR / "token.json"
+    if not token_file.exists():
+        msg = (
+            "YouTube token.json not found on disk or environment.\n"
+            "Action required: Run 'python auth_youtube.py' locally or add YOUTUBE_TOKEN_JSON to GitHub Secrets."
+        )
+        print(f"❌ [Auth Error] {msg}")
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            raise RuntimeError(msg)
+        return None
+
+    try:
+        creds = Credentials.from_authorized_user_file(str(token_file), scopes)
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+            token_file.write_text(creds.to_json(), encoding="utf-8")
+        elif not creds or not creds.valid:
+            if creds and creds.refresh_token:
+                creds.refresh(Request())
+                token_file.write_text(creds.to_json(), encoding="utf-8")
+
+        return build("youtube", "v3", credentials=creds)
+    except Exception as e:
+        global _LAST_AUTH_ERROR
+        err_str = str(e)
+        _LAST_AUTH_ERROR = err_str
+        print(f"❌ [Auth Error] Failed to authenticate YouTube API client: {err_str}")
+        if "invalid_grant" in err_str:
+            print(
+                "\n" + "=" * 75 + "\n"
+                "⚠️ CRITICAL: The YouTube refresh token has EXPIRED or been REVOKED by Google.\n"
+                "Why this happens:\n"
+                "1. If Google Cloud OAuth Consent Screen is in 'Testing' mode, tokens expire in 7 days.\n"
+                "   Fix: Switch to 'In production' (Publish App) in Google Cloud Console.\n"
+                "2. The GitHub Action Secret (YOUTUBE_TOKEN_JSON / YOUTUBE_REFRESH_TOKEN) is outdated.\n"
+                "   Fix: Run 'python auth_youtube.py' and update GitHub Secrets.\n"
+                + "=" * 75 + "\n"
+            )
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            raise RuntimeError(f"YouTube authentication failed: {err_str}") from e
+        return None
+
+
+def verify_youtube_credentials(force_restore: bool = True):
+    """
+    Tests YouTube API connection by fetching the authenticated channel's snippet.
+    Returns (success: bool, info_or_error: str, channel_id: Optional[str])
+    """
+    try:
+        yt = get_youtube_service(force_restore=force_restore)
+        if not yt:
+            return False, _LAST_AUTH_ERROR or "Failed to build YouTube service (missing or invalid credentials)", None
+
+        resp = yt.channels().list(mine=True, part="snippet,statistics").execute()
+        items = resp.get("items", [])
+        if not items:
+            return True, "Authenticated, but no channel found for this Google account", None
+
+        ch = items[0]
+        title = ch.get("snippet", {}).get("title", "Unknown Channel")
+        cid = ch.get("id", "")
+        return True, f"Channel: '{title}' (ID: {cid})", cid
+    except Exception as e:
+        return False, str(e), None

@@ -1603,35 +1603,23 @@ def restore_youtube_credentials():
 
 
 def upload_to_youtube(video_path: Path, title: str, description: str, tags: List[str], pinned_comment: Optional[str] = None, bundle: Optional[Dict[str, Any]] = None) -> Optional[str]:
-    restore_youtube_credentials()
-    token_file = BASE_DIR / "token.json"
-    if not token_file.exists():
+    from autopilot_config import get_youtube_service, QuotaManager
+    yt = get_youtube_service()
+    if not yt:
         print("\n" + "=" * 70)
-        print("❌ [UPLOAD SKIPPED] No 'token.json' found.")
+        print("❌ [UPLOAD SKIPPED] No valid YouTube credentials found or token expired.")
         print("   Video rendered & saved locally at:", video_path)
-        print("   👉 ACTION REQUIRED FOR GITHUB ACTIONS:")
+        print("   👉 ACTION REQUIRED:")
         print("   1. Run 'python auth_youtube.py' locally to generate a fresh token.json.")
-        print("   2. Add 'YOUTUBE_TOKEN_JSON' to GitHub Secrets: https://github.com/mayanksllm/youtube-autopilot/settings/secrets/actions")
+        print("   2. Run 'python set_github_secrets.py' to update GitHub Secrets.")
         print("=" * 70 + "\n")
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            raise RuntimeError("YouTube upload aborted: Invalid or expired YouTube credentials.")
         return None
 
     try:
-        from google.oauth2.credentials import Credentials
-        from googleapiclient.discovery import build
         from googleapiclient.http import MediaFileUpload
-        from google.auth.transport.requests import Request
 
-        scopes = [
-            "https://www.googleapis.com/auth/youtube.upload",
-            "https://www.googleapis.com/auth/youtube.readonly",
-            "https://www.googleapis.com/auth/youtube.force-ssl"
-        ]
-        creds = Credentials.from_authorized_user_file(str(token_file), scopes)
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-            token_file.write_text(creds.to_json(), encoding="utf-8")
-
-        yt = build("youtube", "v3", credentials=creds)
         body = {
             "snippet": {
                 "title": title[:100],
@@ -1646,7 +1634,6 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: List
                 "selfDeclaredMadeForKids": False
             }
         }
-        from autopilot_config import QuotaManager
         if not QuotaManager.can_run_pipeline(1600):
             print(f"🛑 [Quota Guard] Insufficient quota to upload ({QuotaManager.get_status_str()}).")
             print("   Saving video locally to prevent YouTube API 403 quota exhaustion.")
@@ -1693,7 +1680,9 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: List
 
         return vid_id
     except Exception as e:
-        print(f"   [YouTube Upload Warning] {e}")
+        print(f"   ❌ [YouTube Upload Error] {e}")
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            raise RuntimeError(f"YouTube upload failed: {e}") from e
         return None
 
 
@@ -1814,5 +1803,13 @@ if __name__ == "__main__":
         has_token = (BASE_DIR / "token.json").exists() or bool(os.environ.get("YOUTUBE_TOKEN_JSON")) or bool(os.environ.get("YOUTUBE_REFRESH_TOKEN"))
         if not has_token:
             is_dry_run = True
+
+    if not is_dry_run:
+        from autopilot_config import verify_youtube_credentials
+        ok, info, _ = verify_youtube_credentials()
+        if not ok:
+            print(f"\n❌ [Pre-Flight Auth Failed] Cannot proceed with upload run: {info}")
+            if os.environ.get("GITHUB_ACTIONS") == "true":
+                sys.exit(1)
 
     run_autonomous_viral_reels_engine(dry_run=is_dry_run)

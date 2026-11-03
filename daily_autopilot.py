@@ -190,55 +190,8 @@ MYTHOLOGY_VISUAL_DNA = (
 
 
 def get_youtube_service():
-    from google.oauth2.credentials import Credentials
-    from google_auth_oauthlib.flow import InstalledAppFlow
-    from google.auth.transport.requests import Request
-    from googleapiclient.discovery import build
-
-    TOKEN_FILE = BASE_DIR / "token.json"
-    CLIENT_SECRETS_FILE = BASE_DIR / "client_secrets.json"
-
-    # Support cloud environment execution (GitHub Actions / Cloud VPS)
-    if not TOKEN_FILE.exists() and os.environ.get("YOUTUBE_TOKEN_JSON"):
-        try:
-            TOKEN_FILE.write_text(os.environ["YOUTUBE_TOKEN_JSON"].strip(), encoding="utf-8")
-            log.info("Restored token.json from YOUTUBE_TOKEN_JSON environment variable.")
-        except Exception as ex:
-            log.warning(f"Failed to restore token.json from env: {ex}")
-
-    if not CLIENT_SECRETS_FILE.exists() and os.environ.get("CLIENT_SECRETS_JSON"):
-        try:
-            CLIENT_SECRETS_FILE.write_text(os.environ["CLIENT_SECRETS_JSON"].strip(), encoding="utf-8")
-            log.info("Restored client_secrets.json from CLIENT_SECRETS_JSON environment variable.")
-        except Exception as ex:
-            log.warning(f"Failed to restore client_secrets.json from env: {ex}")
-
-    SCOPES = [
-        "https://www.googleapis.com/auth/youtube.upload",
-        "https://www.googleapis.com/auth/youtube.readonly",
-        "https://www.googleapis.com/auth/youtube.force-ssl",
-    ]
-    if not TOKEN_FILE.exists():
-        return None
-    creds = None
-    try:
-        creds = Credentials.from_authorized_user_file(str(TOKEN_FILE), SCOPES)
-    except Exception:
-        pass
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            try:
-                from google.auth.transport.requests import Request
-                creds.refresh(Request())
-                with open(TOKEN_FILE, "w", encoding="utf-8") as tf:
-                    tf.write(creds.to_json())
-            except Exception as ex:
-                log.warning(f"Failed to refresh YouTube token: {ex}")
-                return None
-    try:
-        return build("youtube", "v3", credentials=creds)
-    except Exception:
-        return None
+    from autopilot_config import get_youtube_service as _cfg_get_yt
+    return _cfg_get_yt()
 
 
 def audit_yesterday_analytics(yt) -> dict:
@@ -543,6 +496,12 @@ _DAILY_UPLOAD_COUNTER = 0
 def _upload(yt, video_path: Path, title: str, description: str, tags: list,
             dry_run: bool, is_short: bool = True, pinned_comment: str = None) -> str:
     global _DAILY_UPLOAD_COUNTER
+    if not dry_run and not yt:
+        msg = f"Cannot upload '{video_path.name}': YouTube service unavailable or credentials invalid."
+        log.error(msg)
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            raise RuntimeError(msg)
+
     if dry_run or not yt:
         sim_id = f"LOCAL_{int(time.time())}"
         log.info(f"  [{'DRY-RUN' if dry_run else 'NO-API'}] Saved: {video_path.name}")

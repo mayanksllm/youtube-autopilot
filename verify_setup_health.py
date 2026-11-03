@@ -34,15 +34,12 @@ except Exception as e:
 
 # Test 2: YouTube API Authentication
 try:
-    from daily_autopilot import get_youtube_service
-    yt = get_youtube_service()
-    if yt:
-        channels_resp = yt.channels().list(part="snippet", mine=True).execute()
-        items = channels_resp.get("items", [])
-        ch_title = items[0]["snippet"]["title"] if items else "Authenticated (No channel name)"
-        record("YouTube API Authentication", True, f"Valid & active. Connected Channel: '{ch_title}'")
+    from autopilot_config import verify_youtube_credentials
+    ok, info, cid = verify_youtube_credentials(force_restore=False)
+    if ok:
+        record("YouTube API Authentication", True, f"Valid & active. Connected {info}")
     else:
-        record("YouTube API Authentication", False, "get_youtube_service() returned None")
+        record("YouTube API Authentication", False, f"Auth check failed: {info}")
 except Exception as e:
     record("YouTube API Authentication", False, str(e))
 
@@ -79,7 +76,7 @@ except Exception as e:
 workflow_file = BASE / ".github" / "workflows" / "daily_autopilot.yml"
 if workflow_file.exists():
     content = workflow_file.read_text(encoding="utf-8")
-    if "cron:" in content and "run-autopilot:" in content and "daily_autopilot.py" in content:
+    if "cron:" in content and ("run-autopilot" in content or "run-master-autopilot" in content):
         record("GitHub Actions Cloud Workflow", True, "Workflow file valid with daily cron schedule & secrets mapping")
     else:
         record("GitHub Actions Cloud Workflow", False, "Workflow file missing required blocks")
