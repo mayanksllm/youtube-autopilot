@@ -911,6 +911,30 @@
         "Cinematic 3D hyper-realism, octane 3D render style, futuristic cyan holographic stress-line CAD telemetry projected onto ancient stone pillar demonstrating anti-seismic balance joint, high-tech archaeological inspection, vertical 9:16, 8k, dynamic lighting",
         "Cinematic 3D hyper-realism, octane 3D render style, extreme vertical panoramic vista of Lepakshi temple silhouette under starry cosmic night sky with deep purple nebula and glowing golden aura tracing the temple gopuram, vertical 9:16, 8k, dynamic lighting"
       ]
+    },
+    {
+      "timestamp": "2026-11-03 15:16:25",
+      "video_id": "LOCAL_RENDER",
+      "topic": "The Binary Spin-Flip Collapse",
+      "title": "Anti-Aligned Black Hole Spin Flip Collapse! 🕳️💥 #Shorts",
+      "category": "extreme_physics_space",
+      "hook_format": "direct_provocative_question",
+      "visual_style": "national_geographic_macro",
+      "camera_move": "smooth_vertical_pedestal",
+      "caption_style": "golden_amber_spotlight",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "suspense_ticking_clock",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro shot of two opposing vortex ripples colliding in dark golden liquid, dramatic opening hook visual, vertical 9:16, dynamic cinematic lighting, scene 1",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, extreme close-up of dark spinning iridescent liquid spheres creating symmetrical friction patterns, revealing backstory detail, vertical 9:16, high contrast, scene 2",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, chaotic twisting macro fibers vibrating under intense magnetic tension, escalation of tension, vertical 9:16, moody chiaroscuro, scene 3",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, violent spiral distortion in a crystalline organic lattice structure, shocking twist discovery, vertical 9:16, volumetric lighting, scene 4",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, rapid inward collapsing vortex consuming golden light particles, climactic visual proof, vertical 9:16, vivid textures, scene 5",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro lens focusing on a single shimmering fluid drop on the verge of splitting, circular infinite loop reveal, vertical 9:16, dramatic silhouette, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -953,7 +977,8 @@
       "cinematic_35mm_portra",
       "ancient_indian_monolith",
       "graphic_novel_neo_noir",
-      "graphic_novel_neo_noir"
+      "graphic_novel_neo_noir",
+      "national_geographic_macro"
     ],
     "hook_format": [
       "shocking_metric",
@@ -993,7 +1018,8 @@
       "classified_declassified_reveal",
       "shocking_metric",
       "negative_constraint",
-      "impossible_claim_in_media_res"
+      "impossible_claim_in_media_res",
+      "direct_provocative_question"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1033,7 +1059,8 @@
       "smooth_vertical_pedestal",
       "ken_burns_slow_dolly_in",
       "dynamic_dutch_push",
-      "parallax_subtle_pan_right"
+      "parallax_subtle_pan_right",
+      "smooth_vertical_pedestal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1073,7 +1100,8 @@
       "neon_cyan_glow",
       "pure_white_heavy_stroke",
       "electric_yellow_active_badge",
-      "electric_yellow_active_badge"
+      "electric_yellow_active_badge",
+      "golden_amber_spotlight"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1113,7 +1141,8 @@
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
-      "ancient_tribal_reverberation"
+      "ancient_tribal_reverberation",
+      "suspense_ticking_clock"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1153,7 +1182,8 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_swara_expressive",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1193,7 +1223,8 @@
       "extreme_physics_space",
       "high_stakes_heists_scandals",
       "deep_ocean_abyss",
-      "bizarre_biology_anomalies"
+      "bizarre_biology_anomalies",
+      "extreme_physics_space"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1233,7 +1264,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1273,7 +1305,8 @@
       "impact_bebas",
       "modern_neo_grotesque",
       "cinematic_serif",
-      "impact_bebas"
+      "impact_bebas",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1313,7 +1346,8 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   }
 }
