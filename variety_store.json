@@ -1007,6 +1007,30 @@
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, climactic visual proof, anatomical 3D render of royal gold chest and stamped funding parchment with glowing biological energy flow connecting coins to paper, vivid textures, scene 5",
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, circular infinite loop reveal, 3D anatomical cutaway of a ship captain's skull showing glowing optic nerves looping endlessly back into a royal seal parchment, dramatic silhouette, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-11-04 15:33:05",
+      "video_id": "WCY7TxfCrCY",
+      "topic": "The Inaudible Frequency Engine",
+      "title": "The Silent Frequency That Triggers Terror 😱🔊 #Shorts",
+      "category": "how_it_actually_works",
+      "hook_format": "impossible_claim_in_media_res",
+      "visual_style": "cosmic_james_webb_deep_space",
+      "camera_move": "ken_burns_slow_dolly_in",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_swara_expressive",
+      "music_mood": "ancient_tribal_reverberation",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, dramatic opening hook visual, vertical 9:16, dynamic cinematic lighting, glowing soundwave ripples tearing through cosmic dust, scene 1",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, revealing backstory detail, vertical 9:16, high contrast, invisible 19Hz resonance visualised as deep violet energy waves pulsing through space, scene 2",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, escalation of tension, vertical 9:16, moody chiaroscuro, pulsating stellar core vibrating violently with organ-like organic filaments, scene 3",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, shocking twist discovery, vertical 9:16, volumetric lighting, cosmic neural network igniting in biological panic response across the cosmos, scene 4",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, climactic visual proof, vertical 9:16, vivid textures, massive shockwave expanding from a dying star in silent darkness, scene 5",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, circular infinite loop reveal, vertical 9:16, dramatic silhouette, infinite cosmic swirl resetting back to the initial swirling vortex, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1053,7 +1077,8 @@
       "national_geographic_macro",
       "cosmic_james_webb_deep_space",
       "cosmic_james_webb_deep_space",
-      "3d_anatomical_zackd"
+      "3d_anatomical_zackd",
+      "cosmic_james_webb_deep_space"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1097,7 +1122,8 @@
       "direct_provocative_question",
       "classified_declassified_reveal",
       "shocking_metric",
-      "negative_constraint"
+      "negative_constraint",
+      "impossible_claim_in_media_res"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1141,7 +1167,8 @@
       "smooth_vertical_pedestal",
       "dramatic_pull_out_reveal",
       "dynamic_dutch_push",
-      "parallax_subtle_pan_right"
+      "parallax_subtle_pan_right",
+      "ken_burns_slow_dolly_in"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1185,7 +1212,8 @@
       "golden_amber_spotlight",
       "neon_cyan_glow",
       "pure_white_heavy_stroke",
-      "neon_cyan_glow"
+      "neon_cyan_glow",
+      "electric_yellow_active_badge"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1229,7 +1257,8 @@
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
-      "epic_orchestral_crescendo"
+      "epic_orchestral_crescendo",
+      "ancient_tribal_reverberation"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1272,6 +1301,7 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
+      "hi_swara_expressive",
       "hi_swara_expressive",
       "hi_swara_expressive"
     ],
@@ -1317,7 +1347,8 @@
       "extreme_physics_space",
       "unexplained_history_enigmas",
       "dark_psychology_behavior",
-      "high_stakes_heists_scandals"
+      "high_stakes_heists_scandals",
+      "how_it_actually_works"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1361,7 +1392,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1405,7 +1437,8 @@
       "modern_neo_grotesque",
       "impact_bebas",
       "cinematic_serif",
-      "impact_bebas"
+      "impact_bebas",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1449,11 +1482,12 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-04",
-    "used_units": 1651
+    "used_units": 3302
   }
 }
