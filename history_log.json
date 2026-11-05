@@ -643,6 +643,20 @@
       "pinned_comment": "Did you know Chilean Sea Bass was actually a rebranding trick? Share your thoughts below! 👇",
       "youtube_video_id": "PRIC5YWun3A",
       "status": "PUBLISHED"
+    },
+    {
+      "id": "REELS_1793903241",
+      "date": "2026-11-05 18:27:21",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "Magnetars: The Stars That Dissolve Atomic Bonds",
+      "title": "Lepakshi Ka Hawa Me Latakta Khamba 🏛️ #Shorts #Mystery",
+      "category": "how_it_actually_works",
+      "duration": "24-28 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1793903146.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Kya aapko lagta hai pracheen Bharat ke paas aisi takneek thi jo aaj kho chuki hai? Comment me batao! 👇 #shorts",
+      "youtube_video_id": "WvHdBpIMZjw",
+      "status": "PUBLISHED"
     }
   ]
 }
