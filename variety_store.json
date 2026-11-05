@@ -1055,6 +1055,30 @@
         "Cinematic 3D hyper-realism, octane 3D render style, futuristic cyan holographic stress-line CAD telemetry projected onto ancient stone pillar demonstrating anti-seismic balance joint, high-tech archaeological inspection, vertical 9:16, 8k, dynamic lighting",
         "Cinematic 3D hyper-realism, octane 3D render style, extreme vertical panoramic vista of Lepakshi temple silhouette under starry cosmic night sky with deep purple nebula and glowing golden aura tracing the temple gopuram, vertical 9:16, 8k, dynamic lighting"
       ]
+    },
+    {
+      "timestamp": "2026-11-05 09:35:37",
+      "video_id": "H9iCkXR7nug",
+      "topic": "The Narcissism of Small Differences",
+      "title": "Why We Hate Who Is Most Like Us! 🧠⚔️ #Shorts",
+      "category": "dark_psychology_behavior",
+      "hook_format": "classified_declassified_reveal",
+      "visual_style": "national_geographic_macro",
+      "camera_move": "dramatic_pull_out_reveal",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_swara_expressive",
+      "music_mood": "dark_sub_bass_pulse",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "National Geographic 8K macro shot of two visually identical red harvester ants aggressively locking mandibles in high-tension combat, dew droplets glistening on exoskeletons, razor-sharp focus.",
+        "Macro slow-motion shot of two almost identical colorful chameleons flaring their throat sacs and locking eyes in intense territorial tension, hyper-detailed skin textures.",
+        "Ultra HD 8K macro footage of two rival male Betta fish displaying vibrant, identical iridescent fins, circling each other menacingly in dark water.",
+        "Super macro close-up of a compound insect eye reflecting red danger light, dynamic cinematic lighting highlighting micro-structures and neural aggression.",
+        "High-speed macro capture of two identical golden honeybees clashing mid-air over a single nectar droplet, water splash frozen in extreme detail.",
+        "National Geographic macro tilt-shift camera slow pan over two identical green pit vipers coiled and staring down each other, seamless continuous camera motion framing back toward an ant-level perspective."
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1103,7 +1127,8 @@
       "cosmic_james_webb_deep_space",
       "3d_anatomical_zackd",
       "cosmic_james_webb_deep_space",
-      "investigative_noir_magnates"
+      "investigative_noir_magnates",
+      "national_geographic_macro"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1149,7 +1174,8 @@
       "shocking_metric",
       "negative_constraint",
       "impossible_claim_in_media_res",
-      "direct_provocative_question"
+      "direct_provocative_question",
+      "classified_declassified_reveal"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1195,7 +1221,8 @@
       "dynamic_dutch_push",
       "parallax_subtle_pan_right",
       "ken_burns_slow_dolly_in",
-      "smooth_vertical_pedestal"
+      "smooth_vertical_pedestal",
+      "dramatic_pull_out_reveal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1241,7 +1268,8 @@
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
       "electric_yellow_active_badge",
-      "golden_amber_spotlight"
+      "golden_amber_spotlight",
+      "neon_cyan_glow"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1287,7 +1315,8 @@
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
-      "suspense_ticking_clock"
+      "suspense_ticking_clock",
+      "dark_sub_bass_pulse"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1333,7 +1362,8 @@
       "hi_swara_expressive",
       "hi_swara_expressive",
       "hi_swara_expressive",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1379,7 +1409,8 @@
       "dark_psychology_behavior",
       "high_stakes_heists_scandals",
       "how_it_actually_works",
-      "unexplained_history_enigmas"
+      "unexplained_history_enigmas",
+      "dark_psychology_behavior"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1425,7 +1456,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1471,7 +1503,8 @@
       "cinematic_serif",
       "impact_bebas",
       "modern_neo_grotesque",
-      "cinematic_serif"
+      "cinematic_serif",
+      "impact_bebas"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1517,11 +1550,12 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   },
   "quota_tracking": {
-    "date": "2026-11-04",
-    "used_units": 4953
+    "date": "2026-11-05",
+    "used_units": 1651
   }
 }
