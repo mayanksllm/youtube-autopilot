@@ -1079,6 +1079,30 @@
         "High-speed macro capture of two identical golden honeybees clashing mid-air over a single nectar droplet, water splash frozen in extreme detail.",
         "National Geographic macro tilt-shift camera slow pan over two identical green pit vipers coiled and staring down each other, seamless continuous camera motion framing back toward an ant-level perspective."
       ]
+    },
+    {
+      "timestamp": "2026-11-05 15:40:19",
+      "video_id": "PRIC5YWun3A",
+      "topic": "The Antifreeze Icefish on Luxury Menus",
+      "title": "The $60 Luxury Fish That Doesn't Exist 🐟❄️ #Shorts",
+      "category": "bizarre_biology_anomalies",
+      "hook_format": "shocking_metric",
+      "visual_style": "3d_anatomical_zackd",
+      "camera_move": "parallax_subtle_pan_right",
+      "caption_style": "pure_white_heavy_stroke",
+      "voice": "hi_swara_expressive",
+      "music_mood": "mysterious_cyber_synth",
+      "thumbnail_layout": "split_bottom_contrast",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "caution_hazard_tape",
+      "image_prompts": [
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, microscopic view of a blood vessel surrounded by sub-zero water where glowing blue glycoprotein molecules lock onto sharp ice crystals to stop them from growing, highly detailed render",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, a luxury restaurant white ceramic plate with a served fish fillet transitioning into a translucent glowing 3D anatomical skeletal overlay of a ocean predator, vivid dynamic lighting",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, pitch black Antarctic deep sea ocean abyss showing the terrifying Patagonian Toothfish with razor sharp teeth swimming, internal biological organs glowing bright neon blue",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, close up anatomical cutaway of the toothfish heart and arterial system circulating glowing biological antifreeze fluid throughout translucent muscular tissue",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, dynamic molecular animation showing razor-sharp frost crystals shattering against a translucent glycoprotein protective shield inside a cell membrane",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, fast cinematic morph transition from the monstrous deep sea fish back into microscopic glowing antifreeze molecules, creating an infinite circular visual loop"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1128,7 +1152,8 @@
       "3d_anatomical_zackd",
       "cosmic_james_webb_deep_space",
       "investigative_noir_magnates",
-      "national_geographic_macro"
+      "national_geographic_macro",
+      "3d_anatomical_zackd"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1175,7 +1200,8 @@
       "negative_constraint",
       "impossible_claim_in_media_res",
       "direct_provocative_question",
-      "classified_declassified_reveal"
+      "classified_declassified_reveal",
+      "shocking_metric"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1222,7 +1248,8 @@
       "parallax_subtle_pan_right",
       "ken_burns_slow_dolly_in",
       "smooth_vertical_pedestal",
-      "dramatic_pull_out_reveal"
+      "dramatic_pull_out_reveal",
+      "parallax_subtle_pan_right"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1269,7 +1296,8 @@
       "neon_cyan_glow",
       "electric_yellow_active_badge",
       "golden_amber_spotlight",
-      "neon_cyan_glow"
+      "neon_cyan_glow",
+      "pure_white_heavy_stroke"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1316,7 +1344,8 @@
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
-      "dark_sub_bass_pulse"
+      "dark_sub_bass_pulse",
+      "mysterious_cyber_synth"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1363,6 +1392,7 @@
       "hi_swara_expressive",
       "hi_swara_expressive",
       "hi_madhur_dynamic",
+      "hi_swara_expressive",
       "hi_swara_expressive"
     ],
     "category": [
@@ -1410,7 +1440,8 @@
       "high_stakes_heists_scandals",
       "how_it_actually_works",
       "unexplained_history_enigmas",
-      "dark_psychology_behavior"
+      "dark_psychology_behavior",
+      "bizarre_biology_anomalies"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1457,7 +1488,8 @@
       "split_bottom_contrast",
       "centered_punch",
       "lower_third_bar",
-      "top_header_banner"
+      "top_header_banner",
+      "split_bottom_contrast"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1504,7 +1536,8 @@
       "impact_bebas",
       "modern_neo_grotesque",
       "cinematic_serif",
-      "impact_bebas"
+      "impact_bebas",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1551,11 +1584,12 @@
       "caution_hazard_tape",
       "clean_minimalist",
       "neon_pill_badge",
-      "glowing_brackets"
+      "glowing_brackets",
+      "caution_hazard_tape"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-05",
-    "used_units": 1651
+    "used_units": 3302
   }
 }
