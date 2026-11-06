@@ -1151,6 +1151,30 @@
         "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, close up of abyssal creature's outer skin dissolving into glowing liquid mist in clear surface water, dramatic tragic comic frame, vivid textures, scene 5",
         "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, silhouette of the endless pitch-black abyssal trench looming below, mysterious depth, vertical 9:16, dramatic silhouette, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-11-06 17:54:21",
+      "video_id": "C7FITKUto9s",
+      "topic": "The Accidental Arsenal of Evolution",
+      "title": "Snake Venom Was Never Meant to Kill?! 🐍⚡ #Shorts",
+      "category": "unexplained_history_enigmas",
+      "hook_format": "direct_provocative_question",
+      "visual_style": "3d_anatomical_zackd",
+      "camera_move": "dynamic_dutch_push",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_swara_expressive",
+      "music_mood": "suspense_ticking_clock",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, dramatic opening hook visual, cross section of a viper jaw showing glowing green venom sacs discharging micro-droplets towards glowing nerve receptors, vertical 9:16, dynamic cinematic lighting, scene 1",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, revealing backstory detail, translucent ancient reptile stomach wall digesting food particles with simple blue molecular enzymes, vertical 9:16, high contrast, scene 2",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, escalation of tension, glowing DNA strand duplicating inside cellular nucleus with yellow electrical spark mutation, vertical 9:16, moody chiaroscuro, scene 3",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, shocking twist discovery, mutated protein folding into a sharp molecular key shape inside translucent tissue fluid, vertical 9:16, volumetric lighting, scene 4",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, climactic visual proof, microscopic view of a glowing green enzyme fitting perfectly into a blue mammalian nerve receptor lock, freezing glowing electrical signals, vertical 9:16, vivid textures, scene 5",
+        "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, circular infinite loop reveal, camera rapidly zooming out from glowing nerve synapse back into translucent snake digestive tract seamlessly, vertical 9:16, dramatic silhouette, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1203,7 +1227,8 @@
       "national_geographic_macro",
       "3d_anatomical_zackd",
       "cyberpunk_neon_matrix",
-      "graphic_novel_neo_noir"
+      "graphic_novel_neo_noir",
+      "3d_anatomical_zackd"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1253,7 +1278,8 @@
       "classified_declassified_reveal",
       "shocking_metric",
       "negative_constraint",
-      "impossible_claim_in_media_res"
+      "impossible_claim_in_media_res",
+      "direct_provocative_question"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1303,7 +1329,8 @@
       "dramatic_pull_out_reveal",
       "parallax_subtle_pan_right",
       "ken_burns_slow_dolly_in",
-      "smooth_vertical_pedestal"
+      "smooth_vertical_pedestal",
+      "dynamic_dutch_push"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1353,7 +1380,8 @@
       "neon_cyan_glow",
       "pure_white_heavy_stroke",
       "golden_amber_spotlight",
-      "electric_yellow_active_badge"
+      "electric_yellow_active_badge",
+      "neon_cyan_glow"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1403,7 +1431,8 @@
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
-      "ancient_tribal_reverberation"
+      "ancient_tribal_reverberation",
+      "suspense_ticking_clock"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1453,6 +1482,7 @@
       "hi_swara_expressive",
       "hi_swara_expressive",
       "hi_madhur_dynamic",
+      "hi_swara_expressive",
       "hi_swara_expressive"
     ],
     "category": [
@@ -1503,7 +1533,8 @@
       "dark_psychology_behavior",
       "bizarre_biology_anomalies",
       "how_it_actually_works",
-      "deep_ocean_abyss"
+      "deep_ocean_abyss",
+      "unexplained_history_enigmas"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1553,7 +1584,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1603,7 +1635,8 @@
       "impact_bebas",
       "modern_neo_grotesque",
       "cinematic_serif",
-      "cinematic_serif"
+      "cinematic_serif",
+      "impact_bebas"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1653,11 +1686,12 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-06",
-    "used_units": 1651
+    "used_units": 3302
   }
 }
