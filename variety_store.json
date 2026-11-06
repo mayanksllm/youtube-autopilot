@@ -1127,6 +1127,30 @@
         "Cinematic 3D hyper-realism, octane 3D render style, futuristic cyan holographic stress-line CAD telemetry projected onto ancient stone pillar demonstrating anti-seismic balance joint, high-tech archaeological inspection, vertical 9:16, 8k, dynamic lighting",
         "Cinematic 3D hyper-realism, octane 3D render style, extreme vertical panoramic vista of Lepakshi temple silhouette under starry cosmic night sky with deep purple nebula and glowing golden aura tracing the temple gopuram, vertical 9:16, 8k, dynamic lighting"
       ]
+    },
+    {
+      "timestamp": "2026-11-06 09:24:29",
+      "video_id": "S6lMNqlJ0xE",
+      "topic": "The Abyssal Pressure Armor Paradox",
+      "title": "The Deep Ocean Armor Paradox 🌊💀 #Shorts",
+      "category": "deep_ocean_abyss",
+      "hook_format": "impossible_claim_in_media_res",
+      "visual_style": "graphic_novel_neo_noir",
+      "camera_move": "smooth_vertical_pedestal",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_swara_expressive",
+      "music_mood": "ancient_tribal_reverberation",
+      "thumbnail_layout": "lower_third_bar",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "neon_pill_badge",
+      "image_prompts": [
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, low angle shot of an intimidating abyssal creature swimming effortlessly under colossal ocean pressure, glowing bioluminescent veins, pitch black background, dynamic cinematic lighting, scene 1",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, the abyssal creature floating upwards towards sunlight, dramatic depth perspective, shifting light rays, intense vertical 9:16 composition, high contrast, scene 2",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, microscopic view of cellular proteins surrounded by glowing neon cyan TMAO molecules holding cell walls tight, detailed scientific graphic style, moody chiaroscuro, scene 3",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, molecular level shockwave, cell walls bursting violently as protective molecules swell out of control, vibrant crimson red and violet accents, volumetric lighting, scene 4",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, close up of abyssal creature's outer skin dissolving into glowing liquid mist in clear surface water, dramatic tragic comic frame, vivid textures, scene 5",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, silhouette of the endless pitch-black abyssal trench looming below, mysterious depth, vertical 9:16, dramatic silhouette, scene 6"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1178,7 +1202,8 @@
       "investigative_noir_magnates",
       "national_geographic_macro",
       "3d_anatomical_zackd",
-      "cyberpunk_neon_matrix"
+      "cyberpunk_neon_matrix",
+      "graphic_novel_neo_noir"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1227,7 +1252,8 @@
       "direct_provocative_question",
       "classified_declassified_reveal",
       "shocking_metric",
-      "negative_constraint"
+      "negative_constraint",
+      "impossible_claim_in_media_res"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1276,7 +1302,8 @@
       "smooth_vertical_pedestal",
       "dramatic_pull_out_reveal",
       "parallax_subtle_pan_right",
-      "ken_burns_slow_dolly_in"
+      "ken_burns_slow_dolly_in",
+      "smooth_vertical_pedestal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1325,7 +1352,8 @@
       "golden_amber_spotlight",
       "neon_cyan_glow",
       "pure_white_heavy_stroke",
-      "golden_amber_spotlight"
+      "golden_amber_spotlight",
+      "electric_yellow_active_badge"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1374,7 +1402,8 @@
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
-      "epic_orchestral_crescendo"
+      "epic_orchestral_crescendo",
+      "ancient_tribal_reverberation"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1423,7 +1452,8 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_swara_expressive",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1472,7 +1502,8 @@
       "unexplained_history_enigmas",
       "dark_psychology_behavior",
       "bizarre_biology_anomalies",
-      "how_it_actually_works"
+      "how_it_actually_works",
+      "deep_ocean_abyss"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1521,7 +1552,8 @@
       "lower_third_bar",
       "top_header_banner",
       "split_bottom_contrast",
-      "centered_punch"
+      "centered_punch",
+      "lower_third_bar"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1570,6 +1602,7 @@
       "cinematic_serif",
       "impact_bebas",
       "modern_neo_grotesque",
+      "cinematic_serif",
       "cinematic_serif"
     ],
     "thumbnail_badge": [
@@ -1619,11 +1652,12 @@
       "neon_pill_badge",
       "glowing_brackets",
       "caution_hazard_tape",
-      "clean_minimalist"
+      "clean_minimalist",
+      "neon_pill_badge"
     ]
   },
   "quota_tracking": {
-    "date": "2026-11-05",
-    "used_units": 4953
+    "date": "2026-11-06",
+    "used_units": 1651
   }
 }
