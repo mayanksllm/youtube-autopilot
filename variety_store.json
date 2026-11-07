@@ -1199,6 +1199,35 @@
         "Ultra macro lens close-up of a exotic golden insect snapping open a heavy diamond-encrusted lock, moody suspenseful cinematic lighting.",
         "National Geographic macro high-speed shot of a single majestic insect flying upward out of dark golden mist toward a warm light source, perfectly looping composition."
       ]
+    },
+    {
+      "timestamp": "2026-11-07 14:26:10",
+      "video_id": "VJ1B7v1gPWs",
+      "topic": "The Molecular Graveyard of Modern Chemistry",
+      "title": "The Molecular Graveyard Destroying Medicine ⚗️💀 #Shorts",
+      "category": "how_it_actually_works",
+      "hook_format": "shocking_metric",
+      "visual_style": "cinematic_35mm_portra",
+      "camera_move": "parallax_subtle_pan_right",
+      "caption_style": "pure_white_heavy_stroke",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "mysterious_cyber_synth",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, extreme close up of steam rising from hot tea cup in dim lab",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, dusty abandoned vintage pharmaceutical laboratory bench with broken glass vials",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, exhausted retro chemist staring at glowing test tubes in dark shadowy lab",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, violent boiling blue liquid inside glass flask on burner flame macro view",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, damaged pill tablets dissolving into smoke macro cinematic view",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, scientist switching off heavy furnace heater in dark research laboratory",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, bright blue led laser beam illuminating liquid glass vial in pitch black room",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, macro glowing cyan crystal lattice emitting subtle light rays",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, clear liquid beaker resting calmly at ambient room temperature in modern clean lab",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, golden shining liquid medicine dripping cleanly into medical vial",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, close up dramatic silhouette of steaming tea cup on wooden desk"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1253,7 +1282,8 @@
       "cyberpunk_neon_matrix",
       "graphic_novel_neo_noir",
       "3d_anatomical_zackd",
-      "national_geographic_macro"
+      "national_geographic_macro",
+      "cinematic_35mm_portra"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1305,7 +1335,8 @@
       "negative_constraint",
       "impossible_claim_in_media_res",
       "direct_provocative_question",
-      "classified_declassified_reveal"
+      "classified_declassified_reveal",
+      "shocking_metric"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1357,7 +1388,8 @@
       "ken_burns_slow_dolly_in",
       "smooth_vertical_pedestal",
       "dynamic_dutch_push",
-      "dramatic_pull_out_reveal"
+      "dramatic_pull_out_reveal",
+      "parallax_subtle_pan_right"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1409,7 +1441,8 @@
       "golden_amber_spotlight",
       "electric_yellow_active_badge",
       "neon_cyan_glow",
-      "golden_amber_spotlight"
+      "golden_amber_spotlight",
+      "pure_white_heavy_stroke"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1461,7 +1494,8 @@
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
-      "dark_sub_bass_pulse"
+      "dark_sub_bass_pulse",
+      "mysterious_cyber_synth"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1513,6 +1547,7 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_swara_expressive",
+      "hi_madhur_dynamic",
       "hi_madhur_dynamic"
     ],
     "category": [
@@ -1565,7 +1600,8 @@
       "how_it_actually_works",
       "deep_ocean_abyss",
       "unexplained_history_enigmas",
-      "high_stakes_heists_scandals"
+      "high_stakes_heists_scandals",
+      "how_it_actually_works"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1617,7 +1653,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1669,7 +1706,8 @@
       "cinematic_serif",
       "cinematic_serif",
       "impact_bebas",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "impact_bebas"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1721,11 +1759,12 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-07",
-    "used_units": 1651
+    "used_units": 3302
   }
 }
