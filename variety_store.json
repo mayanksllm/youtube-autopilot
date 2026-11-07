@@ -1175,6 +1175,30 @@
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, climactic visual proof, microscopic view of a glowing green enzyme fitting perfectly into a blue mammalian nerve receptor lock, freezing glowing electrical signals, vertical 9:16, vivid textures, scene 5",
         "3D medical hyper-detailed cutaway anatomical cross-section, glowing biological nerve pathways, Zack D Films animation style, dramatic studio spotlight, octane 3D render, translucent layers, vertical 9:16, circular infinite loop reveal, camera rapidly zooming out from glowing nerve synapse back into translucent snake digestive tract seamlessly, vertical 9:16, dramatic silhouette, scene 6"
       ]
+    },
+    {
+      "timestamp": "2026-11-07 08:59:41",
+      "video_id": "WxHkNVRWKuw",
+      "topic": "The $1 Billion Sitcom Hostage",
+      "title": "The $1 Billion Sitcom Hostage 🤯 #Shorts",
+      "category": "high_stakes_heists_scandals",
+      "hook_format": "classified_declassified_reveal",
+      "visual_style": "national_geographic_macro",
+      "camera_move": "dramatic_pull_out_reveal",
+      "caption_style": "golden_amber_spotlight",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "dark_sub_bass_pulse",
+      "thumbnail_layout": "split_bottom_contrast",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "caution_hazard_tape",
+      "image_prompts": [
+        "National Geographic 8K macro wildlife shot of a queen bee trapped inside a glittering studio microphone cage, extreme close-up, golden dust particles suspended in ambient spotlight.",
+        "Extreme high-speed macro wildlife camera angle showing fifty million shimmering liquid gold droplets falling off a leaf, dynamic cinematic lighting, ultra-detailed textures.",
+        "Macro wildlife shot of an intricate spider web woven entirely out of glowing 35mm Hollywood film reels, trapping a brilliant golden beetle, dramatic depth of field.",
+        "National Geographic 8K macro focus on a colossal glass anthill empire crumbling into miniature crystal dust under intense shadow and light contrast.",
+        "Ultra macro lens close-up of a exotic golden insect snapping open a heavy diamond-encrusted lock, moody suspenseful cinematic lighting.",
+        "National Geographic macro high-speed shot of a single majestic insect flying upward out of dark golden mist toward a warm light source, perfectly looping composition."
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1228,7 +1252,8 @@
       "3d_anatomical_zackd",
       "cyberpunk_neon_matrix",
       "graphic_novel_neo_noir",
-      "3d_anatomical_zackd"
+      "3d_anatomical_zackd",
+      "national_geographic_macro"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1279,7 +1304,8 @@
       "shocking_metric",
       "negative_constraint",
       "impossible_claim_in_media_res",
-      "direct_provocative_question"
+      "direct_provocative_question",
+      "classified_declassified_reveal"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1330,7 +1356,8 @@
       "parallax_subtle_pan_right",
       "ken_burns_slow_dolly_in",
       "smooth_vertical_pedestal",
-      "dynamic_dutch_push"
+      "dynamic_dutch_push",
+      "dramatic_pull_out_reveal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1381,7 +1408,8 @@
       "pure_white_heavy_stroke",
       "golden_amber_spotlight",
       "electric_yellow_active_badge",
-      "neon_cyan_glow"
+      "neon_cyan_glow",
+      "golden_amber_spotlight"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1432,7 +1460,8 @@
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
-      "suspense_ticking_clock"
+      "suspense_ticking_clock",
+      "dark_sub_bass_pulse"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1483,7 +1512,8 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1534,7 +1564,8 @@
       "bizarre_biology_anomalies",
       "how_it_actually_works",
       "deep_ocean_abyss",
-      "unexplained_history_enigmas"
+      "unexplained_history_enigmas",
+      "high_stakes_heists_scandals"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1585,7 +1616,8 @@
       "split_bottom_contrast",
       "centered_punch",
       "lower_third_bar",
-      "top_header_banner"
+      "top_header_banner",
+      "split_bottom_contrast"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1636,7 +1668,8 @@
       "modern_neo_grotesque",
       "cinematic_serif",
       "cinematic_serif",
-      "impact_bebas"
+      "impact_bebas",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1687,11 +1720,12 @@
       "caution_hazard_tape",
       "clean_minimalist",
       "neon_pill_badge",
-      "glowing_brackets"
+      "glowing_brackets",
+      "caution_hazard_tape"
     ]
   },
   "quota_tracking": {
-    "date": "2026-11-06",
-    "used_units": 3302
+    "date": "2026-11-07",
+    "used_units": 1651
   }
 }
