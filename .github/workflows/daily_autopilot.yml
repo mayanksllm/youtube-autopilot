@@ -63,6 +63,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Free 3D-parallax animation: Depth-Anything-V2-Small (Apache-2.0) on the CPU runner.
+      # If this step fails the engine still works (it falls back to built-in pseudo-depth).
+      - name: Install Free Depth Model Runtime (CPU)
+        continue-on-error: true
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install transformers
+
+      - name: Cache Depth Model Weights
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: depth-anything-v2-small-v1
+
       - name: Restore Variety & Autopilot State Cache
         uses: actions/cache/restore@v4
         id: restore-state-cache
@@ -71,6 +85,7 @@ jobs:
             variety_store.json
             autopilot_state.json
             history_log.json
+            asset_history.json
           key: variety-quota-state-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             variety-quota-state-${{ runner.os }}-
@@ -102,6 +117,10 @@ jobs:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          # "animated" (free 3D parallax scenes, default) or "stock" (stock-video clips).
+          # Change it without code: repo Settings > Secrets and variables > Actions > Variables.
+          VIDEO_VISUAL_MODE: ${{ vars.VIDEO_VISUAL_MODE || 'animated' }}
           YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
           YOUTUBE_CLIENT_SECRET_BASE64: ${{ secrets.YOUTUBE_CLIENT_SECRET_BASE64 }}
@@ -142,6 +161,7 @@ jobs:
             variety_store.json
             autopilot_state.json
             history_log.json
+            asset_history.json
           key: variety-quota-state-${{ runner.os }}-${{ github.run_id }}
 
       - name: Commit & Push Daily Production State & Variety Memory
@@ -149,4 +169,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto: Autopilot run completed & state synchronized [skip ci]"
-          file_pattern: "history.json history_log.json daily_report.json autopilot_state.json variety_store.json"
+          file_pattern: "history.json history_log.json daily_report.json autopilot_state.json variety_store.json asset_history.json"

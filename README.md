@@ -146,3 +146,17 @@ python autonomous_viral_reels_engine.py --dry-run
   - `YOUTUBE_REFRESH_TOKEN`
   - `GEMINI_API_KEY`
   - `GROQ_API_KEY`
+
+---
+
+## 🎞️ Motion Upgrade: Animated, Unique, 30-60s Shorts (100% free)
+
+- **No more static images.** Default `VIDEO_VISUAL_MODE=animated`: each scene's AI image gets a depth map
+  (Depth-Anything-V2-Small, Apache-2.0, CPU) and a virtual 3D camera move (dolly, orbit, pull-back, rise)
+  with close-up cuts (`parallax_animator.py`). Set the repo variable `VIDEO_VISUAL_MODE=stock` to use real
+  stock-video clips instead (Pexels/Pixabay, `motion_clips.py`).
+- **30-60 seconds.** 10-12 scenes, a cut about every 3 seconds, scene length follows the voice.
+- **Retention scripts.** Hook, open loop, escalating beats with mini-cliffhangers, payoff, loop ending.
+- **Every video unique.** `asset_history.py` remembers used stock clips and a perceptual hash of every scene
+  image (`asset_history.json`); look-alike images are regenerated and used clips are never reused.
+- Optional secret: `PIXABAY_API_KEY`. If the depth model cannot load, a built-in pseudo-depth is used.

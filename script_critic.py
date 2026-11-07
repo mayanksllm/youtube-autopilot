@@ -133,8 +133,8 @@ class ScriptCriticEngine:
             f"Pinned Engagement Question: \"{pinned}\"\n\n"
             "Score this script strictly on three metrics (integer or float 1.0 to 10.0):\n"
             "1. hook_score: Does sentence 1 drop the viewer directly into high-stakes conflict/paradox with zero fluff or greeting? (1=boring 'Did you know', 10=impossible mind-melt)\n"
-            "2. pacing_score: Is the word count strictly 55-75 words? Does each sentence escalate tension without filler words? (1=dragging/repetitive, 10=razor sharp rhythm)\n"
-            "3. retention_score: Does the voiceover end on a circular loop back to the opening word? Does it demand immediate re-watching? (1=flat ending, 10=seamless infinite loop)\n\n"
+            "2. pacing_score: Is the word count 105-145 words (a 45-55 second Short)? Does every 7-9 second beat add a NEW, more surprising fact and end on a mini-cliffhanger, with no filler or repetition? (1=dragging/repetitive, 10=razor sharp rhythm that never lets the viewer swipe)\n"
+            "3. retention_score: Is there an open loop early that is paid off clearly near the end? Does the voiceover end by looping back to the opening so replay feels seamless? (1=flat ending, 10=seamless infinite loop)\n\n"
             "Respond in STRICT JSON ONLY:\n"
             "{\n"
             "  \"hook_score\": 8.5,\n"
@@ -149,7 +149,7 @@ class ScriptCriticEngine:
         if not critique_result:
             # Fallback heuristic evaluation
             h_score = 7.5 if not any(w in voiceover.lower() for w in ["hello", "namaste", "did you know", "aaj hum"]) else 5.0
-            p_score = 8.5 if 50 <= word_count <= 80 else 6.0
+            p_score = 8.5 if 100 <= word_count <= 150 else 6.0
             r_score = 7.5
             critique_result = {
                 "hook_score": h_score,
@@ -192,29 +192,38 @@ class ScriptCriticEngine:
             f"Visual Style: {chosen_style.get('name', 'Cinematic')}\n"
             f"Hook Formula: {hook_format.get('name', 'Impossible Claim')} -> {hook_format.get('formula', '')}\n\n"
             "RULES FOR REWRITE:\n"
-            "- 'voiceover_clean': Exactly 60-75 words in pure spoken conversational Hindi/Hinglish.\n"
+            "- 'voiceover_clean': 115-140 words (a 45-55 second Short) in pure spoken conversational Hindi/Hinglish. Never under 100 words.\n"
+            "- Structure: hook (one sentence under 12 words) -> open loop -> 4-5 escalating beats, each ending on a mini-cliffhanger -> clear payoff -> final sentence loops back to the first.\n"
             "- First 2 seconds MUST drop viewer into the conflict. Zero greetings ('Namaste', 'Hello', 'Kya aap jaante hain' are strictly forbidden).\n"
-            "- Final sentence MUST loop seamlessly back to the first word.\n"
-            "- Exactly 6 scenes with cinematic prompts.\n\n"
+            "- 10 to 12 scenes. Each scene has 'narration' (the 8-16 words spoken in it), 'visual_query' (2-4 plain English words to search stock VIDEO footage, concrete and filmable, never brands or real people) and 'prompt' (fallback image prompt).\n"
+            "- The scenes' narrations joined in order MUST equal 'voiceover_clean'. Do not invent facts or numbers.\n\n"
             "Respond in STRICT JSON ONLY matching this schema:\n"
             "{\n"
             "  \"title\": \"Shocking headline with emojis and #Shorts\",\n"
-            "  \"voiceover_clean\": \"Spoken Hindi speech only...\",\n"
+            "  \"voiceover_clean\": \"Spoken Hindi/Hinglish speech only...\",\n"
             "  \"pinned_comment\": \"Engaging question in Hindi/English\",\n"
             "  \"scenes\": [\n"
-            "    {\"id\": 1, \"prompt\": \"...\"},\n"
-            "    {\"id\": 2, \"prompt\": \"...\"},\n"
-            "    {\"id\": 3, \"prompt\": \"...\"},\n"
-            "    {\"id\": 4, \"prompt\": \"...\"},\n"
-            "    {\"id\": 5, \"prompt\": \"...\"},\n"
-            "    {\"id\": 6, \"prompt\": \"...\"}\n"
+            "    {\"id\": 1, \"narration\": \"...\", \"visual_query\": \"...\", \"prompt\": \"...\"},\n"
+            "    {\"id\": 2, \"narration\": \"...\", \"visual_query\": \"...\", \"prompt\": \"...\"},\n"
+            "    ... 10 to 12 scenes in total ...\n"
             "  ]\n"
             "}"
         )
 
         revised = _call_llm_json(rewrite_prompt, "You are a master viral scriptwriter. Output strict JSON only.")
-        if revised and revised.get("voiceover_clean") and len(revised.get("scenes", [])) >= 4:
-            return revised
+        if revised and revised.get("voiceover_clean"):
+            scenes = revised.get("scenes", [])
+            # Only accept a rewrite that keeps the long, moving-footage format;
+            # otherwise keep the original draft instead of regressing to a short one.
+            well_formed = (
+                isinstance(scenes, list)
+                and len(scenes) >= 6
+                and all(isinstance(s, dict) and s.get("narration") and s.get("visual_query") for s in scenes)
+            )
+            if well_formed:
+                revised["voiceover_clean"] = " ".join(str(s["narration"]).strip() for s in scenes)
+                if len(revised["voiceover_clean"].split()) >= 80:
+                    return revised
         return original_script
 
     @classmethod

@@ -71,6 +71,9 @@ from autopilot_config import (
     GEMINI_MODELS
 )
 from yt_variety import variety_engine
+import motion_clips
+import parallax_animator
+from asset_history import asset_history
 
 BASE_DIR = Path(__file__).parent.resolve()
 
@@ -87,6 +90,20 @@ for d in [ASSETS_DIR, DIRECTOR_SCENES_DIR, SFX_DIR, TEMP_DIR, OUTPUT_DIR, FALLBA
 HISTORY_LOG_FILE = BASE_DIR / "history_log.json"
 HISTORY_FILE = BASE_DIR / "history.json"
 CONFIG_FILE = BASE_DIR / "autonomous_viral_reels_engine.json"
+
+# Video length targets: 30-60 second Shorts (~2.6 spoken Hinglish words/second)
+MIN_SCENES = 6
+MAX_SCENES = 14
+MIN_SCRIPT_WORDS = 80          # ~30s
+MAX_SCRIPT_WORDS = 155         # ~60s
+TARGET_SCRIPT_WORDS = "115-140"  # ~45-55s
+MAX_VIDEO_SECONDS = 59.0
+
+# How scenes are animated (all free):
+#   "animated" (default) - AI scene image + depth-parallax 3D camera moves (Zack D-style look);
+#                          falls back to stock footage per scene if no relevant image is available
+#   "stock"              - real stock-video clips (Pexels/Pixabay)
+VISUAL_MODE = os.environ.get("VIDEO_VISUAL_MODE", "animated").strip().lower()
 
 # API Keys & Configurations
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
@@ -512,7 +529,7 @@ class TrendResearcher:
 PRE_CRAFTED_SCRIPTS = {
     "The Lepakshi Hanging Pillar Gravity Paradox": {
         "title": "Lepakshi Ka Hawa Me Latakta Khamba 🏛️ #Shorts #Mystery",
-        "duration": "24-28 seconds",
+        "duration": "30-60 seconds",
         "voiceover_clean": (
             "Sattar ton ka thos pathar bina zameen ko chuye hawa me kaise latak sakta hai! "
             "Yeh hai Andhra Pradesh ka 500 saal purana Lepakshi mandir, jahan ek khamba zameen se poori tarah utha hua hai! "
@@ -533,7 +550,7 @@ PRE_CRAFTED_SCRIPTS = {
     },
     "The Pistol Shrimp 8000K Sonoluminescence Paradox": {
         "title": "Suraj Se Bhi Zyada Garam Jheenga 🦐🔥 #Shorts #Science",
-        "duration": "24-28 seconds",
+        "duration": "30-60 seconds",
         "voiceover_clean": (
             "Suraj se bhi zyada garam aag paida karta hai samandar me chhipa ye do inch ka jheenga! "
             "Jab Pistol Shrimp apna claw 100 kilometer prati ghante ki speed se band karta hai, toh ek microscopic bubble banta hai! "
@@ -587,17 +604,43 @@ def _sanitize_script_response(raw_text: str, topic_name: str) -> Optional[Dict[s
         return None
 
     normalized_scenes = []
-    for i, sc in enumerate(scenes[:6]):
+    for i, sc in enumerate(scenes[:MAX_SCENES]):
+        if not isinstance(sc, dict):
+            continue
         sc_id = sc.get("id", i + 1)
         sc_prompt = sc.get("prompt", sc.get("visual_prompt", f"Cinematic 3D hyper-realism, octane 3D render style, {topic_name}, scene {i+1}, vertical 9:16, 8k, dynamic lighting"))
-        normalized_scenes.append({"id": sc_id, "prompt": sc_prompt})
+        norm = {"id": sc_id, "prompt": sc_prompt}
+        narration = re.sub(r"\[.*?\]|\(.*?\)", "", str(sc.get("narration", ""))).strip()
+        if narration:
+            norm["narration"] = " ".join(narration.split())
+        vq = re.sub(r"[^\w\s-]", " ", str(sc.get("visual_query", ""))).strip()
+        if vq:
+            norm["visual_query"] = " ".join(vq.split()[:5])
+        normalized_scenes.append(norm)
 
-    while len(normalized_scenes) < 6:
+    if not normalized_scenes:
+        return None
+
+    # Only pad up to the minimum so the old 6-scene fallback scripts still work
+    while len(normalized_scenes) < MIN_SCENES:
         idx = len(normalized_scenes) + 1
         normalized_scenes.append({
             "id": idx,
             "prompt": f"Cinematic 3D hyper-realism, octane 3D render style, {topic_name} climactic visual {idx}, vertical 9:16, 8k, dynamic lighting"
         })
+
+    # If every scene carries its own narration, the scenes ARE the script:
+    # rebuild the full voiceover from them so audio and visuals stay in sync.
+    if all(sc.get("narration") for sc in normalized_scenes):
+        data["voiceover_clean"] = " ".join(sc["narration"] for sc in normalized_scenes)
+
+    word_count = len(data["voiceover_clean"].split())
+    if word_count < MIN_SCRIPT_WORDS:
+        print(f"   [Script Notice] Script too short for a 30-60s Short ({word_count} words, need {MIN_SCRIPT_WORDS}+). Trying next provider...")
+        return None
+    if word_count > MAX_SCRIPT_WORDS:
+        print(f"   [Script Notice] Script too long for a 30-60s Short ({word_count} words, max {MAX_SCRIPT_WORDS}). Trying next provider...")
+        return None
 
     data["scenes"] = normalized_scenes
     return data
@@ -667,24 +710,35 @@ def generate_script_with_failover(topic_data: Any, bundle: Optional[Dict[str, An
         f"Paradox: {paradox}\n"
         f"Visual Aesthetic Directive: {chosen_style['prompt_prefix']}\n"
         f"{hook_directive}\n"
-        "Generate a 24-28 second video script. Respond in STRICT JSON ONLY matching this exact schema:\n"
+        f"Generate a 45-55 second video script (target {TARGET_SCRIPT_WORDS} spoken words; never fewer than 100 or more than 150).\n"
+        "The goal is a Short people watch to the very END and replay, so build it with this retention structure:\n"
+        "  1. HOOK (0-3s): ONE sentence under 12 words. Start mid-conflict with a specific, impossible-sounding claim.\n"
+        "  2. OPEN LOOP (3-8s): promise a payoff you only reveal near the end (e.g. 'aur jo aakhir me nikla, wo sabse bada raaz hai').\n"
+        "  3. ESCALATION (4 to 5 beats, ~7-9s each): ONE concrete fact, number, name or place per beat, each MORE surprising than the last.\n"
+        "     End every beat on a mini-cliffhanger or pattern interrupt so the viewer never gets a reason to swipe.\n"
+        "  4. PAYOFF (last ~8s): deliver the promised reveal clearly and satisfyingly.\n"
+        "  5. LOOP ENDING: the final sentence flows straight back into the first sentence so the replay feels seamless.\n"
+        "Write short spoken sentences (6-14 words), concrete over abstract, one idea per sentence, no filler.\n\n"
+        "Respond in STRICT JSON ONLY matching this exact schema:\n"
         "{\n"
         "  \"title\": \"Shocking headline with emojis and #Shorts\",\n"
-        "  \"voiceover_clean\": \"Spoken Hindi/Hinglish speech only. 60-75 words total. Zero stage directions, zero brackets, zero emojis in spoken text. Drop viewer into an unresolved paradox in the first 2 seconds with seamless circular loop back to word 1.\",\n"
+        "  \"voiceover_clean\": \"The full narration: every scene's 'narration' joined in order. Spoken Hindi/Hinglish only, zero stage directions, zero brackets, zero emojis.\",\n"
         "  \"pinned_comment\": \"Engaging question in Hindi/English to drive comments\",\n"
         "  \"scenes\": [\n"
-        f"    {{\"id\": 1, \"prompt\": \"{chosen_style['prompt_prefix']}, dramatic opening hook visual, vertical 9:16, dynamic cinematic lighting, scene 1...\"}},\n"
-        f"    {{\"id\": 2, \"prompt\": \"{chosen_style['prompt_prefix']}, revealing backstory detail, vertical 9:16, high contrast, scene 2...\"}},\n"
-        f"    {{\"id\": 3, \"prompt\": \"{chosen_style['prompt_prefix']}, escalation of tension, vertical 9:16, moody chiaroscuro, scene 3...\"}},\n"
-        f"    {{\"id\": 4, \"prompt\": \"{chosen_style['prompt_prefix']}, shocking twist discovery, vertical 9:16, volumetric lighting, scene 4...\"}},\n"
-        f"    {{\"id\": 5, \"prompt\": \"{chosen_style['prompt_prefix']}, climactic visual proof, vertical 9:16, vivid textures, scene 5...\"}},\n"
-        f"    {{\"id\": 6, \"prompt\": \"{chosen_style['prompt_prefix']}, circular infinite loop reveal, vertical 9:16, dramatic silhouette, scene 6...\"}}\n"
+        "    {\"id\": 1, \"narration\": \"The exact 1-2 sentences spoken during this scene (about 8-16 words)\", "
+        "\"visual_query\": \"2-4 plain English words to search stock VIDEO footage, concrete and filmable, e.g. 'ancient temple pillars' or 'ocean waves underwater'\", "
+        "\"prompt\": \"" + chosen_style['prompt_prefix'] + ", specific scene action, vertical 9:16 (only used if no stock footage is found)\"},\n"
+        "    ... 10 to 12 scenes in total, narrations joined in order = voiceover_clean ...\n"
         "  ]\n"
         "}\n\n"
         "RULES:\n"
         "- 'voiceover_clean' MUST be pure conversational Hindi/Hinglish. NO [SFX], (whisper), or bracketed notes.\n"
-        "- Hook (first 2 seconds): Apply the assigned Hook Format Formula strictly. Start mid-conflict with an impossible claim. No greetings like 'Namaste' or 'Did you know'.\n"
-        "- Exactly 6 scenes in 'scenes' array. Each scene's prompt must describe specific scene action matching the aesthetic."
+        "- Hook: apply the assigned Hook Format Formula strictly. No greetings like 'Namaste' or 'Did you know'.\n"
+        "- Exactly 10 to 12 scenes. Every scene MUST have 'narration', 'visual_query' and 'prompt'.\n"
+        "- 'visual_query' must describe something that really exists on stock-footage sites (places, nature, animals, people at work, "
+        "science labs, space, ocean, cities, close-ups of objects). Never use brand names, real people's names or abstract concepts. "
+        "Change the visual from scene to scene so the screen is never repeating itself.\n"
+        "- Never invent facts, numbers or quotes; use only claims you are confident are true."
     )
 
     # -------------------------------------------------------------------------
@@ -946,8 +1000,11 @@ def _generate_procedural_fallback_frame(prompt: str, scene_idx: int, out_path: P
     return out_path
 
 
-def generate_scene_image_with_failover(prompt: str, scene_idx: int, topic_name: Optional[str] = None) -> str:
+def generate_scene_image_with_failover(prompt: str, scene_idx: int, topic_name: Optional[str] = None, allow_generic: bool = True) -> str:
     """
+    allow_generic=False stops after the topic-relevant tiers (1-3) and returns "" instead of
+    falling back to random/generic pictures (tiers 4-6), so the caller can choose a better fallback.
+
     VISUAL GENERATION CASCADE (Chain of 6 Multi-Engine Tiers)
     - Tier 1: Pollinations AI FLUX (Dynamic random seed, Keyless & 9:16 Vertical)
     - Tier 2: Free Pexels 4K Stock Photography (via PEXELS_API_KEY)
@@ -1030,6 +1087,8 @@ def generate_scene_image_with_failover(prompt: str, scene_idx: int, topic_name: 
     # -------------------------------------------------------------------------
     # Tier 4: Lorem Picsum HD Photographic Cinematic Assets (Keyless & Zero Cost)
     # -------------------------------------------------------------------------
+    if not allow_generic:
+        return ""
     try:
         picsum_url = f"https://picsum.photos/1080/1920?random={seed}"
         pr = requests.get(picsum_url, headers=BROWSER_HEADERS, timeout=10)
@@ -1194,7 +1253,7 @@ class VoiceSynthesizer:
 class RemotionVideoAssembler:
     """
     Step 5: Video Assembly
-    - 6 distinct scenes (3-4s each)
+    - 10-12 scenes, each cut into ~3s moving stock-video clips (30-60s total)
     - Center-aligned uppercase 48pt captions with #FFFF00 yellow active-word highlight
     - Master Audio Mix: voiceover 0dB, impact_sfx_on_cuts -16dB, ambient_music -22dB
     """
@@ -1310,106 +1369,144 @@ class RemotionVideoAssembler:
         temp_audio_dir.mkdir(parents=True, exist_ok=True)
         temp_scenes_dir.mkdir(parents=True, exist_ok=True)
 
-        scene_durations = []
-        scene_audio_files = []
+        # Narration per scene: use the scene's own narration when the script provides it,
+        # otherwise fall back to splitting the full voiceover into sentences.
         scene_narrations = []
-
         for idx, s in enumerate(scenes):
-            s_num = s.get("id", idx + 1)
-            # Assign narration chunk
-            if "narration" in s:
-                chunk = s["narration"]
+            if s.get("narration"):
+                scene_narrations.append(s["narration"])
             else:
-                sent_idx = min(idx, len(raw_sentences) - 1)
-                chunk = raw_sentences[sent_idx]
-            scene_narrations.append(chunk)
+                scene_narrations.append(raw_sentences[min(idx, len(raw_sentences) - 1)])
 
-            a_path = temp_audio_dir / f"scene_{s_num:02d}.mp3"
-            generate_voice_with_failover(chunk, a_path, voice_id=voice_id)
-            dur = _get_audio_duration_seconds(a_path)
-            dur = max(3.5, min(4.8, dur))
-            scene_durations.append(dur)
-            scene_audio_files.append(a_path)
-            print(f"   Scene {s_num:02d}: {dur:.2f}s | Voice: '{chunk[:45]}...'")
+        def _synthesize_all(rate: str):
+            durs, files = [], []
+            for idx, (s, chunk) in enumerate(zip(scenes, scene_narrations)):
+                s_num = s.get("id", idx + 1)
+                a_path = temp_audio_dir / f"scene_{idx + 1:02d}.mp3"
+                generate_voice_with_failover(chunk, a_path, voice_id=voice_id, rate=rate)
+                # Scene length follows the voice (+0.2s breathing room); no more 4.8s cap
+                d = max(2.0, _get_audio_duration_seconds(a_path) + 0.2)
+                durs.append(d)
+                files.append(a_path)
+                print(f"   Scene {s_num:02d}: {d:.2f}s | Voice: '{chunk[:45]}...'")
+            return durs, files
 
+        scene_durations, scene_audio_files = _synthesize_all("+10%")
         total_duration = sum(scene_durations)
-        print(f"⏱️ [Video Assembler] Total Video Length: {total_duration:.2f}s (Target: 24-28 seconds)")
 
+        # Keep the Short inside 60s: if the script ran long, re-speak it a little faster once
+        if total_duration > MAX_VIDEO_SECONDS:
+            print(f"   Script runs {total_duration:.1f}s (> {MAX_VIDEO_SECONDS:.0f}s). Re-speaking slightly faster...")
+            scene_durations, scene_audio_files = _synthesize_all("+22%")
+            total_duration = sum(scene_durations)
+
+        if total_duration < 30:
+            print(f"⚠️ [Video Assembler] Video is only {total_duration:.1f}s (target 30-60s). Script was shorter than requested.")
+        print(f"⏱️ [Video Assembler] Total Video Length: {total_duration:.2f}s (Target: 30-60 seconds)")
+
+        # Image fallback (only used when no stock footage is found for a cut):
+        # AI/stock image + vision quality gate, same failover cascade as before.
+        image_variations = [
+            "different camera angle", "extreme close-up detail", "wide establishing view",
+            "dramatic low angle", "aerial overhead view", "different lighting and time of day",
+        ]
+
+        def _image_fn(prompt: str, scene_num: int, allow_generic: bool = True) -> str:
+            """
+            Scene image with quality gate + uniqueness check: an image that looks like one used
+            in ANY earlier video (or earlier in this one) is regenerated with a varied prompt.
+            allow_generic=False -> only topic-relevant sources; raises if none is available.
+            """
+            def _gen(pr: str, i: int) -> str:
+                return generate_scene_image_with_failover(pr, i, allow_generic=allow_generic)
+
+            last = ""
+            for attempt in range(4):
+                p = prompt if attempt == 0 else f"{prompt}, {random.choice(image_variations)}"
+                img_path_str = _gen(p, scene_num + attempt * 7)
+                if not img_path_str:
+                    break
+                try:
+                    from visual_quality_gate import quality_gate
+                    img_path_str = quality_gate.verify_or_regenerate_frame(
+                        img_path_str=img_path_str,
+                        prompt=p,
+                        scene_idx=scene_num,
+                        regenerate_func=_gen
+                    ) or img_path_str
+                except Exception as qg_err:
+                    print(f"   [Quality Gate Notice] {qg_err}")
+                last = img_path_str
+                if not asset_history.is_duplicate_image(img_path_str):
+                    asset_history.remember_image(img_path_str)
+                    return img_path_str
+                print(f"   [Uniqueness] Scene {scene_num} image looks like one used before. Regenerating (attempt {attempt + 1}/4)...")
+            if last:
+                print(f"   [Uniqueness Notice] Scene {scene_num}: no fresh image found after 4 tries; using the last one.")
+                asset_history.remember_image(last)
+                return last
+            raise RuntimeError("no topic-relevant image available")
+
+        # Footage used in earlier videos is excluded too, so no clip repeats across videos
+        used_clip_ids: set = set(asset_history.used_clip_ids())
+        prior_clip_ids = set(used_clip_ids)
         rendered_scene_mp4s = []
+        total_stock, total_img, total_anim = 0, 0, 0
         for idx, (s, dur, chunk) in enumerate(zip(scenes, scene_durations, scene_narrations)):
             s_num = s.get("id", idx + 1)
-            out_scene_mp4 = temp_scenes_dir / f"clip_{s_num:02d}.mp4"
-
-            # Visual Generation with Failover Cascade & Quality Gate
+            out_scene_mp4 = temp_scenes_dir / f"clip_{idx + 1:02d}.mp4"
             prompt = s.get("prompt", f"Cinematic 3D hyper-realism, octane 3D render style, scene {s_num}, vertical 9:16, 8k")
-            img_path_str = generate_scene_image_with_failover(prompt, s_num)
+            visual_query = s.get("visual_query", "")
+
+            # A cut roughly every 3 seconds keeps the screen moving
+            n_sub = max(1, min(int(round(dur / motion_clips.TARGET_SUBCLIP_SECONDS)), int(dur // motion_clips.MIN_SUBCLIP_SECONDS) or 1))
+            cap_chunks = motion_clips.split_caption_chunks(chunk or "MYSTERY REVEALED", n_sub)
+            badges = []
+            for sub_i, cap in enumerate(cap_chunks):
+                b_png = temp_scenes_dir / f"badge_{idx + 1:02d}_{sub_i}.png"
+                self.render_caption_badge(cap.upper(), motion_clips.key_word(cap), b_png, caption_style=caption_style)
+                badges.append(b_png)
+
             try:
-                from visual_quality_gate import quality_gate
-                img_path_str = quality_gate.verify_or_regenerate_frame(
-                    img_path_str=img_path_str,
-                    prompt=prompt,
-                    scene_idx=s_num,
-                    regenerate_func=generate_scene_image_with_failover
-                )
-            except Exception as qg_err:
-                print(f"   [Quality Gate Notice] {qg_err}")
-            img_path = Path(img_path_str)
-
-            # Caption keywords extraction
-            words = chunk.split()
-            cap_text = " ".join(words[:4]).upper() if words else "MYSTERY REVEALED"
-            active_w = words[0] if words else "MYSTERY"
-            b_png = temp_scenes_dir / f"badge_{s_num:02d}.png"
-            self.render_caption_badge(cap_text, active_w, b_png, caption_style=caption_style)
-
-            # Camera zoompan motion based on variety bundle
-            total_frames = int(dur * 30)
-            c_id = camera_move.get("id", "")
-            if c_id == "dramatic_pull_out_reveal":
-                z_expr = "max(1.15-0.0015*on,1.0)"
-                x_expr = "iw/2-(iw/zoom/2)"
-                y_expr = "ih/2-(ih/zoom/2)"
-            elif c_id == "parallax_subtle_pan_right":
-                z_expr = "1.08"
-                x_expr = "(iw-iw/zoom)*(on/duration)"
-                y_expr = "ih/2-(ih/zoom/2)"
-            elif c_id == "smooth_vertical_pedestal":
-                z_expr = "1.08"
-                x_expr = "iw/2-(iw/zoom/2)"
-                y_expr = "(ih-ih/zoom)*(on/duration)"
-            else:
-                # Default: ken_burns_slow_dolly_in
-                z_expr = "min(zoom+0.0015,1.15)"
-                x_expr = "iw/2-(iw/zoom/2)"
-                y_expr = "ih/2-(ih/zoom/2)"
-
-            filter_str = (
-                f"[0:v]zoompan=z='{z_expr}':d={total_frames}:x='{x_expr}':y='{y_expr}':s=1080x1920:fps=30[bg]; "
-                f"[bg][1:v]overlay=0:0[outv]"
-            )
-
-            cmd = [
-                self.ffmpeg_exe, "-y",
-                "-loop", "1", "-i", str(img_path),
-                "-loop", "1", "-i", str(b_png),
-                "-filter_complex", filter_str,
-                "-map", "[outv]",
-                "-t", f"{dur:.3f}",
-                "-c:v", "libx264",
-                "-preset", "veryfast",
-                "-pix_fmt", "yuv420p",
-                str(out_scene_mp4)
-            ]
-            try:
-                subprocess.run(cmd, capture_output=True, text=True, check=True)
-            except subprocess.CalledProcessError as err:
-                print(f"⚠️ [FFmpeg Scene Notice] Zoompan filter failed on scene {i+1}: {err.stderr.strip()[:200] if err.stderr else 'unknown'}")
-                print("   Applying reliable static composition fallback for scene...")
+                stats = None
+                if VISUAL_MODE == "animated":
+                    # Free 3D look: AI scene image + depth-parallax virtual camera
+                    try:
+                        a_stats = parallax_animator.build_animated_scene_video(
+                            ffmpeg=self.ffmpeg_exe,
+                            scene_idx=idx + 1,
+                            dur=dur,
+                            image_prompt=prompt,
+                            badge_paths=badges,
+                            out_path=out_scene_mp4,
+                            work_dir=temp_scenes_dir,
+                            image_fn=lambda pr, n: _image_fn(pr, n, allow_generic=False),
+                        )
+                        stats = {"stock": 0, "image": 0, "animated": a_stats["animated"]}
+                    except Exception as anim_err:
+                        print(f"   [Animated Scene Notice] Scene {idx + 1}: {str(anim_err)[:140]}. Falling back to stock footage...")
+                if stats is None:
+                    stats = motion_clips.build_scene_video(
+                        ffmpeg=self.ffmpeg_exe,
+                        scene_idx=idx + 1,
+                        dur=dur,
+                        visual_query=visual_query,
+                        image_prompt=prompt,
+                        badge_paths=badges,
+                        out_path=out_scene_mp4,
+                        work_dir=temp_scenes_dir,
+                        used_ids=used_clip_ids,
+                        image_fn=_image_fn,
+                    )
+                    stats["animated"] = 0
+            except Exception as err:
+                print(f"⚠️ [Scene Render Notice] Scene {idx + 1} failed ({str(err)[:160]}). Using static composition fallback...")
+                img_path = Path(_image_fn(prompt, s_num))
                 fb_cmd = [
                     self.ffmpeg_exe, "-y",
                     "-loop", "1", "-i", str(img_path),
-                    "-loop", "1", "-i", str(b_png),
-                    "-filter_complex", "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[bg]; [bg][1:v]overlay=0:0[outv]",
+                    "-loop", "1", "-i", str(badges[0]),
+                    "-filter_complex", "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30[bg]; [bg][1:v]overlay=0:0[outv]",
                     "-map", "[outv]",
                     "-t", f"{dur:.3f}",
                     "-c:v", "libx264",
@@ -1418,7 +1515,21 @@ class RemotionVideoAssembler:
                     str(out_scene_mp4)
                 ]
                 subprocess.run(fb_cmd, capture_output=True, text=True, check=True)
+                stats = {"stock": 0, "image": 1, "animated": 0}
+
+            total_stock += stats["stock"]
+            total_img += stats["image"]
+            total_anim += stats["animated"]
+            print(f"   🎞️ Scene {idx + 1:02d}: {n_sub} cut(s) | animated 3D: {stats['animated']} | stock footage: {stats['stock']} | image fallback: {stats['image']}")
             rendered_scene_mp4s.append(out_scene_mp4)
+
+        print(f"🎞️ [Video Assembler] Cuts -> animated 3D: {total_anim} | stock footage: {total_stock} | image-fallback: {total_img}")
+        if VISUAL_MODE == "stock" and total_stock == 0:
+            print("   ⚠️ No stock footage was found. Check that PEXELS_API_KEY is set as a GitHub secret.")
+
+        # Remember everything used in this video so future videos never repeat it
+        asset_history.remember_clips(used_clip_ids - prior_clip_ids)
+        asset_history.commit()
 
         # Concatenate video clips
         concat_txt = temp_scenes_dir / "concat_remotion.txt"
@@ -1449,7 +1560,7 @@ class RemotionVideoAssembler:
             "-vf", "unsharp=5:5:0.6:5:5:0.0,eq=contrast=1.06:saturation=1.12:brightness=0.01,noise=c1s=6:c0f=u",
             "-c:v", "libx264",
             "-preset", "medium",
-            "-crf", "18",
+            "-crf", "22",   # was 18: film grain on 30-60s of motion made files huge; YouTube re-encodes anyway
             "-c:a", "aac",
             "-b:a", "192k",
             "-shortest",
@@ -1769,7 +1880,7 @@ def run_autonomous_viral_reels_engine(dry_run: bool = True) -> str:
         "topic": topic_data["topic"],
         "title": script_data.get("title", f"{topic_data['topic']} #Shorts"),
         "category": bundle["category"]["id"],
-        "duration": "24-28 seconds",
+        "duration": "30-60 seconds",
         "file": str(rendered_file.resolve()),
         "engine": "MultiTierFailoverCascade",
         "pinned_comment": script_data.get("pinned_comment", ""),
