@@ -1286,6 +1286,36 @@
         "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, majestic mythical deep sea hunter swimming through monolithic ancient underwater ruins",
         "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, vast underwater monolithic temple courtyard vanishing into infinite deep dark abyss"
       ]
+    },
+    {
+      "timestamp": "2026-11-08 14:40:02",
+      "video_id": "l_VoliGRZ2g",
+      "topic": "The Refugee Intelligence Trap",
+      "title": "Japan's Secret Refugee Spy Network Revealed 🥷⛩️ #Shorts",
+      "category": "dark_psychology_behavior",
+      "hook_format": "direct_provocative_question",
+      "visual_style": "national_geographic_macro",
+      "camera_move": "dynamic_dutch_push",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_swara_expressive",
+      "music_mood": "suspense_ticking_clock",
+      "thumbnail_layout": "split_bottom_contrast",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "caution_hazard_tape",
+      "image_prompts": [
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro close up of an ancient Japanese samurai iron helmet with golden sunlight",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, close up of massive ancient dark wood castle gates closed tight",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro shot of an ancient parchment map being unrolled under warm light",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, close up of a sharp steel katana blade edge glistening in sunlight",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, dense green bamboo forest shoots macro texture with misty sunbeams",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, black ink dissolving macro shot on traditional rice paper",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, extreme macro close up of a watchful owl eye reflecting golden sunlight",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro shot of a brass magnifying glass over handwritten Chinese characters",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro shot of a flickering candle flame illuminating dark wooden textures",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro shot of golden dew drops glistening on an intricate spider web",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, sharp macro shot of a falcon's feathers glowing in evening sunlight",
+        "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro texture of ancient mossy stone wall in warm sunset glow"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1343,7 +1373,8 @@
       "national_geographic_macro",
       "cinematic_35mm_portra",
       "ancient_indian_monolith",
-      "ancient_indian_monolith"
+      "ancient_indian_monolith",
+      "national_geographic_macro"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1398,7 +1429,8 @@
       "classified_declassified_reveal",
       "shocking_metric",
       "negative_constraint",
-      "impossible_claim_in_media_res"
+      "impossible_claim_in_media_res",
+      "direct_provocative_question"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1453,7 +1485,8 @@
       "dramatic_pull_out_reveal",
       "parallax_subtle_pan_right",
       "smooth_vertical_pedestal",
-      "ken_burns_slow_dolly_in"
+      "ken_burns_slow_dolly_in",
+      "dynamic_dutch_push"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1508,7 +1541,8 @@
       "golden_amber_spotlight",
       "pure_white_heavy_stroke",
       "electric_yellow_active_badge",
-      "electric_yellow_active_badge"
+      "electric_yellow_active_badge",
+      "neon_cyan_glow"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1563,7 +1597,8 @@
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
-      "ancient_tribal_reverberation"
+      "ancient_tribal_reverberation",
+      "suspense_ticking_clock"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1618,6 +1653,7 @@
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
+      "hi_swara_expressive",
       "hi_swara_expressive"
     ],
     "category": [
@@ -1673,7 +1709,8 @@
       "high_stakes_heists_scandals",
       "how_it_actually_works",
       "extreme_physics_space",
-      "bizarre_biology_anomalies"
+      "bizarre_biology_anomalies",
+      "dark_psychology_behavior"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1728,7 +1765,8 @@
       "split_bottom_contrast",
       "centered_punch",
       "lower_third_bar",
-      "top_header_banner"
+      "top_header_banner",
+      "split_bottom_contrast"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1783,7 +1821,8 @@
       "modern_neo_grotesque",
       "impact_bebas",
       "cinematic_serif",
-      "cinematic_serif"
+      "cinematic_serif",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1838,11 +1877,12 @@
       "caution_hazard_tape",
       "clean_minimalist",
       "neon_pill_badge",
-      "glowing_brackets"
+      "glowing_brackets",
+      "caution_hazard_tape"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-08",
-    "used_units": 1651
+    "used_units": 3302
   }
 }
