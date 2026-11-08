@@ -1257,6 +1257,35 @@
         "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, quiet desolate ruined stone temple hall covered in fine golden ash",
         "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, endless corridor of ancient monolithic stone pillars receding into misty golden sunlight"
       ]
+    },
+    {
+      "timestamp": "2026-11-08 09:33:30",
+      "video_id": "3BTvYoMdpgE",
+      "topic": "The Deep-Sea Predator With Invisible Night Vision",
+      "title": "Invisible Night Vision Predator in Deep Sea 🔴🐟 #Shorts",
+      "category": "bizarre_biology_anomalies",
+      "hook_format": "impossible_claim_in_media_res",
+      "visual_style": "ancient_indian_monolith",
+      "camera_move": "ken_burns_slow_dolly_in",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_swara_expressive",
+      "music_mood": "ancient_tribal_reverberation",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, dark monolithic underwater temple ruins submerged in deep ocean abyss",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, mysterious glowing red symbols etched into weathered ancient stone pillar",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, monolithic stone corridor submerged deep underwater in total pitch black darkness",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, bioluminescent blue and green light glowing between ancient carved stone temple columns underwater",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, fearsome mythical predator entity carved into ancient stone emerging from shadows",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, intense glowing red beam emitting from an ancient carved eye emblem on a stone pillar",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, shadows of sea creatures swimming blissfully unaware near massive weathered stone temple structures",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, red beam illuminating a stone sculpture in deep dark water while surrounding area stays dark",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, extreme close-up of a carved stone guardian eye glowing with mystical red pigment",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, majestic mythical deep sea hunter swimming through monolithic ancient underwater ruins",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, vast underwater monolithic temple courtyard vanishing into infinite deep dark abyss"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1313,6 +1342,7 @@
       "3d_anatomical_zackd",
       "national_geographic_macro",
       "cinematic_35mm_portra",
+      "ancient_indian_monolith",
       "ancient_indian_monolith"
     ],
     "hook_format": [
@@ -1367,7 +1397,8 @@
       "direct_provocative_question",
       "classified_declassified_reveal",
       "shocking_metric",
-      "negative_constraint"
+      "negative_constraint",
+      "impossible_claim_in_media_res"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1421,7 +1452,8 @@
       "dynamic_dutch_push",
       "dramatic_pull_out_reveal",
       "parallax_subtle_pan_right",
-      "smooth_vertical_pedestal"
+      "smooth_vertical_pedestal",
+      "ken_burns_slow_dolly_in"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1475,6 +1507,7 @@
       "neon_cyan_glow",
       "golden_amber_spotlight",
       "pure_white_heavy_stroke",
+      "electric_yellow_active_badge",
       "electric_yellow_active_badge"
     ],
     "music_mood": [
@@ -1529,7 +1562,8 @@
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
-      "epic_orchestral_crescendo"
+      "epic_orchestral_crescendo",
+      "ancient_tribal_reverberation"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1583,7 +1617,8 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1637,7 +1672,8 @@
       "unexplained_history_enigmas",
       "high_stakes_heists_scandals",
       "how_it_actually_works",
-      "extreme_physics_space"
+      "extreme_physics_space",
+      "bizarre_biology_anomalies"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1691,7 +1727,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1745,6 +1782,7 @@
       "impact_bebas",
       "modern_neo_grotesque",
       "impact_bebas",
+      "cinematic_serif",
       "cinematic_serif"
     ],
     "thumbnail_badge": [
@@ -1799,11 +1837,12 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   },
   "quota_tracking": {
-    "date": "2026-11-07",
-    "used_units": 4953
+    "date": "2026-11-08",
+    "used_units": 1651
   }
 }
