@@ -1316,6 +1316,34 @@
         "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, sharp macro shot of a falcon's feathers glowing in evening sunlight",
         "National Geographic wildlife macro photography, 8k telephoto lens, tack sharp organic textures, authentic natural golden-hour sunlight, rich vibrant earthy colors, deep depth of field, vertical 9:16, macro texture of ancient mossy stone wall in warm sunset glow"
       ]
+    },
+    {
+      "timestamp": "2026-11-08 17:07:08",
+      "video_id": "QZGZYmA5WsA",
+      "topic": "The Ocean's Submerged Graveyard Lakes",
+      "title": "Ocean's Underwater Graveyard Lakes 🌊☠️ #Shorts #OceanMysteries #DeepSea",
+      "category": "deep_ocean_abyss",
+      "hook_format": "classified_declassified_reveal",
+      "visual_style": "ancient_indian_monolith",
+      "camera_move": "dramatic_pull_out_reveal",
+      "caption_style": "golden_amber_spotlight",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "dark_sub_bass_pulse",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "Ancient Indian monolithic temple architecture underwater, golden hour sunbeams cutting through carved stone pillars submerged in deep sea, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16",
+        "Ancient Indian monolithic stone statues carved into deep underwater cliffs, golden light rays penetrating dark water, weathered tactile stone textures, divine atmosphere, photorealistic, vertical 9:16",
+        "Submerged ancient Indian monolithic temple hallway with clear distinct underwater brine river flowing, golden sunbeams, weathered stone pillars, photorealistic, vertical 9:16",
+        "Deep ocean floor with ancient Indian monolithic stone ruins covered in white crystalline salt formations, golden hour rays, dramatic lighting, vertical 9:16",
+        "Monolithic Indian carved stone archway deep under ocean, mysterious dark water atmosphere, divine golden lighting rays, weathered stone textures, photorealistic, vertical 9:16",
+        "Ancient Indian monolithic carved stone shrine underwater, preserved pristine stone textures, glowing golden light filtering down, vertical 9:16",
+        "Ancient Indian monolithic stone floor underwater with preserved fossil structures, divine golden sunbeams cutting through deep water, vertical 9:16",
+        "Massive ancient Indian monolithic temple chamber buried under sea, glowing golden hour sunbeams, atmospheric underwater mist, weathered stone detail, vertical 9:16",
+        "Ancient Indian monolithic stone pillars lined up on underwater ocean floor, dramatic golden light beams penetrating dark deep sea, vertical 9:16",
+        "Deep sea waters reflecting golden hour light with submerged ancient Indian monolithic temple structures barely visible beneath waves, photorealistic, vertical 9:16"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1374,7 +1402,8 @@
       "cinematic_35mm_portra",
       "ancient_indian_monolith",
       "ancient_indian_monolith",
-      "national_geographic_macro"
+      "national_geographic_macro",
+      "ancient_indian_monolith"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1430,7 +1459,8 @@
       "shocking_metric",
       "negative_constraint",
       "impossible_claim_in_media_res",
-      "direct_provocative_question"
+      "direct_provocative_question",
+      "classified_declassified_reveal"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1486,7 +1516,8 @@
       "parallax_subtle_pan_right",
       "smooth_vertical_pedestal",
       "ken_burns_slow_dolly_in",
-      "dynamic_dutch_push"
+      "dynamic_dutch_push",
+      "dramatic_pull_out_reveal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1542,7 +1573,8 @@
       "pure_white_heavy_stroke",
       "electric_yellow_active_badge",
       "electric_yellow_active_badge",
-      "neon_cyan_glow"
+      "neon_cyan_glow",
+      "golden_amber_spotlight"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1598,7 +1630,8 @@
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
-      "suspense_ticking_clock"
+      "suspense_ticking_clock",
+      "dark_sub_bass_pulse"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1654,7 +1687,8 @@
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1710,7 +1744,8 @@
       "how_it_actually_works",
       "extreme_physics_space",
       "bizarre_biology_anomalies",
-      "dark_psychology_behavior"
+      "dark_psychology_behavior",
+      "deep_ocean_abyss"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1766,7 +1801,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1822,7 +1858,8 @@
       "impact_bebas",
       "cinematic_serif",
       "cinematic_serif",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "impact_bebas"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1878,11 +1915,12 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-08",
-    "used_units": 3302
+    "used_units": 4953
   }
 }
