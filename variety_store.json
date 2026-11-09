@@ -1373,6 +1373,34 @@
         "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, massive shockwave expanding silently across high altitude blue clouds",
         "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, dramatic silhouette of a person looking up at a dark starry sky"
       ]
+    },
+    {
+      "timestamp": "2026-11-09 21:23:45",
+      "video_id": "1TOd86wbV9w",
+      "topic": "The Ocean's Living Television",
+      "title": "Nature Invented Television First! 🌊📺 #Shorts #Science #NatureMysteries",
+      "category": "bizarre_biology_anomalies",
+      "hook_format": "negative_constraint",
+      "visual_style": "investigative_noir_magnates",
+      "camera_move": "ken_burns_slow_dolly_in",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "epic_orchestral_crescendo",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, microscopic transparent organism glowing faintly in pitch black ocean water, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, vintage technical schematics of mechanical television glowing under magnifying glass, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, high tech microscope examining deep sea specimen in dark laboratory, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, extreme macro close up of biological eye retina with light rays, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, 3d render of transparent copepod showing dual glowing optical lenses inside skull, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, mechanical camera lens moving horizontally in slow motion, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, glowing laser beam scanning line by line across optical sensor, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, vintage 1920s television set flickering raster lines in dark room, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, deep sea creature floating surrounded by glowing bioluminescent particles, vertical 9:16",
+        "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, dramatic zoom into glowing underwater abyss, vertical 9:16"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1433,7 +1461,8 @@
       "ancient_indian_monolith",
       "national_geographic_macro",
       "ancient_indian_monolith",
-      "graphic_novel_neo_noir"
+      "graphic_novel_neo_noir",
+      "investigative_noir_magnates"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1491,7 +1520,8 @@
       "impossible_claim_in_media_res",
       "direct_provocative_question",
       "classified_declassified_reveal",
-      "shocking_metric"
+      "shocking_metric",
+      "negative_constraint"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1549,7 +1579,8 @@
       "ken_burns_slow_dolly_in",
       "dynamic_dutch_push",
       "dramatic_pull_out_reveal",
-      "smooth_vertical_pedestal"
+      "smooth_vertical_pedestal",
+      "ken_burns_slow_dolly_in"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1607,7 +1638,8 @@
       "electric_yellow_active_badge",
       "neon_cyan_glow",
       "golden_amber_spotlight",
-      "pure_white_heavy_stroke"
+      "pure_white_heavy_stroke",
+      "electric_yellow_active_badge"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1665,7 +1697,8 @@
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
-      "mysterious_cyber_synth"
+      "mysterious_cyber_synth",
+      "epic_orchestral_crescendo"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1723,7 +1756,8 @@
       "hi_swara_expressive",
       "hi_swara_expressive",
       "hi_madhur_dynamic",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1781,7 +1815,8 @@
       "bizarre_biology_anomalies",
       "dark_psychology_behavior",
       "deep_ocean_abyss",
-      "extreme_physics_space"
+      "extreme_physics_space",
+      "bizarre_biology_anomalies"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1839,7 +1874,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1897,7 +1933,8 @@
       "cinematic_serif",
       "modern_neo_grotesque",
       "impact_bebas",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1955,11 +1992,12 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-09",
-    "used_units": 1651
+    "used_units": 3302
   }
 }
