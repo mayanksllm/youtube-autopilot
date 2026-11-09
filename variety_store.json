@@ -1344,6 +1344,35 @@
         "Ancient Indian monolithic stone pillars lined up on underwater ocean floor, dramatic golden light beams penetrating dark deep sea, vertical 9:16",
         "Deep sea waters reflecting golden hour light with submerged ancient Indian monolithic temple structures barely visible beneath waves, photorealistic, vertical 9:16"
       ]
+    },
+    {
+      "timestamp": "2026-11-09 18:25:29",
+      "video_id": "I9offhOI90g",
+      "topic": "The Ram Pressure Trap Crushing Fireballs",
+      "title": "The Invisible Trap Destroying Meteors! 💥 #Shorts #SpaceFacts #Physics",
+      "category": "extreme_physics_space",
+      "hook_format": "shocking_metric",
+      "visual_style": "graphic_novel_neo_noir",
+      "camera_move": "smooth_vertical_pedestal",
+      "caption_style": "pure_white_heavy_stroke",
+      "voice": "hi_swara_expressive",
+      "music_mood": "mysterious_cyber_synth",
+      "thumbnail_layout": "lower_third_bar",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "neon_pill_badge",
+      "image_prompts": [
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, tiny glowing meteoroid shooting through deep space against distant stars",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, NASA observatory radar tracking a massive glowing streak in the night sky over Tennessee",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, classic comic book view of a rock burning with yellow orange flames",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, hypervelocity asteroid ripping through atmosphere with severe wind shockwaves",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, blinding blue plasma barrier forming violently in front of a space rock",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, heavy industrial press crushing a boulder into dust with dramatic spark effects",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, extreme microscopic close-up of glowing plasma forcing into jagged rock fractures",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, high tech glowing scientific overlay vector diagram showing ram pressure vectors crushing meteor",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, asteroid shattering mid-air into thousands of glowing fragments from internal explosion",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, massive shockwave expanding silently across high altitude blue clouds",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, dramatic silhouette of a person looking up at a dark starry sky"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1403,7 +1432,8 @@
       "ancient_indian_monolith",
       "ancient_indian_monolith",
       "national_geographic_macro",
-      "ancient_indian_monolith"
+      "ancient_indian_monolith",
+      "graphic_novel_neo_noir"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1460,7 +1490,8 @@
       "negative_constraint",
       "impossible_claim_in_media_res",
       "direct_provocative_question",
-      "classified_declassified_reveal"
+      "classified_declassified_reveal",
+      "shocking_metric"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1517,7 +1548,8 @@
       "smooth_vertical_pedestal",
       "ken_burns_slow_dolly_in",
       "dynamic_dutch_push",
-      "dramatic_pull_out_reveal"
+      "dramatic_pull_out_reveal",
+      "smooth_vertical_pedestal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1574,7 +1606,8 @@
       "electric_yellow_active_badge",
       "electric_yellow_active_badge",
       "neon_cyan_glow",
-      "golden_amber_spotlight"
+      "golden_amber_spotlight",
+      "pure_white_heavy_stroke"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1631,7 +1664,8 @@
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
-      "dark_sub_bass_pulse"
+      "dark_sub_bass_pulse",
+      "mysterious_cyber_synth"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1688,7 +1722,8 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_swara_expressive",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1745,7 +1780,8 @@
       "extreme_physics_space",
       "bizarre_biology_anomalies",
       "dark_psychology_behavior",
-      "deep_ocean_abyss"
+      "deep_ocean_abyss",
+      "extreme_physics_space"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1802,7 +1838,8 @@
       "lower_third_bar",
       "top_header_banner",
       "split_bottom_contrast",
-      "centered_punch"
+      "centered_punch",
+      "lower_third_bar"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1859,7 +1896,8 @@
       "cinematic_serif",
       "cinematic_serif",
       "modern_neo_grotesque",
-      "impact_bebas"
+      "impact_bebas",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1916,11 +1954,12 @@
       "neon_pill_badge",
       "glowing_brackets",
       "caution_hazard_tape",
-      "clean_minimalist"
+      "clean_minimalist",
+      "neon_pill_badge"
     ]
   },
   "quota_tracking": {
-    "date": "2026-11-08",
-    "used_units": 4953
+    "date": "2026-11-09",
+    "used_units": 1651
   }
 }
