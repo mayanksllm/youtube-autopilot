@@ -1401,6 +1401,36 @@
         "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, deep sea creature floating surrounded by glowing bioluminescent particles, vertical 9:16",
         "Dark investigative documentary noir aesthetic, MagnatesMedia archival style, atmospheric spotlight cutting through haze, rich charcoal and sepia tones, dramatic rim lighting, 8k vertical 9:16, dramatic zoom into glowing underwater abyss, vertical 9:16"
       ]
+    },
+    {
+      "timestamp": "2026-11-10 10:03:08",
+      "video_id": "_xuLT610PW0",
+      "topic": "The Secret War on Synthetic Crystals",
+      "title": "The Secret War on Synthetic Crystals! 💎🤫 #Shorts",
+      "category": "high_stakes_heists_scandals",
+      "hook_format": "impossible_claim_in_media_res",
+      "visual_style": "graphic_novel_neo_noir",
+      "camera_move": "parallax_subtle_pan_right",
+      "caption_style": "pure_white_heavy_stroke",
+      "voice": "hi_swara_expressive",
+      "music_mood": "ancient_tribal_reverberation",
+      "thumbnail_layout": "split_bottom_contrast",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "caution_hazard_tape",
+      "image_prompts": [
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a glowing flawless red synthetic gem held by glowing robotic tongs inside a dark high-tech laboratory.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a massive iron vault door with glowing red secret symbols closing tightly in a dark hallway.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, an early 1900s scientist in goggles adjusting an intense blazing red furnace growing crystal drops.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, split screen showing a rough dirty mined diamond next to a perfectly symmetrical glowing blue lab crystal under a microscope lens.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, shadowy rich executives in expensive suits sitting at a long boardroom table pushing blueprints away with disdain.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a falling pile of golden coins and dollar bills burning into green ash in a dark vortex.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a shadowy figure whispering into the ear of a politician standing before grand government pillars at night.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a heavy judge's wooden gavel slamming down hard creating fiery sparks on a legal document.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a luxurious diamond ring in a velvet display box with fake glowing price tags surrounded by dark shadows.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a futuristic AI quantum computer node projecting glowing neon crystal molecular lattices.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a glowing brass scale weighing a glowing atom model against a pile of dark gold.",
+        "Stylized graphic novel illustration, high-contrast ink and gouache wash, dramatic comic book angles, gritty cinematic cel shading, vibrant accents, dark moody shadows, vertical 9:16, a mysterious hand holding up a sparkling crystal against a dark dramatic graphic backdrop."
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1462,7 +1492,8 @@
       "national_geographic_macro",
       "ancient_indian_monolith",
       "graphic_novel_neo_noir",
-      "investigative_noir_magnates"
+      "investigative_noir_magnates",
+      "graphic_novel_neo_noir"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1521,7 +1552,8 @@
       "direct_provocative_question",
       "classified_declassified_reveal",
       "shocking_metric",
-      "negative_constraint"
+      "negative_constraint",
+      "impossible_claim_in_media_res"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1580,7 +1612,8 @@
       "dynamic_dutch_push",
       "dramatic_pull_out_reveal",
       "smooth_vertical_pedestal",
-      "ken_burns_slow_dolly_in"
+      "ken_burns_slow_dolly_in",
+      "parallax_subtle_pan_right"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1639,7 +1672,8 @@
       "neon_cyan_glow",
       "golden_amber_spotlight",
       "pure_white_heavy_stroke",
-      "electric_yellow_active_badge"
+      "electric_yellow_active_badge",
+      "pure_white_heavy_stroke"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1698,7 +1732,8 @@
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
-      "epic_orchestral_crescendo"
+      "epic_orchestral_crescendo",
+      "ancient_tribal_reverberation"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1757,7 +1792,8 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1816,7 +1852,8 @@
       "dark_psychology_behavior",
       "deep_ocean_abyss",
       "extreme_physics_space",
-      "bizarre_biology_anomalies"
+      "bizarre_biology_anomalies",
+      "high_stakes_heists_scandals"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1875,7 +1912,8 @@
       "split_bottom_contrast",
       "centered_punch",
       "lower_third_bar",
-      "top_header_banner"
+      "top_header_banner",
+      "split_bottom_contrast"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -1934,7 +1972,8 @@
       "modern_neo_grotesque",
       "impact_bebas",
       "modern_neo_grotesque",
-      "cinematic_serif"
+      "cinematic_serif",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -1993,11 +2032,12 @@
       "caution_hazard_tape",
       "clean_minimalist",
       "neon_pill_badge",
-      "glowing_brackets"
+      "glowing_brackets",
+      "caution_hazard_tape"
     ]
   },
   "quota_tracking": {
-    "date": "2026-11-09",
-    "used_units": 3302
+    "date": "2026-11-10",
+    "used_units": 1651
   }
 }
