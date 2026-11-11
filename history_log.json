@@ -853,6 +853,20 @@
       "pinned_comment": "Kya aapko lagta tha Jupiter hume bacha raha hai? Share your thoughts below! 👇",
       "youtube_video_id": "p9vjyJgBMMw",
       "status": "PUBLISHED"
+    },
+    {
+      "id": "REELS_1794421848",
+      "date": "2026-11-11 18:30:48",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "The Royal Servant Paradox",
+      "title": "The Divine Servant Proxy Trick! 👑✨ #Shorts",
+      "category": "how_it_actually_works",
+      "duration": "30-60 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1794421583.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Kya aapko lagta hai ki khud ko jhukakar taakat haasil karna sabse shatir dimaag ki nishani hai? Tell us below! 👇",
+      "youtube_video_id": "lVjxjLdBZs0",
+      "status": "PUBLISHED"
     }
   ]
 }

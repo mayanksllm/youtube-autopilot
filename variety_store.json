@@ -1507,6 +1507,34 @@
         "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, deadly comet heading directly on collision course toward inner solar system",
         "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, fragile blue planet Earth illuminated against the vast cosmic void"
       ]
+    },
+    {
+      "timestamp": "2026-11-11 18:30:48",
+      "video_id": "lVjxjLdBZs0",
+      "topic": "The Royal Servant Paradox",
+      "title": "The Divine Servant Proxy Trick! 👑✨ #Shorts",
+      "category": "how_it_actually_works",
+      "hook_format": "negative_constraint",
+      "visual_style": "cosmic_james_webb_deep_space",
+      "camera_move": "parallax_subtle_pan_right",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_swara_expressive",
+      "music_mood": "epic_orchestral_crescendo",
+      "thumbnail_layout": "split_bottom_contrast",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "caution_hazard_tape",
+      "image_prompts": [
+        "James Webb telescope deep space view showing a glowing golden royal crown floating amidst a cosmic purple and amber nebula HD",
+        "Deep space cosmic galaxy with glittering star constellations forming historic map patterns in James Webb aesthetic",
+        "Ethereal temple silhouette glowing in intense golden light inside a deep space galaxy surrounded by sparkling stardust",
+        "A massive translucent cosmic silhouette bowing gracefully before a brilliant central star cluster in deep space",
+        "Vast cosmic deep space view featuring a glittering golden grid pattern across galaxies like a cosmic strategy game",
+        "Intense cosmic lightning bolts ripping across a deep space dark nebula with glowing celestial energy",
+        "Dark shadowy silhouettes kneeling in deep space under the dazzling glow of a cosmic supernova explosion",
+        "Planet Earth viewed from deep space with glowing golden energy lines connecting continents across dark cosmic dust",
+        "Blinding golden cosmic explosion radiating powerful energy beams into deep space James Webb style",
+        "Spinning cosmic spiral galaxy acting as a time portal surrounded by colorful deep space gas clouds"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1572,6 +1600,7 @@
       "graphic_novel_neo_noir",
       "cosmic_james_webb_deep_space",
       "cosmic_james_webb_deep_space",
+      "cosmic_james_webb_deep_space",
       "cosmic_james_webb_deep_space"
     ],
     "hook_format": [
@@ -1635,7 +1664,8 @@
       "impossible_claim_in_media_res",
       "direct_provocative_question",
       "classified_declassified_reveal",
-      "shocking_metric"
+      "shocking_metric",
+      "negative_constraint"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1698,7 +1728,8 @@
       "parallax_subtle_pan_right",
       "dynamic_dutch_push",
       "dramatic_pull_out_reveal",
-      "smooth_vertical_pedestal"
+      "smooth_vertical_pedestal",
+      "parallax_subtle_pan_right"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1761,7 +1792,8 @@
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
       "golden_amber_spotlight",
-      "golden_amber_spotlight"
+      "golden_amber_spotlight",
+      "electric_yellow_active_badge"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1824,7 +1856,8 @@
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
-      "mysterious_cyber_synth"
+      "mysterious_cyber_synth",
+      "epic_orchestral_crescendo"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1887,7 +1920,8 @@
       "hi_swara_expressive",
       "hi_swara_expressive",
       "hi_madhur_dynamic",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -1950,7 +1984,8 @@
       "high_stakes_heists_scandals",
       "deep_ocean_abyss",
       "dark_psychology_behavior",
-      "extreme_physics_space"
+      "extreme_physics_space",
+      "how_it_actually_works"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -2013,7 +2048,8 @@
       "split_bottom_contrast",
       "centered_punch",
       "lower_third_bar",
-      "top_header_banner"
+      "top_header_banner",
+      "split_bottom_contrast"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -2076,7 +2112,8 @@
       "modern_neo_grotesque",
       "impact_bebas",
       "modern_neo_grotesque",
-      "cinematic_serif"
+      "cinematic_serif",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -2139,11 +2176,12 @@
       "caution_hazard_tape",
       "clean_minimalist",
       "neon_pill_badge",
-      "glowing_brackets"
+      "glowing_brackets",
+      "caution_hazard_tape"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-11",
-    "used_units": 1651
+    "used_units": 3302
   }
 }
