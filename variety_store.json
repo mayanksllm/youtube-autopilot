@@ -1479,6 +1479,34 @@
         "Cinematic 3D hyper-realism, octane 3D render style, futuristic cyan holographic stress-line CAD telemetry projected onto ancient stone pillar demonstrating anti-seismic balance joint, high-tech archaeological inspection, vertical 9:16, 8k, dynamic lighting",
         "Cinematic 3D hyper-realism, octane 3D render style, extreme vertical panoramic vista of Lepakshi temple silhouette under starry cosmic night sky with deep purple nebula and glowing golden aura tracing the temple gopuram, vertical 9:16, 8k, dynamic lighting"
       ]
+    },
+    {
+      "timestamp": "2026-11-11 09:26:40",
+      "video_id": "p9vjyJgBMMw",
+      "topic": "The Myth of Earth's Cosmic Defense",
+      "title": "Jupiter is Earth's Biggest Enemy? 🌌💥 #Shorts",
+      "category": "extreme_physics_space",
+      "hook_format": "shocking_metric",
+      "visual_style": "cosmic_james_webb_deep_space",
+      "camera_move": "smooth_vertical_pedestal",
+      "caption_style": "golden_amber_spotlight",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "mysterious_cyber_synth",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, giant planet Jupiter rotating in deep space with intense atmospheric bands",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, deep space observatory screens displaying orbital trajectory data",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, massive gravitational vortex pulling space debris into a gas giant",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, giant glowing asteroid crashing into planet atmosphere creating luminous shockwaves",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, luminous digital orbit lines intersecting in dark indigo space",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, frozen Kuiper belt objects floating silently in violet starfield",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, massive gravity well bending space-time around Jupiter slingshotting comets",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, fiery comet blazing through dark space leaving glowing ionized violet tail",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, deadly comet heading directly on collision course toward inner solar system",
+        "James Webb space telescope deep field astrophotography, glowing cosmic nebula vortex, stellar accretion disc, luminous starfield, vivid indigo and violet hues, cosmic majesty, vertical 9:16, fragile blue planet Earth illuminated against the vast cosmic void"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1543,6 +1571,7 @@
       "investigative_noir_magnates",
       "graphic_novel_neo_noir",
       "cosmic_james_webb_deep_space",
+      "cosmic_james_webb_deep_space",
       "cosmic_james_webb_deep_space"
     ],
     "hook_format": [
@@ -1605,7 +1634,8 @@
       "negative_constraint",
       "impossible_claim_in_media_res",
       "direct_provocative_question",
-      "classified_declassified_reveal"
+      "classified_declassified_reveal",
+      "shocking_metric"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1667,7 +1697,8 @@
       "ken_burns_slow_dolly_in",
       "parallax_subtle_pan_right",
       "dynamic_dutch_push",
-      "dramatic_pull_out_reveal"
+      "dramatic_pull_out_reveal",
+      "smooth_vertical_pedestal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1729,6 +1760,7 @@
       "electric_yellow_active_badge",
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
+      "golden_amber_spotlight",
       "golden_amber_spotlight"
     ],
     "music_mood": [
@@ -1791,7 +1823,8 @@
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
-      "dark_sub_bass_pulse"
+      "dark_sub_bass_pulse",
+      "mysterious_cyber_synth"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1853,6 +1886,7 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_swara_expressive",
+      "hi_madhur_dynamic",
       "hi_madhur_dynamic"
     ],
     "category": [
@@ -1915,7 +1949,8 @@
       "bizarre_biology_anomalies",
       "high_stakes_heists_scandals",
       "deep_ocean_abyss",
-      "dark_psychology_behavior"
+      "dark_psychology_behavior",
+      "extreme_physics_space"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -1977,7 +2012,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -2039,7 +2075,8 @@
       "cinematic_serif",
       "modern_neo_grotesque",
       "impact_bebas",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -2101,11 +2138,12 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   },
   "quota_tracking": {
-    "date": "2026-11-10",
-    "used_units": 4953
+    "date": "2026-11-11",
+    "used_units": 1651
   }
 }
