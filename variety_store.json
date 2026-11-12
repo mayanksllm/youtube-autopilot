@@ -1565,6 +1565,36 @@
         "Cyberpunk futuristic concept art, neon cyan and electric magenta volumetric fog, rain-slicked reflective surfaces, Blade Runner 2049 aesthetic, intricate micro-circuitry, 8k vertical 9:16, sprawling underground bioluminescent network inside subterranean rock, vertical 9:16",
         "Cyberpunk futuristic concept art, neon cyan and electric magenta volumetric fog, rain-slicked reflective surfaces, Blade Runner 2049 aesthetic, intricate micro-circuitry, 8k vertical 9:16, endless deep sea canyon opening up into glowing abyss, vertical 9:16"
       ]
+    },
+    {
+      "timestamp": "2026-11-12 19:19:10",
+      "video_id": "VIcSehmReXA",
+      "topic": "The Split-Second Trap of Authority Bias",
+      "title": "The Silent Psychological Flaw That Lost an Olympic Gold 😱 #Shorts",
+      "category": "dark_psychology_behavior",
+      "hook_format": "direct_provocative_question",
+      "visual_style": "ancient_indian_monolith",
+      "camera_move": "dramatic_pull_out_reveal",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "suspense_ticking_clock",
+      "thumbnail_layout": "lower_third_bar",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "neon_pill_badge",
+      "image_prompts": [
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, close up of massive carved stone pillars.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, ancient royal stone throne bathed in golden light.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, silhouette of a runner sprinting through stone corridor.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, close up of warrior feet stepping on ancient stone floor.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, ancient stone clock sundial with shadows shifting fast.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, high priest standing near stone altar gesturing order.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, deep misty temple hall with endless row of pillars.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, detailed carving of a giant stone face with mysterious eyes.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, empty sunlit stone courtyard with dust particles floating.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, broken golden emblem lying on weathered temple steps.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, glowing beam of golden light illuminating central stone deity shrine.",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, wide angle sunset sky behind ancient monolithic stone temple spires."
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1632,7 +1662,8 @@
       "cosmic_james_webb_deep_space",
       "cosmic_james_webb_deep_space",
       "cosmic_james_webb_deep_space",
-      "cyberpunk_neon_matrix"
+      "cyberpunk_neon_matrix",
+      "ancient_indian_monolith"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1697,7 +1728,8 @@
       "classified_declassified_reveal",
       "shocking_metric",
       "negative_constraint",
-      "impossible_claim_in_media_res"
+      "impossible_claim_in_media_res",
+      "direct_provocative_question"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1762,7 +1794,8 @@
       "dramatic_pull_out_reveal",
       "smooth_vertical_pedestal",
       "parallax_subtle_pan_right",
-      "ken_burns_slow_dolly_in"
+      "ken_burns_slow_dolly_in",
+      "dramatic_pull_out_reveal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1827,7 +1860,8 @@
       "golden_amber_spotlight",
       "golden_amber_spotlight",
       "electric_yellow_active_badge",
-      "pure_white_heavy_stroke"
+      "pure_white_heavy_stroke",
+      "neon_cyan_glow"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1892,7 +1926,8 @@
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
-      "ancient_tribal_reverberation"
+      "ancient_tribal_reverberation",
+      "suspense_ticking_clock"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1957,7 +1992,8 @@
       "hi_madhur_dynamic",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -2022,7 +2058,8 @@
       "dark_psychology_behavior",
       "extreme_physics_space",
       "how_it_actually_works",
-      "bizarre_biology_anomalies"
+      "bizarre_biology_anomalies",
+      "dark_psychology_behavior"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -2087,7 +2124,8 @@
       "lower_third_bar",
       "top_header_banner",
       "split_bottom_contrast",
-      "centered_punch"
+      "centered_punch",
+      "lower_third_bar"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -2152,7 +2190,8 @@
       "modern_neo_grotesque",
       "cinematic_serif",
       "modern_neo_grotesque",
-      "impact_bebas"
+      "impact_bebas",
+      "cinematic_serif"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -2217,11 +2256,12 @@
       "neon_pill_badge",
       "glowing_brackets",
       "caution_hazard_tape",
-      "clean_minimalist"
+      "clean_minimalist",
+      "neon_pill_badge"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-12",
-    "used_units": 1651
+    "used_units": 3302
   }
 }

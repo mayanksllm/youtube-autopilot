@@ -881,6 +881,20 @@
       "pinned_comment": "Kya aapko lagta hai aliens bhi zameen ke andar mil sakte hain? Tell us below! 👇",
       "youtube_video_id": "70zC9dWml9E",
       "status": "PUBLISHED"
+    },
+    {
+      "id": "REELS_1794511150",
+      "date": "2026-11-12 19:19:10",
+      "project": "AutonomousViralReelsEngine",
+      "topic": "The Split-Second Trap of Authority Bias",
+      "title": "The Silent Psychological Flaw That Lost an Olympic Gold 😱 #Shorts",
+      "category": "dark_psychology_behavior",
+      "duration": "30-60 seconds",
+      "file": "/home/runner/work/youtube-autopilot/youtube-autopilot/assets/output/reels_engine_short_1794509003.mp4",
+      "engine": "MultiTierFailoverCascade",
+      "pinned_comment": "Kya aapne bhi kabhi kisi authority figure par blind trust karke galat faisla liya hai? Comment mein batao!",
+      "youtube_video_id": "VIcSehmReXA",
+      "status": "PUBLISHED"
     }
   ]
 }
