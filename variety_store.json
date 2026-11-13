@@ -1595,6 +1595,34 @@
         "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, glowing beam of golden light illuminating central stone deity shrine.",
         "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, wide angle sunset sky behind ancient monolithic stone temple spires."
       ]
+    },
+    {
+      "timestamp": "2026-11-13 09:43:00",
+      "video_id": "NEj1ereSgNk",
+      "topic": "The Orbital Racing Paradox",
+      "title": "Space Me Overtake Karne Ka Ulti Physics Secret! 🚀 #Shorts",
+      "category": "extreme_physics_space",
+      "hook_format": "classified_declassified_reveal",
+      "visual_style": "3d_anatomical_zackd",
+      "camera_move": "dynamic_dutch_push",
+      "caption_style": "golden_amber_spotlight",
+      "voice": "hi_swara_expressive",
+      "music_mood": "dark_sub_bass_pulse",
+      "thumbnail_layout": "top_header_banner",
+      "thumbnail_font": "cinematic_serif",
+      "thumbnail_badge": "glowing_brackets",
+      "image_prompts": [
+        "Zack D style 3D schematic diagram showing a futuristic spacecraft applying reverse thruster brakes in Earth orbit with cyan motion vectors",
+        "Zack D style 3D anatomical cross section of Gemini capsule in outer space firing rear engine boosters",
+        "3D scientific cutaway diagram showing spacecraft trajectory curving upwards into a wider outer orbital ring",
+        "Zack D style 3D educational render showing velocity arrows shrinking as spacecraft reaches higher altitude",
+        "3D graphic showing target satellite accelerating ahead while the chasing spacecraft falls behind in higher orbit",
+        "Zack D style minimalist 3D Earth gravity well cross-section displaying orbital velocity equations visually",
+        "3D animated view of spacecraft forward-facing retro thrusters firing glowing orange energy pulses to decelerate",
+        "Zack D style 3D diagram showing spacecraft descending into tighter inner orbit and instantly speeding up",
+        "3D educational render of lower spacecraft elevating upward to align perfectly and rendezvous with target craft",
+        "Zack D style clean 3D render showing complete circular orbital rendezvous loop trajectory with neon vector lines"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1663,7 +1691,8 @@
       "cosmic_james_webb_deep_space",
       "cosmic_james_webb_deep_space",
       "cyberpunk_neon_matrix",
-      "ancient_indian_monolith"
+      "ancient_indian_monolith",
+      "3d_anatomical_zackd"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1729,7 +1758,8 @@
       "shocking_metric",
       "negative_constraint",
       "impossible_claim_in_media_res",
-      "direct_provocative_question"
+      "direct_provocative_question",
+      "classified_declassified_reveal"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1795,7 +1825,8 @@
       "smooth_vertical_pedestal",
       "parallax_subtle_pan_right",
       "ken_burns_slow_dolly_in",
-      "dramatic_pull_out_reveal"
+      "dramatic_pull_out_reveal",
+      "dynamic_dutch_push"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1861,7 +1892,8 @@
       "golden_amber_spotlight",
       "electric_yellow_active_badge",
       "pure_white_heavy_stroke",
-      "neon_cyan_glow"
+      "neon_cyan_glow",
+      "golden_amber_spotlight"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1927,7 +1959,8 @@
       "mysterious_cyber_synth",
       "epic_orchestral_crescendo",
       "ancient_tribal_reverberation",
-      "suspense_ticking_clock"
+      "suspense_ticking_clock",
+      "dark_sub_bass_pulse"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -1993,7 +2026,8 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_swara_expressive",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -2059,7 +2093,8 @@
       "extreme_physics_space",
       "how_it_actually_works",
       "bizarre_biology_anomalies",
-      "dark_psychology_behavior"
+      "dark_psychology_behavior",
+      "extreme_physics_space"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -2125,7 +2160,8 @@
       "top_header_banner",
       "split_bottom_contrast",
       "centered_punch",
-      "lower_third_bar"
+      "lower_third_bar",
+      "top_header_banner"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -2191,6 +2227,7 @@
       "cinematic_serif",
       "modern_neo_grotesque",
       "impact_bebas",
+      "cinematic_serif",
       "cinematic_serif"
     ],
     "thumbnail_badge": [
@@ -2257,11 +2294,12 @@
       "glowing_brackets",
       "caution_hazard_tape",
       "clean_minimalist",
-      "neon_pill_badge"
+      "neon_pill_badge",
+      "glowing_brackets"
     ]
   },
   "quota_tracking": {
-    "date": "2026-11-12",
-    "used_units": 3302
+    "date": "2026-11-13",
+    "used_units": 1651
   }
 }
