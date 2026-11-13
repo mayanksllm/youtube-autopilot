@@ -1647,6 +1647,35 @@
         "Cinematic 3D hyper-realism, octane 3D render style, futuristic cyan holographic stress-line CAD telemetry projected onto ancient stone pillar demonstrating anti-seismic balance joint, high-tech archaeological inspection, vertical 9:16, 8k, dynamic lighting",
         "Cinematic 3D hyper-realism, octane 3D render style, extreme vertical panoramic vista of Lepakshi temple silhouette under starry cosmic night sky with deep purple nebula and glowing golden aura tracing the temple gopuram, vertical 9:16, 8k, dynamic lighting"
       ]
+    },
+    {
+      "timestamp": "2026-11-13 18:28:48",
+      "video_id": "5kVjgqJ8WR4",
+      "topic": "The Hollywood Loophole That Built Pulp Fiction",
+      "title": "The Contract Loophole That Saved Pulp Fiction 🎬💸 #Shorts",
+      "category": "how_it_actually_works",
+      "hook_format": "negative_constraint",
+      "visual_style": "cinematic_35mm_portra",
+      "camera_move": "ken_burns_slow_dolly_in",
+      "caption_style": "electric_yellow_active_badge",
+      "voice": "hi_swara_expressive",
+      "music_mood": "epic_orchestral_crescendo",
+      "thumbnail_layout": "centered_punch",
+      "thumbnail_font": "impact_bebas",
+      "thumbnail_badge": "clean_minimalist",
+      "image_prompts": [
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, macro close up of a luxury fountain pen signing a legal contract on mahogany table",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, vintage typewriter with typed script pages illuminated under dramatic desk lamp light",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, deep corridor of a classic movie archive vault filled with metal film canisters in shadows",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, silhouette of a 1990s film camera crew operating a heavy movie camera on set",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, heavy vintage steel vault door with complex locking wheel cast in shadows",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, dramatic single spotlight shining down on a wooden theater stage floor",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, extreme close up of fine legal text and official wax seal on old parchment paper",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, stack of hundred dollar bill bundles resting on dark leather executive desk",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, vintage movie theater neon sign glowing brilliantly against night sky",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, glowing beam of light cutting through atmospheric haze from a 35mm film projector in a classic theater",
+        "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, solitary director canvas chair positioned under moody studio backlight"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1717,7 +1746,8 @@
       "cyberpunk_neon_matrix",
       "ancient_indian_monolith",
       "3d_anatomical_zackd",
-      "ancient_indian_monolith"
+      "ancient_indian_monolith",
+      "cinematic_35mm_portra"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1785,7 +1815,8 @@
       "impossible_claim_in_media_res",
       "direct_provocative_question",
       "classified_declassified_reveal",
-      "shocking_metric"
+      "shocking_metric",
+      "negative_constraint"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1853,7 +1884,8 @@
       "ken_burns_slow_dolly_in",
       "dramatic_pull_out_reveal",
       "dynamic_dutch_push",
-      "parallax_subtle_pan_right"
+      "parallax_subtle_pan_right",
+      "ken_burns_slow_dolly_in"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1921,7 +1953,8 @@
       "pure_white_heavy_stroke",
       "neon_cyan_glow",
       "golden_amber_spotlight",
-      "pure_white_heavy_stroke"
+      "pure_white_heavy_stroke",
+      "electric_yellow_active_badge"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -1989,7 +2022,8 @@
       "ancient_tribal_reverberation",
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
-      "mysterious_cyber_synth"
+      "mysterious_cyber_synth",
+      "epic_orchestral_crescendo"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -2057,7 +2091,8 @@
       "hi_swara_expressive",
       "hi_madhur_dynamic",
       "hi_swara_expressive",
-      "hi_madhur_dynamic"
+      "hi_madhur_dynamic",
+      "hi_swara_expressive"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -2125,7 +2160,8 @@
       "bizarre_biology_anomalies",
       "dark_psychology_behavior",
       "extreme_physics_space",
-      "high_stakes_heists_scandals"
+      "high_stakes_heists_scandals",
+      "how_it_actually_works"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -2193,7 +2229,8 @@
       "centered_punch",
       "lower_third_bar",
       "top_header_banner",
-      "split_bottom_contrast"
+      "split_bottom_contrast",
+      "centered_punch"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -2261,7 +2298,8 @@
       "impact_bebas",
       "cinematic_serif",
       "cinematic_serif",
-      "modern_neo_grotesque"
+      "modern_neo_grotesque",
+      "impact_bebas"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -2329,11 +2367,12 @@
       "clean_minimalist",
       "neon_pill_badge",
       "glowing_brackets",
-      "caution_hazard_tape"
+      "caution_hazard_tape",
+      "clean_minimalist"
     ]
   },
   "quota_tracking": {
     "date": "2026-11-13",
-    "used_units": 3302
+    "used_units": 4953
   }
 }
