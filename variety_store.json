@@ -1676,6 +1676,35 @@
         "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, glowing beam of light cutting through atmospheric haze from a 35mm film projector in a classic theater",
         "Raw candid masterpiece photograph, shot on Kodak Portra 400, 35mm anamorphic lens, Arri Alexa 65 sensor, tack sharp focus, natural film grain, moody chiaroscuro lighting, subtle volumetric dust particles, 8k vertical 9:16, solitary director canvas chair positioned under moody studio backlight"
       ]
+    },
+    {
+      "timestamp": "2026-11-14 14:47:33",
+      "video_id": "ADG-8bVjyQE",
+      "topic": "The Anticipatory Collapse Effect",
+      "title": "Bina Baadh Ke Doob Gaya Poora Shehar! 🌊 Shocking Human Psychology #Shorts",
+      "category": "dark_psychology_behavior",
+      "hook_format": "impossible_claim_in_media_res",
+      "visual_style": "ancient_indian_monolith",
+      "camera_move": "smooth_vertical_pedestal",
+      "caption_style": "neon_cyan_glow",
+      "voice": "hi_madhur_dynamic",
+      "music_mood": "ancient_tribal_reverberation",
+      "thumbnail_layout": "lower_third_bar",
+      "thumbnail_font": "modern_neo_grotesque",
+      "thumbnail_badge": "neon_pill_badge",
+      "image_prompts": [
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, massive weathered monolithic stone doorway slowly filling with mystic dust, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, close up of ancient Sanskrit treaty inscriptions carved into rough stone wall, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, high angle wide shot of empty stone temple courtyard with tranquil water reflection, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, endless corridor of massive carved stone pillars with intense golden rays streaming through, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, steep monolithic temple steps lit by dramatic low sunbeams, shadows stretching across carved steps, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, deserted stone chambers with forgotten artifacts and weathered rock carvings, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, extreme macro shot of stoic carved divine stone face partially shadowed in golden light, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, solitary lone silhouette standing at the far end of an immense dark stone hall, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, detailed texture of ancient fractured stone floor with golden light seeping through deep cracks, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, silent desolate monolithic temple complex completely devoid of life under a haunting golden dusk, vertical 9:16",
+        "Ancient Indian monolithic temple architecture, golden hour sunbeams cutting through carved stone pillars, mystical divine atmosphere, weathered tactile stone textures, photorealistic cinematic lighting, vertical 9:16, camera pulling rapidly toward massive monolithic archway as golden sunbeams blind the lens, vertical 9:16"
+      ]
     }
   ],
   "replied_comment_ids": {},
@@ -1747,7 +1776,8 @@
       "ancient_indian_monolith",
       "3d_anatomical_zackd",
       "ancient_indian_monolith",
-      "cinematic_35mm_portra"
+      "cinematic_35mm_portra",
+      "ancient_indian_monolith"
     ],
     "hook_format": [
       "shocking_metric",
@@ -1816,7 +1846,8 @@
       "direct_provocative_question",
       "classified_declassified_reveal",
       "shocking_metric",
-      "negative_constraint"
+      "negative_constraint",
+      "impossible_claim_in_media_res"
     ],
     "camera_move": [
       "dynamic_dutch_push",
@@ -1885,7 +1916,8 @@
       "dramatic_pull_out_reveal",
       "dynamic_dutch_push",
       "parallax_subtle_pan_right",
-      "ken_burns_slow_dolly_in"
+      "ken_burns_slow_dolly_in",
+      "smooth_vertical_pedestal"
     ],
     "caption_style": [
       "pure_white_heavy_stroke",
@@ -1954,7 +1986,8 @@
       "neon_cyan_glow",
       "golden_amber_spotlight",
       "pure_white_heavy_stroke",
-      "electric_yellow_active_badge"
+      "electric_yellow_active_badge",
+      "neon_cyan_glow"
     ],
     "music_mood": [
       "mysterious_cyber_synth",
@@ -2023,7 +2056,8 @@
       "suspense_ticking_clock",
       "dark_sub_bass_pulse",
       "mysterious_cyber_synth",
-      "epic_orchestral_crescendo"
+      "epic_orchestral_crescendo",
+      "ancient_tribal_reverberation"
     ],
     "voice": [
       "hi_madhur_dynamic",
@@ -2092,7 +2126,8 @@
       "hi_madhur_dynamic",
       "hi_swara_expressive",
       "hi_madhur_dynamic",
-      "hi_swara_expressive"
+      "hi_swara_expressive",
+      "hi_madhur_dynamic"
     ],
     "category": [
       "bizarre_biology_anomalies",
@@ -2161,7 +2196,8 @@
       "dark_psychology_behavior",
       "extreme_physics_space",
       "high_stakes_heists_scandals",
-      "how_it_actually_works"
+      "how_it_actually_works",
+      "dark_psychology_behavior"
     ],
     "thumbnail_layout": [
       "top_header_banner",
@@ -2230,7 +2266,8 @@
       "lower_third_bar",
       "top_header_banner",
       "split_bottom_contrast",
-      "centered_punch"
+      "centered_punch",
+      "lower_third_bar"
     ],
     "thumbnail_font": [
       "impact_bebas",
@@ -2299,7 +2336,8 @@
       "cinematic_serif",
       "cinematic_serif",
       "modern_neo_grotesque",
-      "impact_bebas"
+      "impact_bebas",
+      "modern_neo_grotesque"
     ],
     "thumbnail_badge": [
       "glowing_brackets",
@@ -2368,11 +2406,12 @@
       "neon_pill_badge",
       "glowing_brackets",
       "caution_hazard_tape",
-      "clean_minimalist"
+      "clean_minimalist",
+      "neon_pill_badge"
     ]
   },
   "quota_tracking": {
-    "date": "2026-11-13",
-    "used_units": 4953
+    "date": "2026-11-14",
+    "used_units": 1651
   }
 }
